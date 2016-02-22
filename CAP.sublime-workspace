@@ -1,0 +1,1212 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"selectio",
+				"selectionAmount"
+			],
+			[
+				"sele",
+				"selectionAmount"
+			],
+			[
+				"amo",
+				"selectionAmount"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"contrac",
+				"contractingAgencyList"
+			],
+			[
+				"sw",
+				"switchCode"
+			],
+			[
+				"up",
+				"updateTotal"
+			],
+			[
+				"ref",
+				"refreshData"
+			],
+			[
+				"nex",
+				"nextRow"
+			],
+			[
+				"sor",
+				"sortedCol"
+			],
+			[
+				"tabl",
+				"tableContainer"
+			],
+			[
+				"pan",
+				"panelBtn"
+			],
+			[
+				"vis",
+				"visGroup"
+			],
+			[
+				"tex",
+				"text"
+			],
+			[
+				"this",
+				"thisLocation"
+			],
+			[
+				"background-i",
+				"background-image"
+			],
+			[
+				"che",
+				"checkHead"
+			],
+			[
+				"ch",
+				"checkHead"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"data",
+				"data-includedvalue"
+			],
+			[
+				"si",
+				"sideList"
+			],
+			[
+				"lis",
+				"listview"
+			],
+			[
+				"list",
+				"listSelect"
+			],
+			[
+				"prod",
+				"product"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"ven",
+				"vendorName"
+			],
+			[
+				"sign",
+				"signedDate"
+			],
+			[
+				"gr",
+				"groupBy"
+			],
+			[
+				"bord",
+				"border-spacing"
+			],
+			[
+				"companyConta",
+				"CompanyContactID"
+			],
+			[
+				"additio",
+				"additionalContact"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"Member",
+				"MemberType"
+			],
+			[
+				"isD",
+				"isDefined	fn. (cfscript)"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"htm",
+				"htmlString"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"lef",
+				"leftcolumn"
+			],
+			[
+				"right",
+				"rightcolumn"
+			],
+			[
+				"click",
+				"clickEventsRegistered"
+			],
+			[
+				"favori",
+				"favoriteCount"
+			],
+			[
+				"each",
+				"eachItem"
+			],
+			[
+				"edi",
+				"edited"
+			],
+			[
+				"hav",
+				"haveFavorites"
+			],
+			[
+				"manag",
+				"managerComment"
+			],
+			[
+				"Mana",
+				"Manager_Comment"
+			],
+			[
+				"for",
+				"forPopulation"
+			],
+			[
+				"fav",
+				"favObj"
+			],
+			[
+				"favo",
+				"favorites"
+			],
+			[
+				"item",
+				"items"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"valid",
+				"validFavorite"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"favor",
+				"favorites"
+			],
+			[
+				"tas",
+				"taskId"
+			],
+			[
+				"timeentry",
+				"timeEntryIndicator"
+			],
+			[
+				"time",
+				"timesheets"
+			],
+			[
+				"curr",
+				"currentIndex"
+			],
+			[
+				"updat",
+				"updateViewQueue"
+			],
+			[
+				"sheet",
+				"sheetTotal"
+			],
+			[
+				"total",
+				"totalHours"
+			],
+			[
+				"tar",
+				"targetEle"
+			],
+			[
+				"ori",
+				"originalHours"
+			],
+			[
+				"coun",
+				"counter"
+			],
+			[
+				"it",
+				"item"
+			],
+			[
+				"pop",
+				"popupStatus"
+			],
+			[
+				"serv",
+				"serviceOrder"
+			],
+			[
+				"popul",
+				"populateTask"
+			],
+			[
+				"popu",
+				"populateAbsence"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"task",
+				"taskSuccess"
+			],
+			[
+				"ti",
+				"timesheet"
+			],
+			[
+				"cuto",
+				"cutoverDate"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"par",
+				"parseFloat"
+			],
+			[
+				"pick",
+				"pickDate"
+			],
+			[
+				"work",
+				"workDate"
+			],
+			[
+				"wbs",
+				"wbsElement"
+			],
+			[
+				"wage",
+				"wageSuccess"
+			],
+			[
+				"atte",
+				"attendanceSuccess"
+			],
+			[
+				"loca",
+				"locationSuccess"
+			],
+			[
+				"load",
+				"loadEntryData"
+			],
+			[
+				"projec",
+				"projectCode"
+			],
+			[
+				"lab",
+				"laborTypeDesc"
+			],
+			[
+				"attend",
+				"attendType"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"chan",
+				"change-reason"
+			],
+			[
+				"ui",
+				"ui_popup"
+			],
+			[
+				"select",
+				"selectedIndex-1"
+			],
+			[
+				"typ",
+				"type"
+			],
+			[
+				"set",
+				"setDate"
+			],
+			[
+				"rol",
+				"rollingDate"
+			],
+			[
+				"pi",
+				"pickDate"
+			],
+			[
+				"pro",
+				"profileStatus"
+			],
+			[
+				"prof",
+				"profile"
+			],
+			[
+				"profil",
+				"profileStatus"
+			],
+			[
+				"is",
+				"isContractor"
+			],
+			[
+				"start",
+				"startDate"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"json",
+				"jsonString"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Answer15.html",
+			"settings":
+			{
+				"buffer_size": 21540,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Answer14.html",
+			"settings":
+			{
+				"buffer_size": 18283,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SelectionCriteria.cfm",
+			"settings":
+			{
+				"buffer_size": 315,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "AddContractsToDBInsert.cfm",
+			"settings":
+			{
+				"buffer_size": 3834,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "AddContractsToDB.html",
+			"settings":
+			{
+				"buffer_size": 5121,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 6019,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "DataDownloads/Data_Feed FY 2016 1109 HSA CA.xml",
+			"settings":
+			{
+				"buffer_size": 197202,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ContractWebService.cfm",
+			"settings":
+			{
+				"buffer_size": 439,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Answer13.html",
+			"settings":
+			{
+				"buffer_size": 18471,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/rgodfrey5/Desktop/Aecon/sapps zipped/ProjectCIMToSAPProjectMaintainLIM.xsl",
+		"/C/Users/rgodfrey5/Desktop/Aecon/sapps zipped/WritePSProjectActualsCRUDparams.xml",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/c detail.xml",
+		"/C/Users/rgodfrey5/Desktop/Sites/ComebackConfetti/StatsPerMin/jquery-2.1.4.min.js",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/Answer4.html",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/Answer2.html",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/Answer8.html",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/DataDownloads/Data_Feed FY 2016 1109 HSA.xml",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/DataDownloads/Data_Feed FY 2015 0930.xml",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/regionChart.html",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/collapsibleTable.html",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/s detail.xml",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/Answer5.html",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/Answer6.html",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/app.js",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/Answer9.html",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/theme.blue.css",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/bootstrap.min.css",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/DataDownloads/Data_Feed FY 2015 0901 - 0930 DOD.xml",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/Answer1.cfm",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/tablesorterColumns.js",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/tablesorterColumns.css",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/Answer7.html",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/Answer5.cfm",
+		"/C/Users/rgodfrey5/Desktop/CAP/Web Project/DataDownloads/Data_Feed FY 2015 0901 - 0930.xml",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/MemForm.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/ConferencesAddEdit.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Conference.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/banners.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/MemCollection.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/MemCollection-ReadOnly.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_SubmitMemForm.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_UpdateCompany.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/ACT_EMAILPASSWORDCHANGE.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/ContactList.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/SetMemberPassword.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_CheckMember.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_CheckUser.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Members.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_UpdateCompany.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_UpdateRegistration.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_AddReg.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_DeleteDoc.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Education.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/member_logos.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Folder.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_AddFolder.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_UpdateFolderAccess.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/EditFolder.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/dsp_EditUser.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/MoreQuestions.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Style.css",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_CollectionExcel.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Reporting.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/ConfCollection.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/ConfCollection-ReadOnly.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Invitation/ICE-Conference-Invitation.html",
+		"/C/Users/rgodfrey5/Desktop/ICE Invitation/invitation.html",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/.htaccess",
+		"/C/Users/rgodfrey5/Desktop/ICE Invitation/ICE-Conference-Invitation.html",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/move.js",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_Verify.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_AddReport.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_AddFolderDoc.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_DeleteFolderDoc.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_DeleteFolder.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_RegForm-ScriptInclude.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/ShowReg.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Registration.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/HotelRegPopup.html",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/CompanyProfile.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_deleteAdditionalContact.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_addAdditionalContact.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/EditCompanyData.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/RegForm.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_UploadContactPicture.cfc",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Join.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Navigation.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Calendar.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/dsp_EditCompany.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Surveys.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/IndustryInitiatives.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/IndustryInitiatives.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_DeleteSecondPicture.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/test.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Committee.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/testAccordian.html",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/PollQuestions.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Users.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Questions.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_UpdateQuestion.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_AddQDocCategory.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_SortQDocCategories.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/dsp_EditQuestion.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Surveys.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/dsp_EditDocument.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_AddCommittee.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Committee.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/dsp_EditCommittee.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_UpdateCommittee.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/About.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/format.min.js",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/MembersNavigation.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/MemForm.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Join.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Head.cfm",
+		"/C/Users/rgodfrey5/Downloads/format.20110630-1100.min.js",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Application.cfc",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/ConferencePages.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Forum/act_AddPost.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Companies.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Forum/TopicView.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/test1.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_DeleteLogo.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_DeleteLogo.cfm",
+		"/C/Users/rgodfrey5/Desktop/tmp.js",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/Application.cfc",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/UpdateRegistration.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/act_UpdateReg.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/MemCollectionIndex-ReadOnly.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/dsp_RegTypeInclude.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/dsp_UpdateRegTypeInclude.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_UpdateUser.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/styles.css",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/test.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/dsp_ShowRegInclude.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/GetSlides1.cfm",
+		"/C/Users/rgodfrey5/Desktop/Sites/ICE/Backstage/act_UpdateQuery.cfm"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\rgodfrey5\\Desktop\\Sites\\ICE",
+			"C:\\Users\\rgodfrey5\\Desktop\\Sites\\SamuraiApocalypse",
+			"C:\\Users\\rgodfrey5\\Desktop\\Project\\catsui-v3",
+			"C:\\Users\\rgodfrey5\\Desktop\\Project\\catsui-v2",
+			"C:\\Users\\rgodfrey5\\Desktop\\Project\\320",
+			"C:\\Users\\rgodfrey5\\Desktop\\Project\\319",
+			"C:\\Users\\rgodfrey5\\Desktop\\Project\\317",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"solici",
+			"day",
+			"signed",
+			"checked",
+			"contractingAgencyList",
+			"checkbo",
+			"page1",
+			"errorPopup",
+			"tablesort",
+			"TABLES",
+			"TABLE",
+			"post",
+			"place of",
+			"parseProductCategory",
+			"substri",
+			"product",
+			"setupTable",
+			"loadContracts",
+			"setupTable",
+			"contractData[i]",
+			"jsonParser",
+			"loadContracts",
+			"jsonParser",
+			"xmlParser",
+			"length",
+			"completionDate",
+			"display",
+			"+\n",
+			"left",
+			"prime",
+			"piid",
+			"contractAmount",
+			"amountToCount",
+			"contractAmount",
+			"city",
+			"Location",
+			"updateTotal",
+			"page1QueryLength",
+			"contractData",
+			"xmlCache",
+			"refreshData",
+			"refreshBtn",
+			"loadContracts",
+			"xmlParser",
+			"refreshData",
+			"refreshBtn",
+			"clearb",
+			"xmlParser",
+			"updateTotal",
+			"update",
+			"check",
+			"sideList",
+			"checkbox",
+			"clear",
+			"clearBtn",
+			"visGroupArray",
+			"chart",
+			"modal",
+			"options",
+			"drawMarkersMap",
+			"options",
+			"chart_div",
+			"visLocation",
+			"modal",
+			"consol",
+			"/>",
+			"City",
+			"chart_div",
+			"checkHead",
+			"setside",
+			"Amount",
+			"amount",
+			"contractsTotal",
+			"clear",
+			"sortTable",
+			"dod",
+			"#popover",
+			"table",
+			"background-image",
+			"asc",
+			"tableso",
+			"h1",
+			"$(\"table\")",
+			" class=\"ui-table-cell-hidden\"",
+			"table",
+			"<tab",
+			"tablesort",
+			"tableso",
+			"updateTotal",
+			"loadContracts",
+			" class=\"ui-table-cell-hidden\"",
+			"ui-table-cell-hidden",
+			"tables",
+			"table",
+			"tablesorter",
+			"sortTable",
+			"table(",
+			"change",
+			"input",
+			"total",
+			"navPanel",
+			"panel",
+			"page1QueryLength",
+			"tableContainer",
+			"contractCount",
+			"loadRecipientContracts",
+			"formatCurrency",
+			"page1",
+			"contractAmount",
+			"page2Recipient",
+			"groupBy",
+			"option",
+			"recipientList",
+			"contractingAgency",
+			"table",
+			"substring",
+			"length",
+			"effect",
+			"effectiveDate",
+			"effect",
+			"page2Recipient",
+			"loadRecipientContracts",
+			"parseRecipientContracts",
+			"loadRecipientContracts",
+			"page_title",
+			"MemLevel",
+			"doccat",
+			"controllingdocument-"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"rawJsonCache.DATA",
+			"setupTable",
+			" class=\"columnSelector-false\"",
+			"columnSelector-false",
+			"5px;width:100%;text-align:center;",
+			"/div",
+			"<div style=\"padding:5px;\"",
+			"6",
+			"5",
+			"4",
+			"3",
+			"6",
+			"5",
+			"4",
+			"3",
+			"SecondState",
+			"/",
+			"",
+			"currentWeekDate",
+			"$target.find(\"",
+			"fav_",
+			"fav_favoritesList",
+			"$(\"#\" + id)",
+			"\"#fav_favoritesList\"",
+			"$(\"#\" + id)",
+			"fav",
+			"favoritesList",
+			"i-indexOffset",
+			"returnFavorites.items.splice",
+			"favorites",
+			"Favorites",
+			"favorite",
+			"Favorite",
+			"favorite",
+			"favoriteData",
+			"favObj",
+			"favor",
+			"favorite",
+			"Favorite",
+			"favorite",
+			"Favorite",
+			"favorite",
+			"<div",
+			"timeO",
+			"timeObject",
+			"p",
+			"",
+			"\"#\" + id + \" ",
+			"ui_popup_edit",
+			"",
+			"\"#\" + id + \"",
+			"#\" + id + \" ",
+			"\"#\" + id + \" ",
+			"",
+			"sideBarColor",
+			" !important;",
+			"dragLI",
+			"id='edit-",
+			"#ui_popup"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Answer15.html",
+					"settings":
+					{
+						"buffer_size": 21540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								405,
+								405
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Answer14.html",
+					"settings":
+					{
+						"buffer_size": 18283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6278.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "SelectionCriteria.cfm",
+					"settings":
+					{
+						"buffer_size": 315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								215,
+								214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ColdFusion/HTML+CFML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "AddContractsToDBInsert.cfm",
+					"settings":
+					{
+						"buffer_size": 3834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3150,
+								3150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ColdFusion/HTML+CFML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "AddContractsToDB.html",
+					"settings":
+					{
+						"buffer_size": 5121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1220,
+								1220
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 168.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 6019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								906,
+								906
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "DataDownloads/Data_Feed FY 2016 1109 HSA CA.xml",
+					"settings":
+					{
+						"buffer_size": 197202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4912,
+								4929
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1260.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "ContractWebService.cfm",
+					"settings":
+					{
+						"buffer_size": 439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								224,
+								224
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ColdFusion/HTML+CFML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Answer13.html",
+					"settings":
+					{
+						"buffer_size": 18471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2084,
+								2084
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 266.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 306.0,
+	"status_bar_visible": true
+}

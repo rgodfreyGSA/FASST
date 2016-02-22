@@ -1,0 +1,306 @@
+		#percentComplete {
+			color: #333;
+			font-size: 0.9em;
+			margin-top: 15px;
+			font-weight: 700;
+			line-height: 30px;
+
+			position: absolute;
+			left: 50%;
+
+			width: 50px;
+			height: 30px;
+			background-color: #e9e9e9;
+			background-repeat: no-repeat;
+			-webkit-border-radius: 1em;
+			border-radius: 1em;
+			text-align: center;
+		}
+		#totalBox {
+			font-weight: bold;
+			margin: .5em 0;
+			padding: .7em 1em;
+		}
+
+
+		#popover, #visLocation {
+			float: right;
+		}
+		#visGroup, #clearBtn, #refreshBtn {
+			float: right;
+		}
+		#popover-target label {
+			margin: 0 5px;
+			display: block;
+		}
+		#popover-target input {
+			margin-right: 5px;
+		}
+		#popover-target .disabled {
+			color: #ddd;
+		}
+
+#contractingAgencyList, #selectionAmountContainer {
+	width: 400px;
+	float: left;
+	margin-right: 20px;
+}
+#selectionAmountContainer label {
+	width: 70%;
+}
+#selectionAmountContainer div.ui-input-text {
+	width: 28%;
+}
+
+.tablesorter .filtered {
+  display: none;
+}
+
+/* All of the following css is already contained within each theme file; modify it as desired */
+/* filter row */
+.tablesorter-filter-row td {
+  background: #eee;
+  line-height: normal;
+  text-align: center; /* center the input */
+  -webkit-transition: line-height 0.1s ease;
+  -moz-transition: line-height 0.1s ease;
+  -o-transition: line-height 0.1s ease;
+  transition: line-height 0.1s ease;
+}
+/* optional disabled input styling */
+.tablesorter-filter-row .disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: not-allowed;
+}
+
+/* hidden filter row */
+.tablesorter-filter-row.hideme td {
+  /*** *********************************************** ***/
+  /*** change this padding to modify the thickness     ***/
+  /*** of the closed filter row (height = padding x 2) ***/
+  padding: 2px;
+  /*** *********************************************** ***/
+  margin: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.tablesorter-filter-row.hideme * {
+  height: 1px;
+  min-height: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  /* don't use visibility: hidden because it disables tabbing */
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* filters */
+.tablesorter-filter {
+  width: 95%;
+  height: inherit;
+  margin: 4px;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  color: #333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: height 0.1s ease;
+  -moz-transition: height 0.1s ease;
+  -o-transition: height 0.1s ease;
+  transition: height 0.1s ease;
+}
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.bold {
+			font-weight: bold !important;
+		}
+		
+		.pager {
+			padding: 0 20px 5px 20px;
+		}
+		
+		/* define table skin */
+		table.grid {
+			margin: 0;
+			padding: 0;
+			border-collapse: separate;
+			border-spacing: 0;
+			width: 100%;
+		}
+		
+		table.grid * {
+			font: 11px Arial, Helvetica, sans-serif;
+			vertical-align: top;
+			text-align: left;
+		}
+		
+		table.grid thead, table.grid .collapsible {
+			background-color: #e6edc1;
+		}
+
+		/* use the below style below to hide the collapsed rows via CSS, you must also set the showCollapsed setting to true */		
+/*
+		table.grid tr.expand-child td {
+			display: none;
+		}
+*/
+
+		table.grid th {
+			color: #565770;
+			padding: 4px 16px 4px 0;
+			cursor: pointer;
+		} 
+		
+		table.grid td {
+			color: #565770;
+			padding: 4px 6px;
+		}
+		
+		table.grid th.headerSortUp {
+			background: #e6edc1 url(images/tablesorter_bkgrd.png) no-repeat 100% -80px;
+		}
+		
+		table.grid th.headerSortUp span {
+			background: #e6edc1 url(images/tablesorter_bkgrd.png) no-repeat 0 -80px;
+		}
+		
+		table.grid th.headerSortDown {
+			background: #e6edc1 url(images/tablesorter_bkgrd.png) no-repeat 100% 2px;
+		}
+		
+		table.grid th.headerSortDown span {
+			background: #e6edc1 url(images/tablesorter_bkgrd.png) no-repeat 0 2px;
+		}
+		
+		table.grid th span {
+			padding: 4px 0 4px 6px;
+			font-weight: bold;
+		}
+		
+		table.grid a:link,
+		table.grid a:visited,
+		table.grid a:focus,
+		table.grid a:hover {
+			color: #565770;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		
+		table.grid a:hover {
+			color: #d07c57;
+		}
+		
+		table.grid tr.even {
+			background-color: #f0f0f0;
+		}
+		
+		/* expand/collapse */
+		table.grid .collapsible {
+			padding: 0 0 3px 0;
+		}
+
+		.collapsible a.collapsed {
+			margin: 2px;
+			display: block;
+			width: 15px;
+			height: 15px;
+			background: url(images/tablesorter_expand.png) no-repeat 3px 3px;
+			outline: 0;
+		}
+		
+		.collapsible a.expanded {
+			margin: 2px;
+			display: block;
+			width: 15px;
+			height: 15px;
+			background: url(images/tablesorter_expand.png) no-repeat -24px 3px;
+			outline: 0;
+		}
+
+	tr.group-header td {
+	  background: #eee;
+	}
+	.group-name {
+	  text-transform: uppercase;
+	  font-weight: bold;
+	}
+	.group-count {
+	  color: #999;
+	}
+	.group-hidden {
+	  display: none;
+	}
+	.group-header, .group-header td {
+	  user-select: none;
+	  -moz-user-select: none;
+	  cursor: pointer;
+	}
+	/* collapsed arrow */
+	tr.group-header td i {
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border-top: 4px solid transparent;
+	  border-bottom: 4px solid #888;
+	  border-right: 4px solid #888;
+	  border-left: 4px solid transparent;
+	  margin-right: 7px;
+	  user-select: none;
+	  -moz-user-select: none;
+	}
+	tr.group-header.collapsed td i {
+	  border-top: 5px solid transparent;
+	  border-bottom: 5px solid transparent;
+	  border-left: 5px solid #888;
+	  border-right: 0;
+	  margin-right: 10px;
+	}
+
+.wrapper {
+  position: relative;
+  padding: 0 5px;
+  height: 250px;
+  overflow-y: auto;
+}
+
+/* Magnific popup */
+#popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+#popup .tablesorter-sticky-wrapper {
+  margin-left: 20px;
+  margin-top: -20px;
+}
+.checkHead {
+	background-image: none !important;
+}
+.checkHead .tablesorter-header-inner {
+	width: 13px;
+}
+.modal-header button {
+	width: 40px;
+}
+
+#chart_div {
+	width: 868px;
+	height: 500px;
+}
+
+#sideList {
+	text-transform: uppercase;
+}
+h3 {
+	text-align: center;
+	margin-top: 0;
+}

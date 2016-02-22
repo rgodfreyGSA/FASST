@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usaspendingSearchResults xmlns="http://www.usaspending.gov/schemas/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <search_criteria>
+      <search_criterion field="detail" value="c" />
+      <search_criterion field="fiscal_year" value="2015" />
+      <search_criterion field="statecode" value="TX" />
+      <search_criterion field="max_records" value="10" />
+      <search_criterion field="sortby" value="OBLIGATED_AMOUNT desc" />
+      <search_criterion field="records_from" value="0" />
+   </search_criteria>
+   <result numFound="111656" max_records="10">
+      <doc spendingCategory="Contracts">
+         <obligatedAmount>4120352986</obligatedAmount>
+         <baseAndExercisedOptionsValue>4183746486.00</baseAndExercisedOptionsValue>
+         <baseAndAllOptionsValue>4192565140.00</baseAndAllOptionsValue>
+         <maj_agency_cat>9700</maj_agency_cat>
+         <mod_agency>1700</mod_agency>
+         <maj_fund_agency_cat>9700: DEPT OF DEFENSE</maj_fund_agency_cat>
+         <contractingOfficeAgencyID>1700: DEPT OF THE NAVY</contractingOfficeAgencyID>
+         <contractingOfficeID>N00019:_x0020_NAVAL_x0020_AIR_x0020_SYSTEMS_x0020_COMMAND</contractingOfficeID>
+         <fundingRequestingAgencyID>1700</fundingRequestingAgencyID>
+         <fundingRequestingOfficeID>N00019</fundingRequestingOfficeID>
+         <signedDate>2014-11-21T00:00:00.000</signedDate>
+         <effectiveDate>2014-11-21T00:00:00.000</effectiveDate>
+         <currentCompletionDate>2100-12-31T00:00:00.000</currentCompletionDate>
+         <ultimateCompletionDate>2100-12-31T00:00:00.000</ultimateCompletionDate>
+         <lastdatetoorder>1900-01-01T00:00:00.000</lastdatetoorder>
+         <contractActionType>DCA</contractActionType>
+         <reasonForModification>A</reasonForModification>
+         <typeOfContractPricing>L</typeOfContractPricing>
+         <subcontractPlan>D: PLAN REQUIRED - INCENTIVE INCLUDED</subcontractPlan>
+         <priceEvaluationPercentDifference>0</priceEvaluationPercentDifference>
+         <letterContract>X</letterContract>
+         <multiYearContract>N: No</multiYearContract>
+         <performanceBasedServiceContract>X</performanceBasedServiceContract>
+         <contingencyHumanitarianPeacekeepingOperation>X: NOT APPLICABLE</contingencyHumanitarianPeacekeepingOperation>
+         <contractFinancing>A</contractFinancing>
+         <costOrPricingData>N</costOrPricingData>
+         <costAccountingStandardsClause>Y</costAccountingStandardsClause>
+         <descriptionOfContractRequirement>LRIP 8 PRODUCTION MODIFICATION</descriptionOfContractRequirement>
+         <purchaseCardAsPaymentMethod>N</purchaseCardAsPaymentMethod>
+         <numberOfActions>1</numberOfActions>
+         <nationalInterestActionCode>NONE</nationalInterestActionCode>
+         <ProgSourceAgency>57</ProgSourceAgency>
+         <ProgSourceAccount>3010</ProgSourceAccount>
+         <vendorName>LOCKHEED MARTIN CORPORATION</vendorName>
+         <vendorAlternateName>LOCKHEED MARTIN</vendorAlternateName>
+         <vendorLegalOrganizationName>LOCKHEED MARTIN CORPORATION</vendorLegalOrganizationName>
+         <streetAddress>1 LOCKHEED BLVD</streetAddress>
+         <city>FORT WORTH</city>
+         <state>TX</state>
+         <ZIPCode>761083619</ZIPCode>
+         <vendorCountryCode>UNITED_x0020_STATES</vendorCountryCode>
+         <vendorStateCode>TX</vendorStateCode>
+         <vendor_cd>TX12</vendor_cd>
+         <congressionalDistrict>12</congressionalDistrict>
+         <vendorSiteCode>008016958</vendorSiteCode>
+         <vendorAlternateSiteCode>761083619</vendorAlternateSiteCode>
+         <DUNSNumber>008016958</DUNSNumber>
+         <parentDUNSNumber>834951691</parentDUNSNumber>
+         <phoneNo>8177636775</phoneNo>
+         <faxNo>8177636781</faxNo>
+         <registrationDate>2002-03-26T00:00:00.000</registrationDate>
+         <renewalDate>2013-04-25T00:00:00.000</renewalDate>
+         <mod_parent>LOCKHEED MARTIN CORPORATION</mod_parent>
+         <stateCode>TX</stateCode>
+         <popStateCode>TX</popStateCode>
+         <placeOfPerformanceCountryCode>USA</placeOfPerformanceCountryCode>
+         <placeOfPerformanceZIPCode>76101</placeOfPerformanceZIPCode>
+         <pop_cd>12</pop_cd>
+         <placeOfPerformanceCongressionalDistrict>12</placeOfPerformanceCongressionalDistrict>
+         <psc_cat>15</psc_cat>
+         <productOrServiceCode>1510: AIRCRAFT, FIXED WING</productOrServiceCode>
+         <systemEquipmentCode>198</systemEquipmentCode>
+         <claimantProgramCode>A1A</claimantProgramCode>
+         <principalNAICSCode>336411</principalNAICSCode>
+         <informationTechnologyCommercialItemCategory>Z: NOT IT PRODUCTS OR SERVICES</informationTechnologyCommercialItemCategory>
+         <GFE_GFP>Y: Transaction uses GFE/GFP</GFE_GFP>
+         <useOfEPADesignatedProducts>A: MEETS REQUIREMENTS</useOfEPADesignatedProducts>
+         <recoveredMaterialClauses>C: NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLU</recoveredMaterialClauses>
+         <seaTransportation>Y: YES</seaTransportation>
+         <contractBundling>D: NOT A BUNDLED REQUIREMENT</contractBundling>
+         <consolidatedContract>N_x003A__x0020_No</consolidatedContract>
+         <countryOfOrigin>USA</countryOfOrigin>
+         <placeOfManufacture>D: MFG IN U.S.</placeOfManufacture>
+         <manufacturingOrganizationType>A: U.S. Owned Business</manufacturingOrganizationType>
+         <agencyID>9700: DEPT OF DEFENSE</agencyID>
+         <PIID>N0001913C0008</PIID>
+         <modNumber>P00013</modNumber>
+         <transactionNumber>0</transactionNumber>
+         <fiscal_year>2015</fiscal_year>
+         <IDVModificationNumber>0</IDVModificationNumber>
+         <extentCompeted>C</extentCompeted>
+         <reasonNotCompeted>ONE: ONLY ONE SOURCE - OTHER</reasonNotCompeted>
+         <numberOfOffersReceived>1</numberOfOffersReceived>
+         <commercialItemAcquisitionProcedures>D:</commercialItemAcquisitionProcedures>
+         <commercialItemTestProgram>N_x003A__x0020_No</commercialItemTestProgram>
+         <smallBusinessCompetitivenessDemonstrationProgram>_x003A__x0020_NO</smallBusinessCompetitivenessDemonstrationProgram>
+         <A76Action>No</A76Action>
+         <solicitationProcedures>SSS: ONLY ONE SOURCE</solicitationProcedures>
+         <typeOfSetAside>NONE: NO SET ASIDE USED.</typeOfSetAside>
+         <localAreaSetAside>N</localAreaSetAside>
+         <evaluatedPreference>NONE: NO PREFERENCE USED</evaluatedPreference>
+         <fedBizOpps>Y</fedBizOpps>
+         <organizationalType>CORPORATE NOT TAX EXEMPT</organizationalType>
+         <numberOfEmployees>140000</numberOfEmployees>
+         <annualRevenue>43259998208</annualRevenue>
+         <firm8AFlag>N</firm8AFlag>
+         <HUBZoneFlag>N</HUBZoneFlag>
+         <SDBFlag>N</SDBFlag>
+         <shelteredWorkshopFlag>N</shelteredWorkshopFlag>
+         <HBCUFlag>N</HBCUFlag>
+         <educationalInstitutionFlag>N</educationalInstitutionFlag>
+         <womenOwnedFlag>N</womenOwnedFlag>
+         <veteranOwnedFlag>N</veteranOwnedFlag>
+         <SRDVOBFlag>N</SRDVOBFlag>
+         <localGovernmentFlag>N</localGovernmentFlag>
+         <minorityInstitutionFlag>N</minorityInstitutionFlag>
+         <AIOBFlag>N</AIOBFlag>
+         <stateGovernmentFlag>N</stateGovernmentFlag>
+         <federalGovernmentFlag>N</federalGovernmentFlag>
+         <minorityOwnedBusinessFlag>N</minorityOwnedBusinessFlag>
+         <APAOBFlag>N</APAOBFlag>
+         <tribalGovernmentFlag>N</tribalGovernmentFlag>
+         <BAOBFlag>N</BAOBFlag>
+         <NAOBFlag>N</NAOBFlag>
+         <SAAOBFlag>N</SAAOBFlag>
+         <nonprofitOrganizationFlag>N</nonprofitOrganizationFlag>
+         <isothernotforprofitorganization>N</isothernotforprofitorganization>
+         <isforprofitorganization>Y</isforprofitorganization>
+         <isfoundation>N</isfoundation>
+         <HAOBFlag>N</HAOBFlag>
+         <ishispanicservicinginstitution>N</ishispanicservicinginstitution>
+         <verySmallBusinessFlag>N</verySmallBusinessFlag>
+         <hospitalflag>N</hospitalflag>
+         <contractingOfficerBusinessSizeDetermination>O: OTHER THAN SMALL BUSINESS</contractingOfficerBusinessSizeDetermination>
+         <is1862landgrantcollege>N</is1862landgrantcollege>
+         <is1890landgrantcollege>N</is1890landgrantcollege>
+         <is1994landgrantcollege>N</is1994landgrantcollege>
+         <isveterinarycollege>N</isveterinarycollege>
+         <isveterinaryhospital>N</isveterinaryhospital>
+         <isprivateuniversityorcollege>N</isprivateuniversityorcollege>
+         <isschoolofforestry>N</isschoolofforestry>
+         <isstatecontrolledinstitutionofhigherlearning>N</isstatecontrolledinstitutionofhigherlearning>
+         <receivescontracts>Y</receivescontracts>
+         <receivesgrants>Y</receivesgrants>
+         <receivescontractsandgrants>Y</receivescontractsandgrants>
+         <isairportauthority>N</isairportauthority>
+         <iscouncilofgovernments>N</iscouncilofgovernments>
+         <ishousingauthoritiespublicortribal>N</ishousingauthoritiespublicortribal>
+         <isinterstateentity>N</isinterstateentity>
+         <isplanningcommission>N</isplanningcommission>
+         <isportauthority>N</isportauthority>
+         <istransitauthority>N</istransitauthority>
+         <issubchapterscorporation>N</issubchapterscorporation>
+         <islimitedliabilitycorporation>N</islimitedliabilitycorporation>
+         <isforeignownedandlocated>N</isforeignownedandlocated>
+         <isarchitectureandengineering>N</isarchitectureandengineering>
+         <iscitylocalgovernment>N</iscitylocalgovernment>
+         <iscommunitydevelopedcorporationownedfirm>N</iscommunitydevelopedcorporationownedfirm>
+         <iscommunitydevelopmentcorporation>N</iscommunitydevelopmentcorporation>
+         <isconstructionfirm>N</isconstructionfirm>
+         <ismanufacturerofgoods>Y</ismanufacturerofgoods>
+         <iscorporateentitynottaxexempt>Y</iscorporateentitynottaxexempt>
+         <iscountylocalgovernment>N</iscountylocalgovernment>
+         <isdomesticshelter>N</isdomesticshelter>
+         <isfederalgovernmentagency>N</isfederalgovernmentagency>
+         <isfederallyfundedresearchanddevelopmentcorp>N</isfederallyfundedresearchanddevelopmentcorp>
+         <isforeigngovernment>N</isforeigngovernment>
+         <isindiantribe>N</isindiantribe>
+         <isintermunicipallocalgovernment>N</isintermunicipallocalgovernment>
+         <isinternationalorganization>N</isinternationalorganization>
+         <islaborsurplusareafirm>N</islaborsurplusareafirm>
+         <islocalgovernmentowned>N</islocalgovernmentowned>
+         <ismunicipalitylocalgovernment>N</ismunicipalitylocalgovernment>
+         <isnativehawaiianownedorganizationorfirm>N</isnativehawaiianownedorganizationorfirm>
+         <isotherbusinessororganization>N</isotherbusinessororganization>
+         <isotherminorityowned>N</isotherminorityowned>
+         <ispartnershiporlimitedliabilitypartnership>N</ispartnershiporlimitedliabilitypartnership>
+         <isschooldistrictlocalgovernment>N</isschooldistrictlocalgovernment>
+         <issmallagriculturalcooperative>N</issmallagriculturalcooperative>
+         <issoleproprietorship>N</issoleproprietorship>
+         <istownshiplocalgovernment>N</istownshiplocalgovernment>
+         <istriballyownedfirm>N</istriballyownedfirm>
+         <istribalcollege>N</istribalcollege>
+         <isalaskannativeownedcorporationorfirm>N</isalaskannativeownedcorporationorfirm>
+         <iscorporateentitytaxexempt>N</iscorporateentitytaxexempt>
+         <WalshHealyAct>Y: Yes</WalshHealyAct>
+         <serviceContractAct>N: No</serviceContractAct>
+         <DavisBaconAct>N: No</DavisBaconAct>
+         <ClingerCohenAct>N: No</ClingerCohenAct>
+         <prime_awardee_executive1_compensation>0</prime_awardee_executive1_compensation>
+         <prime_awardee_executive2_compensation>0</prime_awardee_executive2_compensation>
+         <prime_awardee_executive3_compensation>0</prime_awardee_executive3_compensation>
+         <prime_awardee_executive4_compensation>0</prime_awardee_executive4_compensation>
+         <prime_awardee_executive5_compensation>0</prime_awardee_executive5_compensation>
+         <interagencycontractingauthority>X: Not Applicable</interagencycontractingauthority>
+         <last_modified_date>2014-11-21T00:00:00.000</last_modified_date>
+      </doc>
+      <doc spendingCategory="Contracts">
+         <obligatedAmount>1165931168</obligatedAmount>
+         <baseAndExercisedOptionsValue>0.00</baseAndExercisedOptionsValue>
+         <baseAndAllOptionsValue>0.00</baseAndAllOptionsValue>
+         <maj_agency_cat>9700</maj_agency_cat>
+         <maj_fund_agency_cat>9700: Department of Defense</maj_fund_agency_cat>
+         <contractingOfficeAgencyID>1700: DEPT OF THE NAVY</contractingOfficeAgencyID>
+         <contractingOfficeID>N00019:_x0020_NAVAL_x0020_AIR_x0020_SYSTEMS_x0020_COMMAND</contractingOfficeID>
+         <fundingRequestingAgencyID>1700</fundingRequestingAgencyID>
+         <fundingRequestingOfficeID>N00019</fundingRequestingOfficeID>
+         <fundedByForeignEntity>X</fundedByForeignEntity>
+         <signedDate>2014-12-22T00:00:00.000</signedDate>
+         <effectiveDate>2014-12-22T00:00:00.000</effectiveDate>
+         <currentCompletionDate>2019-09-30T00:00:00.000</currentCompletionDate>
+         <ultimateCompletionDate>2019-09-30T00:00:00.000</ultimateCompletionDate>
+         <contractActionType>D</contractActionType>
+         <reasonForModification>C</reasonForModification>
+         <typeOfContractPricing>L</typeOfContractPricing>
+         <subcontractPlan>C: PLAN REQUIRED - INCENTIVE NOT INCLUDED</subcontractPlan>
+         <priceEvaluationPercentDifference>0.00</priceEvaluationPercentDifference>
+         <typeOfContract>1</typeOfContract>
+         <multiYearContract>N: NO</multiYearContract>
+         <performanceBasedServiceContract>X</performanceBasedServiceContract>
+         <majorProgramCode>V-22</majorProgramCode>
+         <contingencyHumanitarianPeacekeepingOperation>X: NOT APPLICABLE</contingencyHumanitarianPeacekeepingOperation>
+         <contractFinancing>A</contractFinancing>
+         <costOrPricingData>N</costOrPricingData>
+         <costAccountingStandardsClause>Y</costAccountingStandardsClause>
+         <descriptionOfContractRequirement>LOT 19 FULL FUNDING</descriptionOfContractRequirement>
+         <purchaseCardAsPaymentMethod>N</purchaseCardAsPaymentMethod>
+         <numberOfActions>1</numberOfActions>
+         <nationalInterestActionCode>NONE</nationalInterestActionCode>
+         <ProgSourceAgency>17</ProgSourceAgency>
+         <ProgSourceAccount>1506</ProgSourceAccount>
+         <vendorName>BELL BOEING JOINT PROJECT OFFICE</vendorName>
+         <streetAddress>401 TILTROTOR DR PLANT A</streetAddress>
+         <city>AMARILLO</city>
+         <state>TX</state>
+         <ZIPCode>79111</ZIPCode>
+         <vendorCountryCode>USA_x003A__x0020_UNITED_x0020_STATES_x0020_OF_x0020_AMERICA</vendorCountryCode>
+         <vendorStateCode>TX</vendorStateCode>
+         <congressionalDistrict>13</congressionalDistrict>
+         <vendorSiteCode>106632750</vendorSiteCode>
+         <vendorAlternateSiteCode>791111200</vendorAlternateSiteCode>
+         <DUNSNumber>106632750</DUNSNumber>
+         <phoneNo>3018666835</phoneNo>
+         <faxNo>8172782052</faxNo>
+         <registrationDate>2002-10-10T00:00:00.000</registrationDate>
+         <renewalDate>2012-11-20T00:00:00.000</renewalDate>
+         <popStateCode>TX</popStateCode>
+         <placeOfPerformanceCountryCode>USA</placeOfPerformanceCountryCode>
+         <placeOfPerformanceZIPCode>79111</placeOfPerformanceZIPCode>
+         <pop_cd>13</pop_cd>
+         <placeOfPerformanceCongressionalDistrict>13</placeOfPerformanceCongressionalDistrict>
+         <productOrServiceCode>1510: AIRCRAFT, FIXED WING</productOrServiceCode>
+         <systemEquipmentCode>212</systemEquipmentCode>
+         <claimantProgramCode>A1A</claimantProgramCode>
+         <principalNAICSCode>336411</principalNAICSCode>
+         <informationTechnologyCommercialItemCategory>Z: NOT IT PRODUCTS OR SERVICES</informationTechnologyCommercialItemCategory>
+         <GFE_GFP>N: Transaction does not use GFE/GFP</GFE_GFP>
+         <useOfEPADesignatedProducts>A: MEETS REQUIREMENTS</useOfEPADesignatedProducts>
+         <recoveredMaterialClauses>C: NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED</recoveredMaterialClauses>
+         <seaTransportation>N: NO</seaTransportation>
+         <contractBundling>D: NOT A BUNDLED REQUIREMENT</contractBundling>
+         <consolidatedContract>N_x003A__x0020_N</consolidatedContract>
+         <countryOfOrigin>USA: UNITED STATES</countryOfOrigin>
+         <placeOfManufacture>D: MFG IN U.S.</placeOfManufacture>
+         <manufacturingOrganizationType>A: U.S. OWNED BUSINESS</manufacturingOrganizationType>
+         <agencyID>9700: DEPT OF DEFENSE</agencyID>
+         <PIID>N0001912C2001</PIID>
+         <modNumber>P00030</modNumber>
+         <transactionNumber>0</transactionNumber>
+         <fiscal_year>2015</fiscal_year>
+         <extentCompeted>C</extentCompeted>
+         <reasonNotCompeted>ONE: ONLY ONE SOURCE - OTHER</reasonNotCompeted>
+         <numberOfOffersReceived>1</numberOfOffersReceived>
+         <commercialItemAcquisitionProcedures>D: COMMERCIAL ITEM PROCEDURES NOT USED</commercialItemAcquisitionProcedures>
+         <commercialItemTestProgram>N_x003A__x0020_NO</commercialItemTestProgram>
+         <A76Action>N</A76Action>
+         <solicitationProcedures>SSS: ONLY ONE SOURCE</solicitationProcedures>
+         <typeOfSetAside>NONE: NO SET ASIDE USED.</typeOfSetAside>
+         <localAreaSetAside>N</localAreaSetAside>
+         <evaluatedPreference>NONE: NO PREFERENCE USED</evaluatedPreference>
+         <fedBizOpps>Y</fedBizOpps>
+         <organizationalType>OTHER</organizationalType>
+         <numberOfEmployees>2500</numberOfEmployees>
+         <annualRevenue>50000000</annualRevenue>
+         <firm8AFlag>false</firm8AFlag>
+         <HUBZoneFlag>false</HUBZoneFlag>
+         <SDBFlag>false</SDBFlag>
+         <shelteredWorkshopFlag>false</shelteredWorkshopFlag>
+         <HBCUFlag>false</HBCUFlag>
+         <educationalInstitutionFlag>false</educationalInstitutionFlag>
+         <womenOwnedFlag>false</womenOwnedFlag>
+         <veteranOwnedFlag>false</veteranOwnedFlag>
+         <SRDVOBFlag>false</SRDVOBFlag>
+         <localGovernmentFlag>false</localGovernmentFlag>
+         <minorityInstitutionFlag>false</minorityInstitutionFlag>
+         <AIOBFlag>false</AIOBFlag>
+         <stateGovernmentFlag>false</stateGovernmentFlag>
+         <federalGovernmentFlag>false</federalGovernmentFlag>
+         <minorityOwnedBusinessFlag>false</minorityOwnedBusinessFlag>
+         <APAOBFlag>false</APAOBFlag>
+         <tribalGovernmentFlag>false</tribalGovernmentFlag>
+         <BAOBFlag>false</BAOBFlag>
+         <NAOBFlag>false</NAOBFlag>
+         <SAAOBFlag>false</SAAOBFlag>
+         <nonprofitOrganizationFlag>false</nonprofitOrganizationFlag>
+         <isothernotforprofitorganization>false</isothernotforprofitorganization>
+         <isforprofitorganization>true</isforprofitorganization>
+         <isfoundation>false</isfoundation>
+         <HAOBFlag>false</HAOBFlag>
+         <ishispanicservicinginstitution>false</ishispanicservicinginstitution>
+         <verySmallBusinessFlag>false</verySmallBusinessFlag>
+         <hospitalflag>false</hospitalflag>
+         <contractingOfficerBusinessSizeDetermination>O: OTHER THAN SMALL BUSINESS</contractingOfficerBusinessSizeDetermination>
+         <is1862landgrantcollege>false</is1862landgrantcollege>
+         <is1890landgrantcollege>false</is1890landgrantcollege>
+         <is1994landgrantcollege>false</is1994landgrantcollege>
+         <isveterinarycollege>false</isveterinarycollege>
+         <isveterinaryhospital>false</isveterinaryhospital>
+         <isprivateuniversityorcollege>false</isprivateuniversityorcollege>
+         <isschoolofforestry>false</isschoolofforestry>
+         <isstatecontrolledinstitutionofhigherlearning>false</isstatecontrolledinstitutionofhigherlearning>
+         <receivescontracts>true</receivescontracts>
+         <receivesgrants>false</receivesgrants>
+         <receivescontractsandgrants>false</receivescontractsandgrants>
+         <isairportauthority>false</isairportauthority>
+         <iscouncilofgovernments>false</iscouncilofgovernments>
+         <ishousingauthoritiespublicortribal>false</ishousingauthoritiespublicortribal>
+         <isinterstateentity>false</isinterstateentity>
+         <isplanningcommission>false</isplanningcommission>
+         <isportauthority>false</isportauthority>
+         <istransitauthority>false</istransitauthority>
+         <issubchapterscorporation>false</issubchapterscorporation>
+         <islimitedliabilitycorporation>false</islimitedliabilitycorporation>
+         <isforeignownedandlocated>false</isforeignownedandlocated>
+         <isdotcertifieddisadvantagedbusinessenterprise>false</isdotcertifieddisadvantagedbusinessenterprise>
+         <iscitylocalgovernment>false</iscitylocalgovernment>
+         <iscommunitydevelopedcorporationownedfirm>false</iscommunitydevelopedcorporationownedfirm>
+         <iscommunitydevelopmentcorporation>false</iscommunitydevelopmentcorporation>
+         <ismanufacturerofgoods>true</ismanufacturerofgoods>
+         <iscorporateentitynottaxexempt>false</iscorporateentitynottaxexempt>
+         <iscountylocalgovernment>false</iscountylocalgovernment>
+         <isdomesticshelter>false</isdomesticshelter>
+         <isfederalgovernmentagency>false</isfederalgovernmentagency>
+         <isfederallyfundedresearchanddevelopmentcorp>false</isfederallyfundedresearchanddevelopmentcorp>
+         <isforeigngovernment>false</isforeigngovernment>
+         <isindiantribe>false</isindiantribe>
+         <isintermunicipallocalgovernment>false</isintermunicipallocalgovernment>
+         <isinternationalorganization>false</isinternationalorganization>
+         <islaborsurplusareafirm>false</islaborsurplusareafirm>
+         <islocalgovernmentowned>false</islocalgovernmentowned>
+         <ismunicipalitylocalgovernment>false</ismunicipalitylocalgovernment>
+         <isnativehawaiianownedorganizationorfirm>false</isnativehawaiianownedorganizationorfirm>
+         <isotherminorityowned>false</isotherminorityowned>
+         <ispartnershiporlimitedliabilitypartnership>false</ispartnershiporlimitedliabilitypartnership>
+         <isschooldistrictlocalgovernment>false</isschooldistrictlocalgovernment>
+         <issmallagriculturalcooperative>false</issmallagriculturalcooperative>
+         <issoleproprietorship>false</issoleproprietorship>
+         <istownshiplocalgovernment>false</istownshiplocalgovernment>
+         <istriballyownedfirm>false</istriballyownedfirm>
+         <istribalcollege>false</istribalcollege>
+         <isalaskannativeownedcorporationorfirm>false</isalaskannativeownedcorporationorfirm>
+         <iscorporateentitytaxexempt>false</iscorporateentitytaxexempt>
+         <WalshHealyAct>Y: YES</WalshHealyAct>
+         <serviceContractAct>X: NOT APPLICABLE</serviceContractAct>
+         <DavisBaconAct>X: NOT APPLICABLE</DavisBaconAct>
+         <ClingerCohenAct>Y: YES</ClingerCohenAct>
+         <prime_awardee_executive1_compensation>0</prime_awardee_executive1_compensation>
+         <prime_awardee_executive2_compensation>0</prime_awardee_executive2_compensation>
+         <prime_awardee_executive3_compensation>0</prime_awardee_executive3_compensation>
+         <prime_awardee_executive4_compensation>0</prime_awardee_executive4_compensation>
+         <prime_awardee_executive5_compensation>0</prime_awardee_executive5_compensation>
+         <interagencycontractingauthority>X: NOT APPLICABLE</interagencycontractingauthority>
+         <last_modified_date>2014-12-22T00:00:00.000</last_modified_date>
+      </doc>
+      <doc spendingCategory="Contracts">
+         <obligatedAmount>676688704</obligatedAmount>
+         <baseAndExercisedOptionsValue>683054051.00</baseAndExercisedOptionsValue>
+         <baseAndAllOptionsValue>718299821.00</baseAndAllOptionsValue>
+         <maj_agency_cat>9700</maj_agency_cat>
+         <maj_fund_agency_cat>9700: Department of Defense</maj_fund_agency_cat>
+         <contractingOfficeAgencyID>1700: DEPT OF THE NAVY</contractingOfficeAgencyID>
+         <contractingOfficeID>N00019:_x0020_NAVAL_x0020_AIR_x0020_SYSTEMS_x0020_COMMAND</contractingOfficeID>
+         <fundingRequestingAgencyID>1700</fundingRequestingAgencyID>
+         <fundingRequestingOfficeID>N00019</fundingRequestingOfficeID>
+         <fundedByForeignEntity>A</fundedByForeignEntity>
+         <signedDate>2015-07-14T00:00:00.000</signedDate>
+         <effectiveDate>2015-06-05T00:00:00.000</effectiveDate>
+         <currentCompletionDate>2020-04-01T00:00:00.000</currentCompletionDate>
+         <ultimateCompletionDate>2020-04-01T00:00:00.000</ultimateCompletionDate>
+         <contractActionType>D</contractActionType>
+         <reasonForModification>A</reasonForModification>
+         <typeOfContractPricing>V</typeOfContractPricing>
+         <subcontractPlan>B: PLAN NOT REQUIRED</subcontractPlan>
+         <priceEvaluationPercentDifference>0.00</priceEvaluationPercentDifference>
+         <typeOfContract>1</typeOfContract>
+         <multiYearContract>N: NO</multiYearContract>
+         <performanceBasedServiceContract>X</performanceBasedServiceContract>
+         <contingencyHumanitarianPeacekeepingOperation>X: NOT APPLICABLE</contingencyHumanitarianPeacekeepingOperation>
+         <contractFinancing>D</contractFinancing>
+         <costOrPricingData>Y</costOrPricingData>
+         <costAccountingStandardsClause>Y</costAccountingStandardsClause>
+         <descriptionOfContractRequirement>IGF::OT::IGF AWARD OF LRIP 8NA</descriptionOfContractRequirement>
+         <purchaseCardAsPaymentMethod>N</purchaseCardAsPaymentMethod>
+         <numberOfActions>1</numberOfActions>
+         <nationalInterestActionCode>NONE</nationalInterestActionCode>
+         <ProgSourceAgency>17</ProgSourceAgency>
+         <ProgSourceAccount>1506</ProgSourceAccount>
+         <vendorName>LOCKHEED MARTIN CORPORATION</vendorName>
+         <vendorAlternateName>LOCKHEED MARTIN AERONAUTICS COMPANY</vendorAlternateName>
+         <vendorLegalOrganizationName>LOCKHEED MARTIN CORPORATION</vendorLegalOrganizationName>
+         <streetAddress>1 LOCKHEED BLVD</streetAddress>
+         <city>FORT WORTH</city>
+         <state>TX</state>
+         <ZIPCode>76108</ZIPCode>
+         <vendorCountryCode>USA_x003A__x0020_UNITED_x0020_STATES_x0020_OF_x0020_AMERICA</vendorCountryCode>
+         <vendorStateCode>TX</vendorStateCode>
+         <congressionalDistrict>12</congressionalDistrict>
+         <vendorSiteCode>008016958</vendorSiteCode>
+         <vendorAlternateSiteCode>76108</vendorAlternateSiteCode>
+         <DUNSNumber>008016958</DUNSNumber>
+         <phoneNo>8177636775</phoneNo>
+         <faxNo>8177636781</faxNo>
+         <registrationDate>2002-03-26T00:00:00.000</registrationDate>
+         <renewalDate>2015-04-17T00:00:00.000</renewalDate>
+         <mod_parent>LOCKHEED MARTIN CORPORATION</mod_parent>
+         <popStateCode>TX</popStateCode>
+         <placeOfPerformanceCountryCode>USA</placeOfPerformanceCountryCode>
+         <placeOfPerformanceZIPCode>76108</placeOfPerformanceZIPCode>
+         <pop_cd>12</pop_cd>
+         <placeOfPerformanceCongressionalDistrict>12</placeOfPerformanceCongressionalDistrict>
+         <psc_cat>15</psc_cat>
+         <productOrServiceCode>1510: AIRCRAFT, FIXED WING</productOrServiceCode>
+         <systemEquipmentCode>198</systemEquipmentCode>
+         <claimantProgramCode>A1A</claimantProgramCode>
+         <principalNAICSCode>336411</principalNAICSCode>
+         <informationTechnologyCommercialItemCategory>Z: NOT IT PRODUCTS OR SERVICES</informationTechnologyCommercialItemCategory>
+         <GFE_GFP>Y: Transaction uses GFE/GFP</GFE_GFP>
+         <useOfEPADesignatedProducts>A: MEETS REQUIREMENTS</useOfEPADesignatedProducts>
+         <recoveredMaterialClauses>C: NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED</recoveredMaterialClauses>
+         <seaTransportation>Y: YES</seaTransportation>
+         <contractBundling>D: NOT A BUNDLED REQUIREMENT</contractBundling>
+         <consolidatedContract>N_x003A__x0020_N</consolidatedContract>
+         <countryOfOrigin>USA: UNITED STATES</countryOfOrigin>
+         <placeOfManufacture>D: MFG IN U.S.</placeOfManufacture>
+         <manufacturingOrganizationType>A: U.S. OWNED BUSINESS</manufacturingOrganizationType>
+         <agencyID>9700: DEPT OF DEFENSE</agencyID>
+         <PIID>N0001915C0031</PIID>
+         <modNumber>P00021</modNumber>
+         <transactionNumber>0</transactionNumber>
+         <fiscal_year>2015</fiscal_year>
+         <solicitationID>N0001913R0078</solicitationID>
+         <extentCompeted>C</extentCompeted>
+         <reasonNotCompeted>UNQ: UNIQUE SOURCE</reasonNotCompeted>
+         <numberOfOffersReceived>1</numberOfOffersReceived>
+         <commercialItemAcquisitionProcedures>D: COMMERCIAL ITEM PROCEDURES NOT USED</commercialItemAcquisitionProcedures>
+         <commercialItemTestProgram>N_x003A__x0020_NO</commercialItemTestProgram>
+         <A76Action>N</A76Action>
+         <solicitationProcedures>SSS: ONLY ONE SOURCE</solicitationProcedures>
+         <typeOfSetAside>NONE: NO SET ASIDE USED.</typeOfSetAside>
+         <localAreaSetAside>N</localAreaSetAside>
+         <evaluatedPreference>NONE: NO PREFERENCE USED</evaluatedPreference>
+         <fedBizOpps>Y</fedBizOpps>
+         <organizationalType>CORPORATE NOT TAX EXEMPT</organizationalType>
+         <numberOfEmployees>115000</numberOfEmployees>
+         <annualRevenue>46345998336</annualRevenue>
+         <firm8AFlag>false</firm8AFlag>
+         <HUBZoneFlag>false</HUBZoneFlag>
+         <SDBFlag>false</SDBFlag>
+         <shelteredWorkshopFlag>false</shelteredWorkshopFlag>
+         <HBCUFlag>false</HBCUFlag>
+         <educationalInstitutionFlag>false</educationalInstitutionFlag>
+         <womenOwnedFlag>false</womenOwnedFlag>
+         <veteranOwnedFlag>false</veteranOwnedFlag>
+         <SRDVOBFlag>false</SRDVOBFlag>
+         <localGovernmentFlag>false</localGovernmentFlag>
+         <minorityInstitutionFlag>false</minorityInstitutionFlag>
+         <AIOBFlag>false</AIOBFlag>
+         <stateGovernmentFlag>false</stateGovernmentFlag>
+         <federalGovernmentFlag>false</federalGovernmentFlag>
+         <minorityOwnedBusinessFlag>false</minorityOwnedBusinessFlag>
+         <APAOBFlag>false</APAOBFlag>
+         <tribalGovernmentFlag>false</tribalGovernmentFlag>
+         <BAOBFlag>false</BAOBFlag>
+         <NAOBFlag>false</NAOBFlag>
+         <SAAOBFlag>false</SAAOBFlag>
+         <nonprofitOrganizationFlag>false</nonprofitOrganizationFlag>
+         <isothernotforprofitorganization>false</isothernotforprofitorganization>
+         <isforprofitorganization>true</isforprofitorganization>
+         <isfoundation>false</isfoundation>
+         <HAOBFlag>false</HAOBFlag>
+         <ishispanicservicinginstitution>false</ishispanicservicinginstitution>
+         <verySmallBusinessFlag>false</verySmallBusinessFlag>
+         <hospitalflag>false</hospitalflag>
+         <contractingOfficerBusinessSizeDetermination>O: OTHER THAN SMALL BUSINESS</contractingOfficerBusinessSizeDetermination>
+         <is1862landgrantcollege>false</is1862landgrantcollege>
+         <is1890landgrantcollege>false</is1890landgrantcollege>
+         <is1994landgrantcollege>false</is1994landgrantcollege>
+         <isveterinarycollege>false</isveterinarycollege>
+         <isveterinaryhospital>false</isveterinaryhospital>
+         <isprivateuniversityorcollege>false</isprivateuniversityorcollege>
+         <isschoolofforestry>false</isschoolofforestry>
+         <isstatecontrolledinstitutionofhigherlearning>false</isstatecontrolledinstitutionofhigherlearning>
+         <receivescontracts>false</receivescontracts>
+         <receivesgrants>false</receivesgrants>
+         <receivescontractsandgrants>true</receivescontractsandgrants>
+         <isairportauthority>false</isairportauthority>
+         <iscouncilofgovernments>false</iscouncilofgovernments>
+         <ishousingauthoritiespublicortribal>false</ishousingauthoritiespublicortribal>
+         <isinterstateentity>false</isinterstateentity>
+         <isplanningcommission>false</isplanningcommission>
+         <isportauthority>false</isportauthority>
+         <istransitauthority>false</istransitauthority>
+         <issubchapterscorporation>false</issubchapterscorporation>
+         <islimitedliabilitycorporation>false</islimitedliabilitycorporation>
+         <isforeignownedandlocated>false</isforeignownedandlocated>
+         <isdotcertifieddisadvantagedbusinessenterprise>false</isdotcertifieddisadvantagedbusinessenterprise>
+         <iscitylocalgovernment>false</iscitylocalgovernment>
+         <iscommunitydevelopedcorporationownedfirm>false</iscommunitydevelopedcorporationownedfirm>
+         <iscommunitydevelopmentcorporation>false</iscommunitydevelopmentcorporation>
+         <ismanufacturerofgoods>true</ismanufacturerofgoods>
+         <iscorporateentitynottaxexempt>true</iscorporateentitynottaxexempt>
+         <iscountylocalgovernment>false</iscountylocalgovernment>
+         <isdomesticshelter>false</isdomesticshelter>
+         <isfederalgovernmentagency>false</isfederalgovernmentagency>
+         <isfederallyfundedresearchanddevelopmentcorp>false</isfederallyfundedresearchanddevelopmentcorp>
+         <isforeigngovernment>false</isforeigngovernment>
+         <isindiantribe>false</isindiantribe>
+         <isintermunicipallocalgovernment>false</isintermunicipallocalgovernment>
+         <isinternationalorganization>false</isinternationalorganization>
+         <islaborsurplusareafirm>false</islaborsurplusareafirm>
+         <islocalgovernmentowned>false</islocalgovernmentowned>
+         <ismunicipalitylocalgovernment>false</ismunicipalitylocalgovernment>
+         <isnativehawaiianownedorganizationorfirm>false</isnativehawaiianownedorganizationorfirm>
+         <isotherminorityowned>false</isotherminorityowned>
+         <ispartnershiporlimitedliabilitypartnership>false</ispartnershiporlimitedliabilitypartnership>
+         <isschooldistrictlocalgovernment>false</isschooldistrictlocalgovernment>
+         <issmallagriculturalcooperative>false</issmallagriculturalcooperative>
+         <issoleproprietorship>false</issoleproprietorship>
+         <istownshiplocalgovernment>false</istownshiplocalgovernment>
+         <istriballyownedfirm>false</istriballyownedfirm>
+         <istribalcollege>false</istribalcollege>
+         <isalaskannativeownedcorporationorfirm>false</isalaskannativeownedcorporationorfirm>
+         <iscorporateentitytaxexempt>false</iscorporateentitytaxexempt>
+         <WalshHealyAct>X: NOT APPLICABLE</WalshHealyAct>
+         <serviceContractAct>Y: YES</serviceContractAct>
+         <DavisBaconAct>X: NOT APPLICABLE</DavisBaconAct>
+         <ClingerCohenAct>N: NO</ClingerCohenAct>
+         <prime_awardee_executive1_compensation>0</prime_awardee_executive1_compensation>
+         <prime_awardee_executive2_compensation>0</prime_awardee_executive2_compensation>
+         <prime_awardee_executive3_compensation>0</prime_awardee_executive3_compensation>
+         <prime_awardee_executive4_compensation>0</prime_awardee_executive4_compensation>
+         <prime_awardee_executive5_compensation>0</prime_awardee_executive5_compensation>
+         <interagencycontractingauthority>X: NOT APPLICABLE</interagencycontractingauthority>
+         <last_modified_date>2015-07-30T00:00:00.000</last_modified_date>
+      </doc>
+      <doc spendingCategory="Contracts">
+         <obligatedAmount>568247904</obligatedAmount>
+         <baseAndExercisedOptionsValue>568247904.00</baseAndExercisedOptionsValue>
+         <baseAndAllOptionsValue>568247904.00</baseAndAllOptionsValue>
+         <maj_agency_cat>9700</maj_agency_cat>
+         <maj_fund_agency_cat>9700: Department of Defense</maj_fund_agency_cat>
+         <contractingOfficeAgencyID>1700: DEPT OF THE NAVY</contractingOfficeAgencyID>
+         <contractingOfficeID>N00019:_x0020_NAVAL_x0020_AIR_x0020_SYSTEMS_x0020_COMMAND</contractingOfficeID>
+         <fundingRequestingAgencyID>1700</fundingRequestingAgencyID>
+         <fundingRequestingOfficeID>N00019</fundingRequestingOfficeID>
+         <fundedByForeignEntity>B</fundedByForeignEntity>
+         <signedDate>2015-06-04T00:00:00.000</signedDate>
+         <effectiveDate>2015-05-26T00:00:00.000</effectiveDate>
+         <currentCompletionDate>2015-10-31T00:00:00.000</currentCompletionDate>
+         <ultimateCompletionDate>2015-10-31T00:00:00.000</ultimateCompletionDate>
+         <contractActionType>D</contractActionType>
+         <typeOfContractPricing>L</typeOfContractPricing>
+         <subcontractPlan>H: DOD COMPREHENSIVE SUBCONTRACT PLAN</subcontractPlan>
+         <priceEvaluationPercentDifference>0.00</priceEvaluationPercentDifference>
+         <typeOfContract>1</typeOfContract>
+         <multiYearContract>N: NO</multiYearContract>
+         <performanceBasedServiceContract>X</performanceBasedServiceContract>
+         <contingencyHumanitarianPeacekeepingOperation>X: NOT APPLICABLE</contingencyHumanitarianPeacekeepingOperation>
+         <contractFinancing>A</contractFinancing>
+         <costOrPricingData>N</costOrPricingData>
+         <costAccountingStandardsClause>Y</costAccountingStandardsClause>
+         <descriptionOfContractRequirement>LRIP 10 AAC</descriptionOfContractRequirement>
+         <purchaseCardAsPaymentMethod>N</purchaseCardAsPaymentMethod>
+         <numberOfActions>1</numberOfActions>
+         <nationalInterestActionCode>NONE</nationalInterestActionCode>
+         <ProgSourceAgency>57</ProgSourceAgency>
+         <ProgSourceAccount>3010</ProgSourceAccount>
+         <vendorName>LOCKHEED MARTIN CORPORATION</vendorName>
+         <vendorAlternateName>LOCKHEED MARTIN AERONAUTICS COMPANY</vendorAlternateName>
+         <vendorLegalOrganizationName>LOCKHEED MARTIN CORPORATION</vendorLegalOrganizationName>
+         <streetAddress>1 LOCKHEED BLVD</streetAddress>
+         <city>FORT WORTH</city>
+         <state>TX</state>
+         <ZIPCode>76108</ZIPCode>
+         <vendorCountryCode>USA_x003A__x0020_UNITED_x0020_STATES_x0020_OF_x0020_AMERICA</vendorCountryCode>
+         <vendorStateCode>TX</vendorStateCode>
+         <congressionalDistrict>12</congressionalDistrict>
+         <vendorSiteCode>008016958</vendorSiteCode>
+         <vendorAlternateSiteCode>76108</vendorAlternateSiteCode>
+         <DUNSNumber>008016958</DUNSNumber>
+         <phoneNo>8177636775</phoneNo>
+         <faxNo>8177636781</faxNo>
+         <registrationDate>2002-03-26T00:00:00.000</registrationDate>
+         <renewalDate>2015-11-12T00:00:00.000</renewalDate>
+         <popStateCode>TX</popStateCode>
+         <placeOfPerformanceCountryCode>USA</placeOfPerformanceCountryCode>
+         <placeOfPerformanceZIPCode>76106</placeOfPerformanceZIPCode>
+         <pop_cd>33</pop_cd>
+         <placeOfPerformanceCongressionalDistrict>33</placeOfPerformanceCongressionalDistrict>
+         <psc_cat>15</psc_cat>
+         <productOrServiceCode>1510: AIRCRAFT, FIXED WING</productOrServiceCode>
+         <systemEquipmentCode>198</systemEquipmentCode>
+         <claimantProgramCode>A1A</claimantProgramCode>
+         <principalNAICSCode>336411</principalNAICSCode>
+         <informationTechnologyCommercialItemCategory>Z: NOT IT PRODUCTS OR SERVICES</informationTechnologyCommercialItemCategory>
+         <GFE_GFP>N: Transaction does not use GFE/GFP</GFE_GFP>
+         <useOfEPADesignatedProducts>A: MEETS REQUIREMENTS</useOfEPADesignatedProducts>
+         <recoveredMaterialClauses>C: NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED</recoveredMaterialClauses>
+         <seaTransportation>U: UNKNOWN</seaTransportation>
+         <contractBundling>D: NOT A BUNDLED REQUIREMENT</contractBundling>
+         <consolidatedContract>N_x003A__x0020_N</consolidatedContract>
+         <countryOfOrigin>USA: UNITED STATES</countryOfOrigin>
+         <placeOfManufacture>D: MFG IN U.S.</placeOfManufacture>
+         <manufacturingOrganizationType>A: U.S. OWNED BUSINESS</manufacturingOrganizationType>
+         <agencyID>9700: DEPT OF DEFENSE</agencyID>
+         <PIID>N0001915C0003</PIID>
+         <modNumber>0</modNumber>
+         <transactionNumber>16</transactionNumber>
+         <fiscal_year>2015</fiscal_year>
+         <solicitationID>N0001915R0003</solicitationID>
+         <extentCompeted>C</extentCompeted>
+         <reasonNotCompeted>ONE: ONLY ONE SOURCE - OTHER</reasonNotCompeted>
+         <numberOfOffersReceived>1</numberOfOffersReceived>
+         <commercialItemAcquisitionProcedures>D: COMMERCIAL ITEM PROCEDURES NOT USED</commercialItemAcquisitionProcedures>
+         <commercialItemTestProgram>N_x003A__x0020_NO</commercialItemTestProgram>
+         <A76Action>N</A76Action>
+         <solicitationProcedures>SSS: ONLY ONE SOURCE</solicitationProcedures>
+         <typeOfSetAside>NONE: NO SET ASIDE USED.</typeOfSetAside>
+         <localAreaSetAside>N</localAreaSetAside>
+         <evaluatedPreference>NONE: NO PREFERENCE USED</evaluatedPreference>
+         <fedBizOpps>Y</fedBizOpps>
+         <organizationalType>CORPORATE NOT TAX EXEMPT</organizationalType>
+         <numberOfEmployees>115000</numberOfEmployees>
+         <annualRevenue>46346000000</annualRevenue>
+         <firm8AFlag>false</firm8AFlag>
+         <HUBZoneFlag>false</HUBZoneFlag>
+         <SDBFlag>false</SDBFlag>
+         <shelteredWorkshopFlag>false</shelteredWorkshopFlag>
+         <HBCUFlag>false</HBCUFlag>
+         <educationalInstitutionFlag>false</educationalInstitutionFlag>
+         <womenOwnedFlag>false</womenOwnedFlag>
+         <veteranOwnedFlag>false</veteranOwnedFlag>
+         <SRDVOBFlag>false</SRDVOBFlag>
+         <localGovernmentFlag>false</localGovernmentFlag>
+         <minorityInstitutionFlag>false</minorityInstitutionFlag>
+         <AIOBFlag>false</AIOBFlag>
+         <stateGovernmentFlag>false</stateGovernmentFlag>
+         <federalGovernmentFlag>false</federalGovernmentFlag>
+         <minorityOwnedBusinessFlag>false</minorityOwnedBusinessFlag>
+         <APAOBFlag>false</APAOBFlag>
+         <tribalGovernmentFlag>false</tribalGovernmentFlag>
+         <BAOBFlag>false</BAOBFlag>
+         <NAOBFlag>false</NAOBFlag>
+         <SAAOBFlag>false</SAAOBFlag>
+         <nonprofitOrganizationFlag>false</nonprofitOrganizationFlag>
+         <isothernotforprofitorganization>false</isothernotforprofitorganization>
+         <isforprofitorganization>true</isforprofitorganization>
+         <isfoundation>false</isfoundation>
+         <HAOBFlag>false</HAOBFlag>
+         <ishispanicservicinginstitution>false</ishispanicservicinginstitution>
+         <verySmallBusinessFlag>false</verySmallBusinessFlag>
+         <hospitalflag>false</hospitalflag>
+         <contractingOfficerBusinessSizeDetermination>O: OTHER THAN SMALL BUSINESS</contractingOfficerBusinessSizeDetermination>
+         <is1862landgrantcollege>false</is1862landgrantcollege>
+         <is1890landgrantcollege>false</is1890landgrantcollege>
+         <is1994landgrantcollege>false</is1994landgrantcollege>
+         <isveterinarycollege>false</isveterinarycollege>
+         <isveterinaryhospital>false</isveterinaryhospital>
+         <isprivateuniversityorcollege>false</isprivateuniversityorcollege>
+         <isschoolofforestry>false</isschoolofforestry>
+         <isstatecontrolledinstitutionofhigherlearning>false</isstatecontrolledinstitutionofhigherlearning>
+         <receivescontracts>false</receivescontracts>
+         <receivesgrants>false</receivesgrants>
+         <receivescontractsandgrants>true</receivescontractsandgrants>
+         <isairportauthority>false</isairportauthority>
+         <iscouncilofgovernments>false</iscouncilofgovernments>
+         <ishousingauthoritiespublicortribal>false</ishousingauthoritiespublicortribal>
+         <isinterstateentity>false</isinterstateentity>
+         <isplanningcommission>false</isplanningcommission>
+         <isportauthority>false</isportauthority>
+         <istransitauthority>false</istransitauthority>
+         <issubchapterscorporation>false</issubchapterscorporation>
+         <islimitedliabilitycorporation>false</islimitedliabilitycorporation>
+         <isforeignownedandlocated>false</isforeignownedandlocated>
+         <isdotcertifieddisadvantagedbusinessenterprise>false</isdotcertifieddisadvantagedbusinessenterprise>
+         <iscitylocalgovernment>false</iscitylocalgovernment>
+         <iscommunitydevelopedcorporationownedfirm>false</iscommunitydevelopedcorporationownedfirm>
+         <iscommunitydevelopmentcorporation>false</iscommunitydevelopmentcorporation>
+         <ismanufacturerofgoods>true</ismanufacturerofgoods>
+         <iscorporateentitynottaxexempt>true</iscorporateentitynottaxexempt>
+         <iscountylocalgovernment>false</iscountylocalgovernment>
+         <isdomesticshelter>false</isdomesticshelter>
+         <isfederalgovernmentagency>false</isfederalgovernmentagency>
+         <isfederallyfundedresearchanddevelopmentcorp>false</isfederallyfundedresearchanddevelopmentcorp>
+         <isforeigngovernment>false</isforeigngovernment>
+         <isindiantribe>false</isindiantribe>
+         <isintermunicipallocalgovernment>false</isintermunicipallocalgovernment>
+         <isinternationalorganization>false</isinternationalorganization>
+         <islaborsurplusareafirm>false</islaborsurplusareafirm>
+         <islocalgovernmentowned>false</islocalgovernmentowned>
+         <ismunicipalitylocalgovernment>false</ismunicipalitylocalgovernment>
+         <isnativehawaiianownedorganizationorfirm>false</isnativehawaiianownedorganizationorfirm>
+         <isotherminorityowned>false</isotherminorityowned>
+         <ispartnershiporlimitedliabilitypartnership>false</ispartnershiporlimitedliabilitypartnership>
+         <isschooldistrictlocalgovernment>false</isschooldistrictlocalgovernment>
+         <issmallagriculturalcooperative>false</issmallagriculturalcooperative>
+         <issoleproprietorship>false</issoleproprietorship>
+         <istownshiplocalgovernment>false</istownshiplocalgovernment>
+         <istriballyownedfirm>false</istriballyownedfirm>
+         <istribalcollege>false</istribalcollege>
+         <isalaskannativeownedcorporationorfirm>false</isalaskannativeownedcorporationorfirm>
+         <iscorporateentitytaxexempt>false</iscorporateentitytaxexempt>
+         <WalshHealyAct>Y: YES</WalshHealyAct>
+         <serviceContractAct>X: NOT APPLICABLE</serviceContractAct>
+         <DavisBaconAct>X: NOT APPLICABLE</DavisBaconAct>
+         <ClingerCohenAct>N: NO</ClingerCohenAct>
+         <prime_awardee_executive1_compensation>0</prime_awardee_executive1_compensation>
+         <prime_awardee_executive2_compensation>0</prime_awardee_executive2_compensation>
+         <prime_awardee_executive3_compensation>0</prime_awardee_executive3_compensation>
+         <prime_awardee_executive4_compensation>0</prime_awardee_executive4_compensation>
+         <prime_awardee_executive5_compensation>0</prime_awardee_executive5_compensation>
+         <interagencycontractingauthority>X: NOT APPLICABLE</interagencycontractingauthority>
+         <last_modified_date>2015-07-09T00:00:00.000</last_modified_date>
+      </doc>
+      <doc spendingCategory="Contracts">
+         <obligatedAmount>492008803</obligatedAmount>
+         <baseAndExercisedOptionsValue>492008803.00</baseAndExercisedOptionsValue>
+         <baseAndAllOptionsValue>492233995.00</baseAndAllOptionsValue>
+         <maj_agency_cat>9700</maj_agency_cat>
+         <mod_agency>1700</mod_agency>
+         <maj_fund_agency_cat>9700: DEPT OF DEFENSE</maj_fund_agency_cat>
+         <contractingOfficeAgencyID>1700: DEPT OF THE NAVY</contractingOfficeAgencyID>
+         <contractingOfficeID>N00019:_x0020_NAVAL_x0020_AIR_x0020_SYSTEMS_x0020_COMMAND</contractingOfficeID>
+         <fundingRequestingAgencyID>1700</fundingRequestingAgencyID>
+         <fundingRequestingOfficeID>N00019</fundingRequestingOfficeID>
+         <signedDate>2014-11-26T00:00:00.000</signedDate>
+         <effectiveDate>2014-11-26T00:00:00.000</effectiveDate>
+         <currentCompletionDate>2021-12-31T00:00:00.000</currentCompletionDate>
+         <ultimateCompletionDate>2021-12-31T00:00:00.000</ultimateCompletionDate>
+         <lastdatetoorder>1900-01-01T00:00:00.000</lastdatetoorder>
+         <contractActionType>DCA</contractActionType>
+         <reasonForModification>A</reasonForModification>
+         <typeOfContractPricing>L</typeOfContractPricing>
+         <subcontractPlan>D: PLAN REQUIRED - INCENTIVE INCLUDED</subcontractPlan>
+         <priceEvaluationPercentDifference>0</priceEvaluationPercentDifference>
+         <letterContract>X</letterContract>
+         <multiYearContract>N: No</multiYearContract>
+         <performanceBasedServiceContract>X</performanceBasedServiceContract>
+         <contingencyHumanitarianPeacekeepingOperation>X: NOT APPLICABLE</contingencyHumanitarianPeacekeepingOperation>
+         <contractFinancing>A</contractFinancing>
+         <costOrPricingData>N</costOrPricingData>
+         <costAccountingStandardsClause>Y</costAccountingStandardsClause>
+         <descriptionOfContractRequirement>THIS AWARD IS LRIP 7 NA TO PROCURE SUSTAINMENT ACTIVITY FOR JFS.</descriptionOfContractRequirement>
+         <purchaseCardAsPaymentMethod>N</purchaseCardAsPaymentMethod>
+         <numberOfActions>1</numberOfActions>
+         <nationalInterestActionCode>NONE</nationalInterestActionCode>
+         <ProgSourceAgency>17</ProgSourceAgency>
+         <ProgSourceAccount>1804</ProgSourceAccount>
+         <vendorName>LOCKHEED MARTIN CORPORATION</vendorName>
+         <vendorAlternateName>LOCKHEED MARTIN</vendorAlternateName>
+         <vendorLegalOrganizationName>LOCKHEED MARTIN CORPORATION</vendorLegalOrganizationName>
+         <streetAddress>1 LOCKHEED BLVD</streetAddress>
+         <city>FORT WORTH</city>
+         <state>TX</state>
+         <ZIPCode>761083619</ZIPCode>
+         <vendorCountryCode>UNITED_x0020_STATES</vendorCountryCode>
+         <vendorStateCode>TX</vendorStateCode>
+         <vendor_cd>TX12</vendor_cd>
+         <congressionalDistrict>12</congressionalDistrict>
+         <vendorSiteCode>008016958</vendorSiteCode>
+         <vendorAlternateSiteCode>761083619</vendorAlternateSiteCode>
+         <DUNSNumber>008016958</DUNSNumber>
+         <parentDUNSNumber>834951691</parentDUNSNumber>
+         <phoneNo>8177636775</phoneNo>
+         <faxNo>8177636781</faxNo>
+         <registrationDate>2002-03-26T00:00:00.000</registrationDate>
+         <renewalDate>2013-01-25T00:00:00.000</renewalDate>
+         <mod_parent>LOCKHEED MARTIN CORPORATION</mod_parent>
+         <stateCode>TX</stateCode>
+         <popStateCode>TX</popStateCode>
+         <placeOfPerformanceCountryCode>USA</placeOfPerformanceCountryCode>
+         <placeOfPerformanceZIPCode>76101</placeOfPerformanceZIPCode>
+         <pop_cd>12</pop_cd>
+         <placeOfPerformanceCongressionalDistrict>12</placeOfPerformanceCongressionalDistrict>
+         <psc_cat>15</psc_cat>
+         <productOrServiceCode>1510: AIRCRAFT, FIXED WING</productOrServiceCode>
+         <systemEquipmentCode>198</systemEquipmentCode>
+         <claimantProgramCode>A1A</claimantProgramCode>
+         <principalNAICSCode>336411</principalNAICSCode>
+         <informationTechnologyCommercialItemCategory>Z: NOT IT PRODUCTS OR SERVICES</informationTechnologyCommercialItemCategory>
+         <GFE_GFP>Y: Transaction uses GFE/GFP</GFE_GFP>
+         <useOfEPADesignatedProducts>A: MEETS REQUIREMENTS</useOfEPADesignatedProducts>
+         <recoveredMaterialClauses>C: NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLU</recoveredMaterialClauses>
+         <seaTransportation>Y: YES</seaTransportation>
+         <contractBundling>D: NOT A BUNDLED REQUIREMENT</contractBundling>
+         <consolidatedContract>N_x003A__x0020_No</consolidatedContract>
+         <countryOfOrigin>USA</countryOfOrigin>
+         <placeOfManufacture>D: MFG IN U.S.</placeOfManufacture>
+         <manufacturingOrganizationType>A: U.S. Owned Business</manufacturingOrganizationType>
+         <agencyID>9700: DEPT OF DEFENSE</agencyID>
+         <PIID>N0001912C0004</PIID>
+         <modNumber>P00041</modNumber>
+         <transactionNumber>0</transactionNumber>
+         <fiscal_year>2015</fiscal_year>
+         <IDVModificationNumber>0</IDVModificationNumber>
+         <extentCompeted>C</extentCompeted>
+         <reasonNotCompeted>ONE: ONLY ONE SOURCE - OTHER</reasonNotCompeted>
+         <numberOfOffersReceived>1</numberOfOffersReceived>
+         <commercialItemAcquisitionProcedures>D:</commercialItemAcquisitionProcedures>
+         <commercialItemTestProgram>N_x003A__x0020_No</commercialItemTestProgram>
+         <smallBusinessCompetitivenessDemonstrationProgram>_x003A__x0020_NO</smallBusinessCompetitivenessDemonstrationProgram>
+         <A76Action>No</A76Action>
+         <solicitationProcedures>SSS: ONLY ONE SOURCE</solicitationProcedures>
+         <typeOfSetAside>NONE: NO SET ASIDE USED.</typeOfSetAside>
+         <localAreaSetAside>N</localAreaSetAside>
+         <evaluatedPreference>NONE: NO PREFERENCE USED</evaluatedPreference>
+         <fedBizOpps>Y</fedBizOpps>
+         <organizationalType>CORPORATE NOT TAX EXEMPT</organizationalType>
+         <numberOfEmployees>140000</numberOfEmployees>
+         <annualRevenue>43259998208</annualRevenue>
+         <firm8AFlag>N</firm8AFlag>
+         <HUBZoneFlag>N</HUBZoneFlag>
+         <SDBFlag>N</SDBFlag>
+         <shelteredWorkshopFlag>N</shelteredWorkshopFlag>
+         <HBCUFlag>N</HBCUFlag>
+         <educationalInstitutionFlag>N</educationalInstitutionFlag>
+         <womenOwnedFlag>N</womenOwnedFlag>
+         <veteranOwnedFlag>N</veteranOwnedFlag>
+         <SRDVOBFlag>N</SRDVOBFlag>
+         <localGovernmentFlag>N</localGovernmentFlag>
+         <minorityInstitutionFlag>N</minorityInstitutionFlag>
+         <AIOBFlag>N</AIOBFlag>
+         <stateGovernmentFlag>N</stateGovernmentFlag>
+         <federalGovernmentFlag>N</federalGovernmentFlag>
+         <minorityOwnedBusinessFlag>N</minorityOwnedBusinessFlag>
+         <APAOBFlag>N</APAOBFlag>
+         <tribalGovernmentFlag>N</tribalGovernmentFlag>
+         <BAOBFlag>N</BAOBFlag>
+         <NAOBFlag>N</NAOBFlag>
+         <SAAOBFlag>N</SAAOBFlag>
+         <nonprofitOrganizationFlag>N</nonprofitOrganizationFlag>
+         <isothernotforprofitorganization>N</isothernotforprofitorganization>
+         <isforprofitorganization>Y</isforprofitorganization>
+         <isfoundation>N</isfoundation>
+         <HAOBFlag>N</HAOBFlag>
+         <ishispanicservicinginstitution>N</ishispanicservicinginstitution>
+         <verySmallBusinessFlag>N</verySmallBusinessFlag>
+         <hospitalflag>N</hospitalflag>
+         <contractingOfficerBusinessSizeDetermination>O: OTHER THAN SMALL BUSINESS</contractingOfficerBusinessSizeDetermination>
+         <is1862landgrantcollege>N</is1862landgrantcollege>
+         <is1890landgrantcollege>N</is1890landgrantcollege>
+         <is1994landgrantcollege>N</is1994landgrantcollege>
+         <isveterinarycollege>N</isveterinarycollege>
+         <isveterinaryhospital>N</isveterinaryhospital>
+         <isprivateuniversityorcollege>N</isprivateuniversityorcollege>
+         <isschoolofforestry>N</isschoolofforestry>
+         <isstatecontrolledinstitutionofhigherlearning>N</isstatecontrolledinstitutionofhigherlearning>
+         <receivescontracts>Y</receivescontracts>
+         <receivesgrants>N</receivesgrants>
+         <receivescontractsandgrants>N</receivescontractsandgrants>
+         <isairportauthority>N</isairportauthority>
+         <iscouncilofgovernments>N</iscouncilofgovernments>
+         <ishousingauthoritiespublicortribal>N</ishousingauthoritiespublicortribal>
+         <isinterstateentity>N</isinterstateentity>
+         <isplanningcommission>N</isplanningcommission>
+         <isportauthority>N</isportauthority>
+         <istransitauthority>N</istransitauthority>
+         <issubchapterscorporation>N</issubchapterscorporation>
+         <islimitedliabilitycorporation>N</islimitedliabilitycorporation>
+         <isforeignownedandlocated>N</isforeignownedandlocated>
+         <isarchitectureandengineering>N</isarchitectureandengineering>
+         <iscitylocalgovernment>N</iscitylocalgovernment>
+         <iscommunitydevelopedcorporationownedfirm>N</iscommunitydevelopedcorporationownedfirm>
+         <iscommunitydevelopmentcorporation>N</iscommunitydevelopmentcorporation>
+         <isconstructionfirm>N</isconstructionfirm>
+         <ismanufacturerofgoods>Y</ismanufacturerofgoods>
+         <iscorporateentitynottaxexempt>Y</iscorporateentitynottaxexempt>
+         <iscountylocalgovernment>N</iscountylocalgovernment>
+         <isdomesticshelter>N</isdomesticshelter>
+         <isfederalgovernmentagency>N</isfederalgovernmentagency>
+         <isfederallyfundedresearchanddevelopmentcorp>N</isfederallyfundedresearchanddevelopmentcorp>
+         <isforeigngovernment>N</isforeigngovernment>
+         <isindiantribe>N</isindiantribe>
+         <isintermunicipallocalgovernment>N</isintermunicipallocalgovernment>
+         <isinternationalorganization>N</isinternationalorganization>
+         <islaborsurplusareafirm>N</islaborsurplusareafirm>
+         <islocalgovernmentowned>N</islocalgovernmentowned>
+         <ismunicipalitylocalgovernment>N</ismunicipalitylocalgovernment>
+         <isnativehawaiianownedorganizationorfirm>N</isnativehawaiianownedorganizationorfirm>
+         <isotherbusinessororganization>N</isotherbusinessororganization>
+         <isotherminorityowned>N</isotherminorityowned>
+         <ispartnershiporlimitedliabilitypartnership>N</ispartnershiporlimitedliabilitypartnership>
+         <isschooldistrictlocalgovernment>N</isschooldistrictlocalgovernment>
+         <issmallagriculturalcooperative>N</issmallagriculturalcooperative>
+         <issoleproprietorship>N</issoleproprietorship>
+         <istownshiplocalgovernment>N</istownshiplocalgovernment>
+         <istriballyownedfirm>N</istriballyownedfirm>
+         <istribalcollege>N</istribalcollege>
+         <isalaskannativeownedcorporationorfirm>N</isalaskannativeownedcorporationorfirm>
+         <iscorporateentitytaxexempt>N</iscorporateentitytaxexempt>
+         <WalshHealyAct>Y: Yes</WalshHealyAct>
+         <serviceContractAct>N: No</serviceContractAct>
+         <DavisBaconAct>N: No</DavisBaconAct>
+         <ClingerCohenAct>N: No</ClingerCohenAct>
+         <prime_awardee_executive1_compensation>0</prime_awardee_executive1_compensation>
+         <prime_awardee_executive2_compensation>0</prime_awardee_executive2_compensation>
+         <prime_awardee_executive3_compensation>0</prime_awardee_executive3_compensation>
+         <prime_awardee_executive4_compensation>0</prime_awardee_executive4_compensation>
+         <prime_awardee_executive5_compensation>0</prime_awardee_executive5_compensation>
+         <interagencycontractingauthority>X: Not Applicable</interagencycontractingauthority>
+         <last_modified_date>2014-11-28T00:00:00.000</last_modified_date>
+      </doc>
+      <doc spendingCategory="Contracts">
+         <obligatedAmount>455140116.49</obligatedAmount>
+         <baseAndExercisedOptionsValue>455140116.49</baseAndExercisedOptionsValue>
+         <baseAndAllOptionsValue>455140116.49</baseAndAllOptionsValue>
+         <maj_agency_cat>9700</maj_agency_cat>
+         <mod_agency>2100</mod_agency>
+         <maj_fund_agency_cat>9700: DEPT OF DEFENSE</maj_fund_agency_cat>
+         <contractingOfficeAgencyID>2100: DEPT OF THE ARMY</contractingOfficeAgencyID>
+         <contractingOfficeID>W31P4Q:_x0020_W6QK_x0020_ACC-RSA</contractingOfficeID>
+         <fundingRequestingAgencyID>2100</fundingRequestingAgencyID>
+         <fundingRequestingOfficeID>W80FH0</fundingRequestingOfficeID>
+         <signedDate>2014-10-14T00:00:00.000</signedDate>
+         <effectiveDate>2014-10-14T00:00:00.000</effectiveDate>
+         <currentCompletionDate>2017-01-31T00:00:00.000</currentCompletionDate>
+         <ultimateCompletionDate>2017-01-31T00:00:00.000</ultimateCompletionDate>
+         <lastdatetoorder>1900-01-01T00:00:00.000</lastdatetoorder>
+         <contractActionType>DCA</contractActionType>
+         <reasonForModification>B</reasonForModification>
+         <typeOfContractPricing>J</typeOfContractPricing>
+         <subcontractPlan>C: PLAN REQUIRED - INCENTIVE NOT INCLUDED</subcontractPlan>
+         <priceEvaluationPercentDifference>0</priceEvaluationPercentDifference>
+         <letterContract>A</letterContract>
+         <multiYearContract>N: No</multiYearContract>
+         <performanceBasedServiceContract>X</performanceBasedServiceContract>
+         <contingencyHumanitarianPeacekeepingOperation>X: NOT APPLICABLE</contingencyHumanitarianPeacekeepingOperation>
+         <contractFinancing>A</contractFinancing>
+         <costOrPricingData>Y</costOrPricingData>
+         <costAccountingStandardsClause>Y</costAccountingStandardsClause>
+         <descriptionOfContractRequirement>INCREASE FUNDING</descriptionOfContractRequirement>
+         <purchaseCardAsPaymentMethod>N</purchaseCardAsPaymentMethod>
+         <numberOfActions>1</numberOfActions>
+         <nationalInterestActionCode>NONE</nationalInterestActionCode>
+         <ProgSourceAgency>11</ProgSourceAgency>
+         <ProgSourceAccount>8242</ProgSourceAccount>
+         <vendorName>LOCKHEED MARTIN CORPORATION</vendorName>
+         <vendorAlternateName>LOCKHEED MARTIN MISSILES AND FIRE CONTROL</vendorAlternateName>
+         <vendorLegalOrganizationName>LOCKHEED MARTIN CORPORATION</vendorLegalOrganizationName>
+         <streetAddress>1701 W MARSHALL DR</streetAddress>
+         <city>GRAND PRAIRIE</city>
+         <state>TX</state>
+         <ZIPCode>750512704</ZIPCode>
+         <vendorCountryCode>UNITED_x0020_STATES</vendorCountryCode>
+         <vendorStateCode>TX</vendorStateCode>
+         <vendor_cd>TX33</vendor_cd>
+         <congressionalDistrict>33</congressionalDistrict>
+         <vendorSiteCode>794571448</vendorSiteCode>
+         <vendorAlternateSiteCode>750512704</vendorAlternateSiteCode>
+         <DUNSNumber>794571448</DUNSNumber>
+         <parentDUNSNumber>834951691</parentDUNSNumber>
+         <phoneNo>4073564186</phoneNo>
+         <faxNo>4073567199</faxNo>
+         <registrationDate>2002-02-27T00:00:00.000</registrationDate>
+         <renewalDate>2014-12-09T00:00:00.000</renewalDate>
+         <mod_parent>LOCKHEED MARTIN CORPORATION</mod_parent>
+         <stateCode>TX</stateCode>
+         <popStateCode>TX</popStateCode>
+         <placeOfPerformanceCountryCode>USA</placeOfPerformanceCountryCode>
+         <placeOfPerformanceZIPCode>75051</placeOfPerformanceZIPCode>
+         <pop_cd>33</pop_cd>
+         <placeOfPerformanceCongressionalDistrict>33</placeOfPerformanceCongressionalDistrict>
+         <psc_cat>14</psc_cat>
+         <productOrServiceCode>1420: GUIDED MISSILE COMPONENTS</productOrServiceCode>
+         <systemEquipmentCode>106</systemEquipmentCode>
+         <claimantProgramCode>A2</claimantProgramCode>
+         <principalNAICSCode>336419</principalNAICSCode>
+         <informationTechnologyCommercialItemCategory>Z: NOT IT PRODUCTS OR SERVICES</informationTechnologyCommercialItemCategory>
+         <GFE_GFP>N: Transaction does not use GFE/GFP</GFE_GFP>
+         <useOfEPADesignatedProducts>E: NOT REQUIRED</useOfEPADesignatedProducts>
+         <recoveredMaterialClauses>C: NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLU</recoveredMaterialClauses>
+         <seaTransportation>N: NO</seaTransportation>
+         <contractBundling>D: NOT A BUNDLED REQUIREMENT</contractBundling>
+         <consolidatedContract>N_x003A__x0020_No</consolidatedContract>
+         <countryOfOrigin>USA</countryOfOrigin>
+         <placeOfManufacture>D: MFG IN U.S.</placeOfManufacture>
+         <manufacturingOrganizationType>A: U.S. Owned Business</manufacturingOrganizationType>
+         <agencyID>9700: DEPT OF DEFENSE</agencyID>
+         <PIID>W31P4Q14C0034</PIID>
+         <modNumber>P00008</modNumber>
+         <transactionNumber>2</transactionNumber>
+         <fiscal_year>2015</fiscal_year>
+         <IDVModificationNumber>0</IDVModificationNumber>
+         <solicitationID>W31P4Q13R0004</solicitationID>
+         <extentCompeted>C</extentCompeted>
+         <reasonNotCompeted>ONE: ONLY ONE SOURCE - OTHER</reasonNotCompeted>
+         <numberOfOffersReceived>1</numberOfOffersReceived>
+         <commercialItemAcquisitionProcedures>D:</commercialItemAcquisitionProcedures>
+         <commercialItemTestProgram>N_x003A__x0020_No</commercialItemTestProgram>
+         <smallBusinessCompetitivenessDemonstrationProgram>_x003A__x0020_NO</smallBusinessCompetitivenessDemonstrationProgram>
+         <A76Action>No</A76Action>
+         <solicitationProcedures>SSS: ONLY ONE SOURCE</solicitationProcedures>
+         <typeOfSetAside>NONE: NO SET ASIDE USED.</typeOfSetAside>
+         <localAreaSetAside>N</localAreaSetAside>
+         <evaluatedPreference>NONE: NO PREFERENCE USED</evaluatedPreference>
+         <fedBizOpps>Y</fedBizOpps>
+         <organizationalType>CORPORATE NOT TAX EXEMPT</organizationalType>
+         <numberOfEmployees>12000</numberOfEmployees>
+         <annualRevenue>46400000000</annualRevenue>
+         <firm8AFlag>N</firm8AFlag>
+         <HUBZoneFlag>N</HUBZoneFlag>
+         <SDBFlag>N</SDBFlag>
+         <shelteredWorkshopFlag>N</shelteredWorkshopFlag>
+         <HBCUFlag>N</HBCUFlag>
+         <educationalInstitutionFlag>N</educationalInstitutionFlag>
+         <womenOwnedFlag>N</womenOwnedFlag>
+         <veteranOwnedFlag>N</veteranOwnedFlag>
+         <SRDVOBFlag>N</SRDVOBFlag>
+         <localGovernmentFlag>N</localGovernmentFlag>
+         <minorityInstitutionFlag>N</minorityInstitutionFlag>
+         <AIOBFlag>N</AIOBFlag>
+         <stateGovernmentFlag>N</stateGovernmentFlag>
+         <federalGovernmentFlag>N</federalGovernmentFlag>
+         <minorityOwnedBusinessFlag>N</minorityOwnedBusinessFlag>
+         <APAOBFlag>N</APAOBFlag>
+         <tribalGovernmentFlag>N</tribalGovernmentFlag>
+         <BAOBFlag>N</BAOBFlag>
+         <NAOBFlag>N</NAOBFlag>
+         <SAAOBFlag>N</SAAOBFlag>
+         <nonprofitOrganizationFlag>N</nonprofitOrganizationFlag>
+         <isothernotforprofitorganization>N</isothernotforprofitorganization>
+         <isforprofitorganization>Y</isforprofitorganization>
+         <isfoundation>N</isfoundation>
+         <HAOBFlag>N</HAOBFlag>
+         <ishispanicservicinginstitution>N</ishispanicservicinginstitution>
+         <verySmallBusinessFlag>N</verySmallBusinessFlag>
+         <hospitalflag>N</hospitalflag>
+         <contractingOfficerBusinessSizeDetermination>O: OTHER THAN SMALL BUSINESS</contractingOfficerBusinessSizeDetermination>
+         <is1862landgrantcollege>N</is1862landgrantcollege>
+         <is1890landgrantcollege>N</is1890landgrantcollege>
+         <is1994landgrantcollege>N</is1994landgrantcollege>
+         <isveterinarycollege>N</isveterinarycollege>
+         <isveterinaryhospital>N</isveterinaryhospital>
+         <isprivateuniversityorcollege>N</isprivateuniversityorcollege>
+         <isschoolofforestry>N</isschoolofforestry>
+         <isstatecontrolledinstitutionofhigherlearning>N</isstatecontrolledinstitutionofhigherlearning>
+         <receivescontracts>Y</receivescontracts>
+         <receivesgrants>Y</receivesgrants>
+         <receivescontractsandgrants>Y</receivescontractsandgrants>
+         <isairportauthority>N</isairportauthority>
+         <iscouncilofgovernments>N</iscouncilofgovernments>
+         <ishousingauthoritiespublicortribal>N</ishousingauthoritiespublicortribal>
+         <isinterstateentity>N</isinterstateentity>
+         <isplanningcommission>N</isplanningcommission>
+         <isportauthority>N</isportauthority>
+         <istransitauthority>N</istransitauthority>
+         <issubchapterscorporation>N</issubchapterscorporation>
+         <islimitedliabilitycorporation>N</islimitedliabilitycorporation>
+         <isforeignownedandlocated>N</isforeignownedandlocated>
+         <isarchitectureandengineering>N</isarchitectureandengineering>
+         <iscitylocalgovernment>N</iscitylocalgovernment>
+         <iscommunitydevelopedcorporationownedfirm>N</iscommunitydevelopedcorporationownedfirm>
+         <iscommunitydevelopmentcorporation>N</iscommunitydevelopmentcorporation>
+         <isconstructionfirm>N</isconstructionfirm>
+         <ismanufacturerofgoods>Y</ismanufacturerofgoods>
+         <iscorporateentitynottaxexempt>Y</iscorporateentitynottaxexempt>
+         <iscountylocalgovernment>N</iscountylocalgovernment>
+         <isdomesticshelter>N</isdomesticshelter>
+         <isfederalgovernmentagency>N</isfederalgovernmentagency>
+         <isfederallyfundedresearchanddevelopmentcorp>N</isfederallyfundedresearchanddevelopmentcorp>
+         <isforeigngovernment>N</isforeigngovernment>
+         <isindiantribe>N</isindiantribe>
+         <isintermunicipallocalgovernment>N</isintermunicipallocalgovernment>
+         <isinternationalorganization>N</isinternationalorganization>
+         <islaborsurplusareafirm>N</islaborsurplusareafirm>
+         <islocalgovernmentowned>N</islocalgovernmentowned>
+         <ismunicipalitylocalgovernment>N</ismunicipalitylocalgovernment>
+         <isnativehawaiianownedorganizationorfirm>N</isnativehawaiianownedorganizationorfirm>
+         <isotherbusinessororganization>N</isotherbusinessororganization>
+         <isotherminorityowned>N</isotherminorityowned>
+         <ispartnershiporlimitedliabilitypartnership>N</ispartnershiporlimitedliabilitypartnership>
+         <isschooldistrictlocalgovernment>N</isschooldistrictlocalgovernment>
+         <issmallagriculturalcooperative>N</issmallagriculturalcooperative>
+         <issoleproprietorship>N</issoleproprietorship>
+         <istownshiplocalgovernment>N</istownshiplocalgovernment>
+         <istriballyownedfirm>N</istriballyownedfirm>
+         <istribalcollege>N</istribalcollege>
+         <isalaskannativeownedcorporationorfirm>N</isalaskannativeownedcorporationorfirm>
+         <iscorporateentitytaxexempt>N</iscorporateentitytaxexempt>
+         <WalshHealyAct>Y: Yes</WalshHealyAct>
+         <serviceContractAct>N: No</serviceContractAct>
+         <DavisBaconAct>N: No</DavisBaconAct>
+         <ClingerCohenAct>N: No</ClingerCohenAct>
+         <prime_awardee_executive1_compensation>0</prime_awardee_executive1_compensation>
+         <prime_awardee_executive2_compensation>0</prime_awardee_executive2_compensation>
+         <prime_awardee_executive3_compensation>0</prime_awardee_executive3_compensation>
+         <prime_awardee_executive4_compensation>0</prime_awardee_executive4_compensation>
+         <prime_awardee_executive5_compensation>0</prime_awardee_executive5_compensation>
+         <interagencycontractingauthority>X: Not Applicable</interagencycontractingauthority>
+         <last_modified_date>2014-10-14T00:00:00.000</last_modified_date>
+      </doc>
+      <doc spendingCategory="Contracts">
+         <obligatedAmount>361160589</obligatedAmount>
+         <baseAndExercisedOptionsValue>388310396.00</baseAndExercisedOptionsValue>
+         <baseAndAllOptionsValue>388310396.00</baseAndAllOptionsValue>
+         <maj_agency_cat>9700</maj_agency_cat>
+         <mod_agency>1700</mod_agency>
+         <maj_fund_agency_cat>9700: DEPT OF DEFENSE</maj_fund_agency_cat>
+         <contractingOfficeAgencyID>1700: DEPT OF THE NAVY</contractingOfficeAgencyID>
+         <contractingOfficeID>N00019:_x0020_NAVAL_x0020_AIR_x0020_SYSTEMS_x0020_COMMAND</contractingOfficeID>
+         <fundingRequestingAgencyID>1700</fundingRequestingAgencyID>
+         <fundingRequestingOfficeID>N00019</fundingRequestingOfficeID>
+         <signedDate>2014-10-28T00:00:00.000</signedDate>
+         <effectiveDate>2014-11-01T00:00:00.000</effectiveDate>
+         <currentCompletionDate>2015-11-30T00:00:00.000</currentCompletionDate>
+         <ultimateCompletionDate>2015-11-30T00:00:00.000</ultimateCompletionDate>
+         <lastdatetoorder>1900-01-01T00:00:00.000</lastdatetoorder>
+         <contractActionType>DCA</contractActionType>
+         <typeOfContractPricing>V</typeOfContractPricing>
+         <subcontractPlan>B: PLAN NOT REQUIRED</subcontractPlan>
+         <priceEvaluationPercentDifference>0</priceEvaluationPercentDifference>
+         <letterContract>X</letterContract>
+         <multiYearContract>N: No</multiYearContract>
+         <performanceBasedServiceContract>X</performanceBasedServiceContract>
+         <contingencyHumanitarianPeacekeepingOperation>X: NOT APPLICABLE</contingencyHumanitarianPeacekeepingOperation>
+         <contractFinancing>D</contractFinancing>
+         <costOrPricingData>Y</costOrPricingData>
+         <costAccountingStandardsClause>Y</costAccountingStandardsClause>
+         <descriptionOfContractRequirement>LOGISTICS SUPPORT CONTRACT</descriptionOfContractRequirement>
+         <purchaseCardAsPaymentMethod>N</purchaseCardAsPaymentMethod>
+         <numberOfActions>1</numberOfActions>
+         <nationalInterestActionCode>NONE</nationalInterestActionCode>
+         <ProgSourceAgency>17</ProgSourceAgency>
+         <ProgSourceAccount>1506</ProgSourceAccount>
+         <vendorName>LOCKHEED MARTIN CORPORATION</vendorName>
+         <vendorAlternateName>LOCKHEED MARTIN AERONAUTICS COMPANY</vendorAlternateName>
+         <vendorLegalOrganizationName>LOCKHEED MARTIN CORPORATION</vendorLegalOrganizationName>
+         <streetAddress>1 LOCKHEED BLVD</streetAddress>
+         <city>FORT WORTH</city>
+         <state>TX</state>
+         <ZIPCode>761083619</ZIPCode>
+         <vendorCountryCode>UNITED_x0020_STATES</vendorCountryCode>
+         <vendorStateCode>TX</vendorStateCode>
+         <vendor_cd>TX12</vendor_cd>
+         <congressionalDistrict>12</congressionalDistrict>
+         <vendorSiteCode>008016958</vendorSiteCode>
+         <vendorAlternateSiteCode>76108</vendorAlternateSiteCode>
+         <DUNSNumber>008016958</DUNSNumber>
+         <parentDUNSNumber>834951691</parentDUNSNumber>
+         <phoneNo>8177636775</phoneNo>
+         <faxNo>8177636781</faxNo>
+         <registrationDate>2002-03-26T00:00:00.000</registrationDate>
+         <renewalDate>2015-04-17T00:00:00.000</renewalDate>
+         <mod_parent>LOCKHEED MARTIN CORPORATION</mod_parent>
+         <stateCode>TX</stateCode>
+         <popStateCode>TX</popStateCode>
+         <placeOfPerformanceCountryCode>USA</placeOfPerformanceCountryCode>
+         <placeOfPerformanceZIPCode>76108</placeOfPerformanceZIPCode>
+         <pop_cd>12</pop_cd>
+         <placeOfPerformanceCongressionalDistrict>12</placeOfPerformanceCongressionalDistrict>
+         <psc_cat>15</psc_cat>
+         <productOrServiceCode>1510: AIRCRAFT, FIXED WING</productOrServiceCode>
+         <systemEquipmentCode>198</systemEquipmentCode>
+         <claimantProgramCode>A1A</claimantProgramCode>
+         <principalNAICSCode>336411</principalNAICSCode>
+         <informationTechnologyCommercialItemCategory>Z: NOT IT PRODUCTS OR SERVICES</informationTechnologyCommercialItemCategory>
+         <GFE_GFP>Y: Transaction uses GFE/GFP</GFE_GFP>
+         <useOfEPADesignatedProducts>A: MEETS REQUIREMENTS</useOfEPADesignatedProducts>
+         <recoveredMaterialClauses>C: NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLU</recoveredMaterialClauses>
+         <seaTransportation>Y: YES</seaTransportation>
+         <contractBundling>D: NOT A BUNDLED REQUIREMENT</contractBundling>
+         <consolidatedContract>N_x003A__x0020_No</consolidatedContract>
+         <countryOfOrigin>USA</countryOfOrigin>
+         <placeOfManufacture>D: MFG IN U.S.</placeOfManufacture>
+         <manufacturingOrganizationType>A: U.S. Owned Business</manufacturingOrganizationType>
+         <agencyID>9700: DEPT OF DEFENSE</agencyID>
+         <PIID>N0001915C0031</PIID>
+         <modNumber>0</modNumber>
+         <transactionNumber>0</transactionNumber>
+         <fiscal_year>2015</fiscal_year>
+         <IDVModificationNumber>0</IDVModificationNumber>
+         <solicitationID>N0001913R0078</solicitationID>
+         <extentCompeted>C</extentCompeted>
+         <reasonNotCompeted>UNQ: UNIQUE SOURCE</reasonNotCompeted>
+         <numberOfOffersReceived>1</numberOfOffersReceived>
+         <commercialItemAcquisitionProcedures>D:</commercialItemAcquisitionProcedures>
+         <commercialItemTestProgram>N_x003A__x0020_No</commercialItemTestProgram>
+         <smallBusinessCompetitivenessDemonstrationProgram>_x003A__x0020_NO</smallBusinessCompetitivenessDemonstrationProgram>
+         <A76Action>No</A76Action>
+         <solicitationProcedures>SSS: ONLY ONE SOURCE</solicitationProcedures>
+         <typeOfSetAside>NONE: NO SET ASIDE USED.</typeOfSetAside>
+         <localAreaSetAside>N</localAreaSetAside>
+         <evaluatedPreference>NONE: NO PREFERENCE USED</evaluatedPreference>
+         <fedBizOpps>Y</fedBizOpps>
+         <organizationalType>CORPORATE NOT TAX EXEMPT</organizationalType>
+         <numberOfEmployees>115000</numberOfEmployees>
+         <annualRevenue>46346000000</annualRevenue>
+         <firm8AFlag>N</firm8AFlag>
+         <HUBZoneFlag>N</HUBZoneFlag>
+         <SDBFlag>N</SDBFlag>
+         <shelteredWorkshopFlag>N</shelteredWorkshopFlag>
+         <HBCUFlag>N</HBCUFlag>
+         <educationalInstitutionFlag>N</educationalInstitutionFlag>
+         <womenOwnedFlag>N</womenOwnedFlag>
+         <veteranOwnedFlag>N</veteranOwnedFlag>
+         <SRDVOBFlag>N</SRDVOBFlag>
+         <localGovernmentFlag>N</localGovernmentFlag>
+         <minorityInstitutionFlag>N</minorityInstitutionFlag>
+         <AIOBFlag>N</AIOBFlag>
+         <stateGovernmentFlag>N</stateGovernmentFlag>
+         <federalGovernmentFlag>N</federalGovernmentFlag>
+         <minorityOwnedBusinessFlag>N</minorityOwnedBusinessFlag>
+         <APAOBFlag>N</APAOBFlag>
+         <tribalGovernmentFlag>N</tribalGovernmentFlag>
+         <BAOBFlag>N</BAOBFlag>
+         <NAOBFlag>N</NAOBFlag>
+         <SAAOBFlag>N</SAAOBFlag>
+         <nonprofitOrganizationFlag>N</nonprofitOrganizationFlag>
+         <isothernotforprofitorganization>N</isothernotforprofitorganization>
+         <isforprofitorganization>Y</isforprofitorganization>
+         <isfoundation>N</isfoundation>
+         <HAOBFlag>N</HAOBFlag>
+         <ishispanicservicinginstitution>N</ishispanicservicinginstitution>
+         <verySmallBusinessFlag>N</verySmallBusinessFlag>
+         <hospitalflag>N</hospitalflag>
+         <contractingOfficerBusinessSizeDetermination>O: OTHER THAN SMALL BUSINESS</contractingOfficerBusinessSizeDetermination>
+         <is1862landgrantcollege>N</is1862landgrantcollege>
+         <is1890landgrantcollege>N</is1890landgrantcollege>
+         <is1994landgrantcollege>N</is1994landgrantcollege>
+         <isveterinarycollege>N</isveterinarycollege>
+         <isveterinaryhospital>N</isveterinaryhospital>
+         <isprivateuniversityorcollege>N</isprivateuniversityorcollege>
+         <isschoolofforestry>N</isschoolofforestry>
+         <isstatecontrolledinstitutionofhigherlearning>N</isstatecontrolledinstitutionofhigherlearning>
+         <receivescontracts>Y</receivescontracts>
+         <receivesgrants>Y</receivesgrants>
+         <receivescontractsandgrants>Y</receivescontractsandgrants>
+         <isairportauthority>N</isairportauthority>
+         <iscouncilofgovernments>N</iscouncilofgovernments>
+         <ishousingauthoritiespublicortribal>N</ishousingauthoritiespublicortribal>
+         <isinterstateentity>N</isinterstateentity>
+         <isplanningcommission>N</isplanningcommission>
+         <isportauthority>N</isportauthority>
+         <istransitauthority>N</istransitauthority>
+         <issubchapterscorporation>N</issubchapterscorporation>
+         <islimitedliabilitycorporation>N</islimitedliabilitycorporation>
+         <isforeignownedandlocated>N</isforeignownedandlocated>
+         <isarchitectureandengineering>N</isarchitectureandengineering>
+         <iscitylocalgovernment>N</iscitylocalgovernment>
+         <iscommunitydevelopedcorporationownedfirm>N</iscommunitydevelopedcorporationownedfirm>
+         <iscommunitydevelopmentcorporation>N</iscommunitydevelopmentcorporation>
+         <isconstructionfirm>N</isconstructionfirm>
+         <ismanufacturerofgoods>Y</ismanufacturerofgoods>
+         <iscorporateentitynottaxexempt>Y</iscorporateentitynottaxexempt>
+         <iscountylocalgovernment>N</iscountylocalgovernment>
+         <isdomesticshelter>N</isdomesticshelter>
+         <isfederalgovernmentagency>N</isfederalgovernmentagency>
+         <isfederallyfundedresearchanddevelopmentcorp>N</isfederallyfundedresearchanddevelopmentcorp>
+         <isforeigngovernment>N</isforeigngovernment>
+         <isindiantribe>N</isindiantribe>
+         <isintermunicipallocalgovernment>N</isintermunicipallocalgovernment>
+         <isinternationalorganization>N</isinternationalorganization>
+         <islaborsurplusareafirm>N</islaborsurplusareafirm>
+         <islocalgovernmentowned>N</islocalgovernmentowned>
+         <ismunicipalitylocalgovernment>N</ismunicipalitylocalgovernment>
+         <isnativehawaiianownedorganizationorfirm>N</isnativehawaiianownedorganizationorfirm>
+         <isotherbusinessororganization>N</isotherbusinessororganization>
+         <isotherminorityowned>N</isotherminorityowned>
+         <ispartnershiporlimitedliabilitypartnership>N</ispartnershiporlimitedliabilitypartnership>
+         <isschooldistrictlocalgovernment>N</isschooldistrictlocalgovernment>
+         <issmallagriculturalcooperative>N</issmallagriculturalcooperative>
+         <issoleproprietorship>N</issoleproprietorship>
+         <istownshiplocalgovernment>N</istownshiplocalgovernment>
+         <istriballyownedfirm>N</istriballyownedfirm>
+         <istribalcollege>N</istribalcollege>
+         <isalaskannativeownedcorporationorfirm>N</isalaskannativeownedcorporationorfirm>
+         <iscorporateentitytaxexempt>N</iscorporateentitytaxexempt>
+         <WalshHealyAct>X: Not Applicable</WalshHealyAct>
+         <serviceContractAct>Y: Yes</serviceContractAct>
+         <DavisBaconAct>X: Not Applicable</DavisBaconAct>
+         <ClingerCohenAct>N: No</ClingerCohenAct>
+         <prime_awardee_executive1_compensation>0</prime_awardee_executive1_compensation>
+         <prime_awardee_executive2_compensation>0</prime_awardee_executive2_compensation>
+         <prime_awardee_executive3_compensation>0</prime_awardee_executive3_compensation>
+         <prime_awardee_executive4_compensation>0</prime_awardee_executive4_compensation>
+         <prime_awardee_executive5_compensation>0</prime_awardee_executive5_compensation>
+         <interagencycontractingauthority>X: Not Applicable</interagencycontractingauthority>
+         <last_modified_date>2014-10-28T00:00:00.000</last_modified_date>
+      </doc>
+      <doc spendingCategory="Contracts">
+         <obligatedAmount>352102228</obligatedAmount>
+         <baseAndExercisedOptionsValue>352102228.00</baseAndExercisedOptionsValue>
+         <baseAndAllOptionsValue>352102228.00</baseAndAllOptionsValue>
+         <maj_agency_cat>9700</maj_agency_cat>
+         <maj_fund_agency_cat>9700: Department of Defense</maj_fund_agency_cat>
+         <contractingOfficeAgencyID>1700: DEPT OF THE NAVY</contractingOfficeAgencyID>
+         <contractingOfficeID>N00019:_x0020_NAVAL_x0020_AIR_x0020_SYSTEMS_x0020_COMMAND</contractingOfficeID>
+         <fundingRequestingAgencyID>1700</fundingRequestingAgencyID>
+         <fundingRequestingOfficeID>N00019</fundingRequestingOfficeID>
+         <fundedByForeignEntity>A</fundedByForeignEntity>
+         <signedDate>2015-06-04T00:00:00.000</signedDate>
+         <effectiveDate>2015-05-26T00:00:00.000</effectiveDate>
+         <currentCompletionDate>2019-08-03T00:00:00.000</currentCompletionDate>
+         <ultimateCompletionDate>2019-08-03T00:00:00.000</ultimateCompletionDate>
+         <contractActionType>D</contractActionType>
+         <typeOfContractPricing>L</typeOfContractPricing>
+         <subcontractPlan>H: DOD COMPREHENSIVE SUBCONTRACT PLAN</subcontractPlan>
+         <priceEvaluationPercentDifference>0.00</priceEvaluationPercentDifference>
+         <typeOfContract>1</typeOfContract>
+         <multiYearContract>N: NO</multiYearContract>
+         <performanceBasedServiceContract>X</performanceBasedServiceContract>
+         <contingencyHumanitarianPeacekeepingOperation>X: NOT APPLICABLE</contingencyHumanitarianPeacekeepingOperation>
+         <contractFinancing>A</contractFinancing>
+         <costOrPricingData>N</costOrPricingData>
+         <costAccountingStandardsClause>Y</costAccountingStandardsClause>
+         <descriptionOfContractRequirement>LRIP 10 AAC</descriptionOfContractRequirement>
+         <purchaseCardAsPaymentMethod>N</purchaseCardAsPaymentMethod>
+         <numberOfActions>1</numberOfActions>
+         <nationalInterestActionCode>NONE</nationalInterestActionCode>
+         <ProgSourceAgency>57</ProgSourceAgency>
+         <ProgSourceAccount>3010</ProgSourceAccount>
+         <vendorName>LOCKHEED MARTIN CORPORATION</vendorName>
+         <vendorAlternateName>LOCKHEED MARTIN AERONAUTICS COMPANY</vendorAlternateName>
+         <vendorLegalOrganizationName>LOCKHEED MARTIN CORPORATION</vendorLegalOrganizationName>
+         <streetAddress>1 LOCKHEED BLVD</streetAddress>
+         <city>FORT WORTH</city>
+         <state>TX</state>
+         <ZIPCode>76108</ZIPCode>
+         <vendorCountryCode>USA_x003A__x0020_UNITED_x0020_STATES_x0020_OF_x0020_AMERICA</vendorCountryCode>
+         <vendorStateCode>TX</vendorStateCode>
+         <congressionalDistrict>12</congressionalDistrict>
+         <vendorSiteCode>008016958</vendorSiteCode>
+         <vendorAlternateSiteCode>76108</vendorAlternateSiteCode>
+         <DUNSNumber>008016958</DUNSNumber>
+         <phoneNo>8177636775</phoneNo>
+         <faxNo>8177636781</faxNo>
+         <registrationDate>2002-03-26T00:00:00.000</registrationDate>
+         <renewalDate>2015-11-12T00:00:00.000</renewalDate>
+         <popStateCode>TX</popStateCode>
+         <placeOfPerformanceCountryCode>USA</placeOfPerformanceCountryCode>
+         <placeOfPerformanceZIPCode>76106</placeOfPerformanceZIPCode>
+         <pop_cd>33</pop_cd>
+         <placeOfPerformanceCongressionalDistrict>33</placeOfPerformanceCongressionalDistrict>
+         <psc_cat>15</psc_cat>
+         <productOrServiceCode>1510: AIRCRAFT, FIXED WING</productOrServiceCode>
+         <systemEquipmentCode>198</systemEquipmentCode>
+         <claimantProgramCode>A1A</claimantProgramCode>
+         <principalNAICSCode>336411</principalNAICSCode>
+         <informationTechnologyCommercialItemCategory>Z: NOT IT PRODUCTS OR SERVICES</informationTechnologyCommercialItemCategory>
+         <GFE_GFP>Y: Transaction uses GFE/GFP</GFE_GFP>
+         <useOfEPADesignatedProducts>A: MEETS REQUIREMENTS</useOfEPADesignatedProducts>
+         <recoveredMaterialClauses>C: NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED</recoveredMaterialClauses>
+         <seaTransportation>U: UNKNOWN</seaTransportation>
+         <contractBundling>D: NOT A BUNDLED REQUIREMENT</contractBundling>
+         <consolidatedContract>N_x003A__x0020_N</consolidatedContract>
+         <countryOfOrigin>USA: UNITED STATES</countryOfOrigin>
+         <placeOfManufacture>D: MFG IN U.S.</placeOfManufacture>
+         <manufacturingOrganizationType>A: U.S. OWNED BUSINESS</manufacturingOrganizationType>
+         <agencyID>9700: DEPT OF DEFENSE</agencyID>
+         <PIID>N0001915C0003</PIID>
+         <modNumber>0</modNumber>
+         <transactionNumber>14</transactionNumber>
+         <fiscal_year>2015</fiscal_year>
+         <solicitationID>N0001915R0003</solicitationID>
+         <extentCompeted>C</extentCompeted>
+         <reasonNotCompeted>ONE: ONLY ONE SOURCE - OTHER</reasonNotCompeted>
+         <numberOfOffersReceived>1</numberOfOffersReceived>
+         <commercialItemAcquisitionProcedures>D: COMMERCIAL ITEM PROCEDURES NOT USED</commercialItemAcquisitionProcedures>
+         <commercialItemTestProgram>N_x003A__x0020_NO</commercialItemTestProgram>
+         <A76Action>N</A76Action>
+         <solicitationProcedures>SSS: ONLY ONE SOURCE</solicitationProcedures>
+         <typeOfSetAside>NONE: NO SET ASIDE USED.</typeOfSetAside>
+         <localAreaSetAside>N</localAreaSetAside>
+         <evaluatedPreference>NONE: NO PREFERENCE USED</evaluatedPreference>
+         <fedBizOpps>Y</fedBizOpps>
+         <organizationalType>CORPORATE NOT TAX EXEMPT</organizationalType>
+         <numberOfEmployees>115000</numberOfEmployees>
+         <annualRevenue>46346000000</annualRevenue>
+         <firm8AFlag>false</firm8AFlag>
+         <HUBZoneFlag>false</HUBZoneFlag>
+         <SDBFlag>false</SDBFlag>
+         <shelteredWorkshopFlag>false</shelteredWorkshopFlag>
+         <HBCUFlag>false</HBCUFlag>
+         <educationalInstitutionFlag>false</educationalInstitutionFlag>
+         <womenOwnedFlag>false</womenOwnedFlag>
+         <veteranOwnedFlag>false</veteranOwnedFlag>
+         <SRDVOBFlag>false</SRDVOBFlag>
+         <localGovernmentFlag>false</localGovernmentFlag>
+         <minorityInstitutionFlag>false</minorityInstitutionFlag>
+         <AIOBFlag>false</AIOBFlag>
+         <stateGovernmentFlag>false</stateGovernmentFlag>
+         <federalGovernmentFlag>false</federalGovernmentFlag>
+         <minorityOwnedBusinessFlag>false</minorityOwnedBusinessFlag>
+         <APAOBFlag>false</APAOBFlag>
+         <tribalGovernmentFlag>false</tribalGovernmentFlag>
+         <BAOBFlag>false</BAOBFlag>
+         <NAOBFlag>false</NAOBFlag>
+         <SAAOBFlag>false</SAAOBFlag>
+         <nonprofitOrganizationFlag>false</nonprofitOrganizationFlag>
+         <isothernotforprofitorganization>false</isothernotforprofitorganization>
+         <isforprofitorganization>true</isforprofitorganization>
+         <isfoundation>false</isfoundation>
+         <HAOBFlag>false</HAOBFlag>
+         <ishispanicservicinginstitution>false</ishispanicservicinginstitution>
+         <verySmallBusinessFlag>false</verySmallBusinessFlag>
+         <hospitalflag>false</hospitalflag>
+         <contractingOfficerBusinessSizeDetermination>O: OTHER THAN SMALL BUSINESS</contractingOfficerBusinessSizeDetermination>
+         <is1862landgrantcollege>false</is1862landgrantcollege>
+         <is1890landgrantcollege>false</is1890landgrantcollege>
+         <is1994landgrantcollege>false</is1994landgrantcollege>
+         <isveterinarycollege>false</isveterinarycollege>
+         <isveterinaryhospital>false</isveterinaryhospital>
+         <isprivateuniversityorcollege>false</isprivateuniversityorcollege>
+         <isschoolofforestry>false</isschoolofforestry>
+         <isstatecontrolledinstitutionofhigherlearning>false</isstatecontrolledinstitutionofhigherlearning>
+         <receivescontracts>false</receivescontracts>
+         <receivesgrants>false</receivesgrants>
+         <receivescontractsandgrants>true</receivescontractsandgrants>
+         <isairportauthority>false</isairportauthority>
+         <iscouncilofgovernments>false</iscouncilofgovernments>
+         <ishousingauthoritiespublicortribal>false</ishousingauthoritiespublicortribal>
+         <isinterstateentity>false</isinterstateentity>
+         <isplanningcommission>false</isplanningcommission>
+         <isportauthority>false</isportauthority>
+         <istransitauthority>false</istransitauthority>
+         <issubchapterscorporation>false</issubchapterscorporation>
+         <islimitedliabilitycorporation>false</islimitedliabilitycorporation>
+         <isforeignownedandlocated>false</isforeignownedandlocated>
+         <isdotcertifieddisadvantagedbusinessenterprise>false</isdotcertifieddisadvantagedbusinessenterprise>
+         <iscitylocalgovernment>false</iscitylocalgovernment>
+         <iscommunitydevelopedcorporationownedfirm>false</iscommunitydevelopedcorporationownedfirm>
+         <iscommunitydevelopmentcorporation>false</iscommunitydevelopmentcorporation>
+         <ismanufacturerofgoods>true</ismanufacturerofgoods>
+         <iscorporateentitynottaxexempt>true</iscorporateentitynottaxexempt>
+         <iscountylocalgovernment>false</iscountylocalgovernment>
+         <isdomesticshelter>false</isdomesticshelter>
+         <isfederalgovernmentagency>false</isfederalgovernmentagency>
+         <isfederallyfundedresearchanddevelopmentcorp>false</isfederallyfundedresearchanddevelopmentcorp>
+         <isforeigngovernment>false</isforeigngovernment>
+         <isindiantribe>false</isindiantribe>
+         <isintermunicipallocalgovernment>false</isintermunicipallocalgovernment>
+         <isinternationalorganization>false</isinternationalorganization>
+         <islaborsurplusareafirm>false</islaborsurplusareafirm>
+         <islocalgovernmentowned>false</islocalgovernmentowned>
+         <ismunicipalitylocalgovernment>false</ismunicipalitylocalgovernment>
+         <isnativehawaiianownedorganizationorfirm>false</isnativehawaiianownedorganizationorfirm>
+         <isotherminorityowned>false</isotherminorityowned>
+         <ispartnershiporlimitedliabilitypartnership>false</ispartnershiporlimitedliabilitypartnership>
+         <isschooldistrictlocalgovernment>false</isschooldistrictlocalgovernment>
+         <issmallagriculturalcooperative>false</issmallagriculturalcooperative>
+         <issoleproprietorship>false</issoleproprietorship>
+         <istownshiplocalgovernment>false</istownshiplocalgovernment>
+         <istriballyownedfirm>false</istriballyownedfirm>
+         <istribalcollege>false</istribalcollege>
+         <isalaskannativeownedcorporationorfirm>false</isalaskannativeownedcorporationorfirm>
+         <iscorporateentitytaxexempt>false</iscorporateentitytaxexempt>
+         <WalshHealyAct>Y: YES</WalshHealyAct>
+         <serviceContractAct>X: NOT APPLICABLE</serviceContractAct>
+         <DavisBaconAct>X: NOT APPLICABLE</DavisBaconAct>
+         <ClingerCohenAct>N: NO</ClingerCohenAct>
+         <prime_awardee_executive1_compensation>0</prime_awardee_executive1_compensation>
+         <prime_awardee_executive2_compensation>0</prime_awardee_executive2_compensation>
+         <prime_awardee_executive3_compensation>0</prime_awardee_executive3_compensation>
+         <prime_awardee_executive4_compensation>0</prime_awardee_executive4_compensation>
+         <prime_awardee_executive5_compensation>0</prime_awardee_executive5_compensation>
+         <interagencycontractingauthority>X: NOT APPLICABLE</interagencycontractingauthority>
+         <last_modified_date>2015-07-09T00:00:00.000</last_modified_date>
+      </doc>
+      <doc spendingCategory="Contracts">
+         <obligatedAmount>332468664.55</obligatedAmount>
+         <baseAndExercisedOptionsValue>322867051.08</baseAndExercisedOptionsValue>
+         <baseAndAllOptionsValue>322867051.08</baseAndAllOptionsValue>
+         <maj_agency_cat>9700</maj_agency_cat>
+         <maj_fund_agency_cat>9700: Department of Defense</maj_fund_agency_cat>
+         <contractingOfficeAgencyID>1700: DEPT OF THE NAVY</contractingOfficeAgencyID>
+         <contractingOfficeID>N00019:_x0020_NAVAL_x0020_AIR_x0020_SYSTEMS_x0020_COMMAND</contractingOfficeID>
+         <fundingRequestingAgencyID>1700</fundingRequestingAgencyID>
+         <fundingRequestingOfficeID>N00019</fundingRequestingOfficeID>
+         <fundedByForeignEntity>A</fundedByForeignEntity>
+         <signedDate>2015-07-14T00:00:00.000</signedDate>
+         <effectiveDate>2015-07-14T00:00:00.000</effectiveDate>
+         <currentCompletionDate>2019-09-30T00:00:00.000</currentCompletionDate>
+         <ultimateCompletionDate>2019-09-30T00:00:00.000</ultimateCompletionDate>
+         <contractActionType>D</contractActionType>
+         <reasonForModification>D</reasonForModification>
+         <typeOfContractPricing>L</typeOfContractPricing>
+         <subcontractPlan>C: PLAN REQUIRED - INCENTIVE NOT INCLUDED</subcontractPlan>
+         <priceEvaluationPercentDifference>0.00</priceEvaluationPercentDifference>
+         <typeOfContract>1</typeOfContract>
+         <multiYearContract>N: NO</multiYearContract>
+         <performanceBasedServiceContract>X</performanceBasedServiceContract>
+         <majorProgramCode>V-22</majorProgramCode>
+         <contingencyHumanitarianPeacekeepingOperation>X: NOT APPLICABLE</contingencyHumanitarianPeacekeepingOperation>
+         <contractFinancing>A</contractFinancing>
+         <costOrPricingData>N</costOrPricingData>
+         <costAccountingStandardsClause>Y</costAccountingStandardsClause>
+         <descriptionOfContractRequirement>PROCUREMENT OF FIVE (5) MV-22 AIRCRAFT IN SUPPORT OF FMS JAPAN REQUIREMENTS.</descriptionOfContractRequirement>
+         <purchaseCardAsPaymentMethod>N</purchaseCardAsPaymentMethod>
+         <numberOfActions>1</numberOfActions>
+         <nationalInterestActionCode>NONE</nationalInterestActionCode>
+         <ProgSourceAgency>17</ProgSourceAgency>
+         <ProgSourceAccount>1506</ProgSourceAccount>
+         <vendorName>BELL BOEING JOINT PROJECT OFFICE</vendorName>
+         <streetAddress>401 TILTROTOR DR PLANT A</streetAddress>
+         <city>AMARILLO</city>
+         <state>TX</state>
+         <ZIPCode>79111</ZIPCode>
+         <vendorCountryCode>USA_x003A__x0020_UNITED_x0020_STATES_x0020_OF_x0020_AMERICA</vendorCountryCode>
+         <vendorStateCode>TX</vendorStateCode>
+         <congressionalDistrict>13</congressionalDistrict>
+         <vendorSiteCode>106632750</vendorSiteCode>
+         <vendorAlternateSiteCode>791111200</vendorAlternateSiteCode>
+         <DUNSNumber>106632750</DUNSNumber>
+         <phoneNo>3018666835</phoneNo>
+         <faxNo>8172782052</faxNo>
+         <registrationDate>2002-10-10T00:00:00.000</registrationDate>
+         <renewalDate>2012-11-20T00:00:00.000</renewalDate>
+         <mod_parent>BELL BOEING JOINT PROJECT OFFICE</mod_parent>
+         <popStateCode>TX</popStateCode>
+         <placeOfPerformanceCountryCode>USA</placeOfPerformanceCountryCode>
+         <placeOfPerformanceZIPCode>79111</placeOfPerformanceZIPCode>
+         <pop_cd>13</pop_cd>
+         <placeOfPerformanceCongressionalDistrict>13</placeOfPerformanceCongressionalDistrict>
+         <psc_cat>15</psc_cat>
+         <productOrServiceCode>1510: AIRCRAFT, FIXED WING</productOrServiceCode>
+         <systemEquipmentCode>212</systemEquipmentCode>
+         <claimantProgramCode>A1A</claimantProgramCode>
+         <principalNAICSCode>336411</principalNAICSCode>
+         <informationTechnologyCommercialItemCategory>Z: NOT IT PRODUCTS OR SERVICES</informationTechnologyCommercialItemCategory>
+         <GFE_GFP>Y: Transaction uses GFE/GFP</GFE_GFP>
+         <useOfEPADesignatedProducts>A: MEETS REQUIREMENTS</useOfEPADesignatedProducts>
+         <recoveredMaterialClauses>C: NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED</recoveredMaterialClauses>
+         <seaTransportation>N: NO</seaTransportation>
+         <contractBundling>D: NOT A BUNDLED REQUIREMENT</contractBundling>
+         <consolidatedContract>N_x003A__x0020_N</consolidatedContract>
+         <countryOfOrigin>USA: UNITED STATES</countryOfOrigin>
+         <placeOfManufacture>D: MFG IN U.S.</placeOfManufacture>
+         <manufacturingOrganizationType>A: U.S. OWNED BUSINESS</manufacturingOrganizationType>
+         <agencyID>9700: DEPT OF DEFENSE</agencyID>
+         <PIID>N0001912C2001</PIID>
+         <modNumber>P00039</modNumber>
+         <transactionNumber>0</transactionNumber>
+         <fiscal_year>2015</fiscal_year>
+         <extentCompeted>C</extentCompeted>
+         <reasonNotCompeted>ONE: ONLY ONE SOURCE - OTHER</reasonNotCompeted>
+         <numberOfOffersReceived>1</numberOfOffersReceived>
+         <commercialItemAcquisitionProcedures>D: COMMERCIAL ITEM PROCEDURES NOT USED</commercialItemAcquisitionProcedures>
+         <commercialItemTestProgram>N_x003A__x0020_NO</commercialItemTestProgram>
+         <A76Action>N</A76Action>
+         <solicitationProcedures>SSS: ONLY ONE SOURCE</solicitationProcedures>
+         <typeOfSetAside>NONE: NO SET ASIDE USED.</typeOfSetAside>
+         <localAreaSetAside>N</localAreaSetAside>
+         <evaluatedPreference>NONE: NO PREFERENCE USED</evaluatedPreference>
+         <fedBizOpps>Y</fedBizOpps>
+         <organizationalType>OTHER</organizationalType>
+         <numberOfEmployees>2500</numberOfEmployees>
+         <annualRevenue>50000000</annualRevenue>
+         <firm8AFlag>false</firm8AFlag>
+         <HUBZoneFlag>false</HUBZoneFlag>
+         <SDBFlag>false</SDBFlag>
+         <shelteredWorkshopFlag>false</shelteredWorkshopFlag>
+         <HBCUFlag>false</HBCUFlag>
+         <educationalInstitutionFlag>false</educationalInstitutionFlag>
+         <womenOwnedFlag>false</womenOwnedFlag>
+         <veteranOwnedFlag>false</veteranOwnedFlag>
+         <SRDVOBFlag>false</SRDVOBFlag>
+         <localGovernmentFlag>false</localGovernmentFlag>
+         <minorityInstitutionFlag>false</minorityInstitutionFlag>
+         <AIOBFlag>false</AIOBFlag>
+         <stateGovernmentFlag>false</stateGovernmentFlag>
+         <federalGovernmentFlag>false</federalGovernmentFlag>
+         <minorityOwnedBusinessFlag>false</minorityOwnedBusinessFlag>
+         <APAOBFlag>false</APAOBFlag>
+         <tribalGovernmentFlag>false</tribalGovernmentFlag>
+         <BAOBFlag>false</BAOBFlag>
+         <NAOBFlag>false</NAOBFlag>
+         <SAAOBFlag>false</SAAOBFlag>
+         <nonprofitOrganizationFlag>false</nonprofitOrganizationFlag>
+         <isothernotforprofitorganization>false</isothernotforprofitorganization>
+         <isforprofitorganization>true</isforprofitorganization>
+         <isfoundation>false</isfoundation>
+         <HAOBFlag>false</HAOBFlag>
+         <ishispanicservicinginstitution>false</ishispanicservicinginstitution>
+         <verySmallBusinessFlag>false</verySmallBusinessFlag>
+         <hospitalflag>false</hospitalflag>
+         <contractingOfficerBusinessSizeDetermination>O: OTHER THAN SMALL BUSINESS</contractingOfficerBusinessSizeDetermination>
+         <is1862landgrantcollege>false</is1862landgrantcollege>
+         <is1890landgrantcollege>false</is1890landgrantcollege>
+         <is1994landgrantcollege>false</is1994landgrantcollege>
+         <isveterinarycollege>false</isveterinarycollege>
+         <isveterinaryhospital>false</isveterinaryhospital>
+         <isprivateuniversityorcollege>false</isprivateuniversityorcollege>
+         <isschoolofforestry>false</isschoolofforestry>
+         <isstatecontrolledinstitutionofhigherlearning>false</isstatecontrolledinstitutionofhigherlearning>
+         <receivescontracts>true</receivescontracts>
+         <receivesgrants>false</receivesgrants>
+         <receivescontractsandgrants>false</receivescontractsandgrants>
+         <isairportauthority>false</isairportauthority>
+         <iscouncilofgovernments>false</iscouncilofgovernments>
+         <ishousingauthoritiespublicortribal>false</ishousingauthoritiespublicortribal>
+         <isinterstateentity>false</isinterstateentity>
+         <isplanningcommission>false</isplanningcommission>
+         <isportauthority>false</isportauthority>
+         <istransitauthority>false</istransitauthority>
+         <issubchapterscorporation>false</issubchapterscorporation>
+         <islimitedliabilitycorporation>false</islimitedliabilitycorporation>
+         <isforeignownedandlocated>false</isforeignownedandlocated>
+         <isdotcertifieddisadvantagedbusinessenterprise>false</isdotcertifieddisadvantagedbusinessenterprise>
+         <iscitylocalgovernment>false</iscitylocalgovernment>
+         <iscommunitydevelopedcorporationownedfirm>false</iscommunitydevelopedcorporationownedfirm>
+         <iscommunitydevelopmentcorporation>false</iscommunitydevelopmentcorporation>
+         <ismanufacturerofgoods>true</ismanufacturerofgoods>
+         <iscorporateentitynottaxexempt>false</iscorporateentitynottaxexempt>
+         <iscountylocalgovernment>false</iscountylocalgovernment>
+         <isdomesticshelter>false</isdomesticshelter>
+         <isfederalgovernmentagency>false</isfederalgovernmentagency>
+         <isfederallyfundedresearchanddevelopmentcorp>false</isfederallyfundedresearchanddevelopmentcorp>
+         <isforeigngovernment>false</isforeigngovernment>
+         <isindiantribe>false</isindiantribe>
+         <isintermunicipallocalgovernment>false</isintermunicipallocalgovernment>
+         <isinternationalorganization>false</isinternationalorganization>
+         <islaborsurplusareafirm>false</islaborsurplusareafirm>
+         <islocalgovernmentowned>false</islocalgovernmentowned>
+         <ismunicipalitylocalgovernment>false</ismunicipalitylocalgovernment>
+         <isnativehawaiianownedorganizationorfirm>false</isnativehawaiianownedorganizationorfirm>
+         <isotherminorityowned>false</isotherminorityowned>
+         <ispartnershiporlimitedliabilitypartnership>false</ispartnershiporlimitedliabilitypartnership>
+         <isschooldistrictlocalgovernment>false</isschooldistrictlocalgovernment>
+         <issmallagriculturalcooperative>false</issmallagriculturalcooperative>
+         <issoleproprietorship>false</issoleproprietorship>
+         <istownshiplocalgovernment>false</istownshiplocalgovernment>
+         <istriballyownedfirm>false</istriballyownedfirm>
+         <istribalcollege>false</istribalcollege>
+         <isalaskannativeownedcorporationorfirm>false</isalaskannativeownedcorporationorfirm>
+         <iscorporateentitytaxexempt>false</iscorporateentitytaxexempt>
+         <WalshHealyAct>Y: YES</WalshHealyAct>
+         <serviceContractAct>X: NOT APPLICABLE</serviceContractAct>
+         <DavisBaconAct>X: NOT APPLICABLE</DavisBaconAct>
+         <ClingerCohenAct>Y: YES</ClingerCohenAct>
+         <prime_awardee_executive1_compensation>0</prime_awardee_executive1_compensation>
+         <prime_awardee_executive2_compensation>0</prime_awardee_executive2_compensation>
+         <prime_awardee_executive3_compensation>0</prime_awardee_executive3_compensation>
+         <prime_awardee_executive4_compensation>0</prime_awardee_executive4_compensation>
+         <prime_awardee_executive5_compensation>0</prime_awardee_executive5_compensation>
+         <interagencycontractingauthority>X: NOT APPLICABLE</interagencycontractingauthority>
+         <last_modified_date>2015-07-20T00:00:00.000</last_modified_date>
+      </doc>
+      <doc spendingCategory="Contracts">
+         <obligatedAmount>308263249</obligatedAmount>
+         <baseAndExercisedOptionsValue>308263249.00</baseAndExercisedOptionsValue>
+         <baseAndAllOptionsValue>308263249.00</baseAndAllOptionsValue>
+         <maj_agency_cat>9700</maj_agency_cat>
+         <maj_fund_agency_cat>9700: Department of Defense</maj_fund_agency_cat>
+         <contractingOfficeAgencyID>5700: DEPT OF THE AIR FORCE</contractingOfficeAgencyID>
+         <contractingOfficeID>FA8615:_x0020_FA8615_x0020_AFLCMC_x0020_WWM</contractingOfficeID>
+         <fundingRequestingAgencyID>5700</fundingRequestingAgencyID>
+         <fundingRequestingOfficeID>F4FDAS</fundingRequestingOfficeID>
+         <fundedByForeignEntity>A</fundedByForeignEntity>
+         <signedDate>2014-12-16T00:00:00.000</signedDate>
+         <effectiveDate>2014-12-16T00:00:00.000</effectiveDate>
+         <currentCompletionDate>2021-11-30T00:00:00.000</currentCompletionDate>
+         <ultimateCompletionDate>2021-11-30T00:00:00.000</ultimateCompletionDate>
+         <contractActionType>D</contractActionType>
+         <reasonForModification>B</reasonForModification>
+         <typeOfContractPricing>J</typeOfContractPricing>
+         <subcontractPlan>C: PLAN REQUIRED - INCENTIVE NOT INCLUDED</subcontractPlan>
+         <priceEvaluationPercentDifference>0.00</priceEvaluationPercentDifference>
+         <typeOfContract>1</typeOfContract>
+         <multiYearContract>N: NO</multiYearContract>
+         <performanceBasedServiceContract>X</performanceBasedServiceContract>
+         <contingencyHumanitarianPeacekeepingOperation>X: NOT APPLICABLE</contingencyHumanitarianPeacekeepingOperation>
+         <contractFinancing>A</contractFinancing>
+         <costOrPricingData>N</costOrPricingData>
+         <costAccountingStandardsClause>Y</costAccountingStandardsClause>
+         <descriptionOfContractRequirement>CCP 3111, AESA RADAR AND IN-COUNTRY SUPPLIER SUPPORT</descriptionOfContractRequirement>
+         <purchaseCardAsPaymentMethod>N</purchaseCardAsPaymentMethod>
+         <numberOfActions>1</numberOfActions>
+         <nationalInterestActionCode>NONE</nationalInterestActionCode>
+         <ProgSourceAgency>97</ProgSourceAgency>
+         <ProgSourceAccount>8242</ProgSourceAccount>
+         <vendorName>LOCKHEED MARTIN CORPORATION</vendorName>
+         <vendorAlternateName>LOCKHEED MARTIN</vendorAlternateName>
+         <vendorLegalOrganizationName>LOCKHEED MARTIN CORPORATION</vendorLegalOrganizationName>
+         <streetAddress>1 LOCKHEED BLVD</streetAddress>
+         <city>FORT WORTH</city>
+         <state>TX</state>
+         <ZIPCode>76108</ZIPCode>
+         <vendorCountryCode>USA_x003A__x0020_UNITED_x0020_STATES_x0020_OF_x0020_AMERICA</vendorCountryCode>
+         <vendorStateCode>TX</vendorStateCode>
+         <congressionalDistrict>12</congressionalDistrict>
+         <vendorSiteCode>008016958</vendorSiteCode>
+         <vendorAlternateSiteCode>761083619</vendorAlternateSiteCode>
+         <DUNSNumber>008016958</DUNSNumber>
+         <phoneNo>8177636775</phoneNo>
+         <faxNo>8177636781</faxNo>
+         <registrationDate>2002-03-26T00:00:00.000</registrationDate>
+         <renewalDate>2013-01-25T00:00:00.000</renewalDate>
+         <popStateCode>TX</popStateCode>
+         <placeOfPerformanceCountryCode>USA</placeOfPerformanceCountryCode>
+         <placeOfPerformanceZIPCode>76108</placeOfPerformanceZIPCode>
+         <pop_cd>12</pop_cd>
+         <placeOfPerformanceCongressionalDistrict>12</placeOfPerformanceCongressionalDistrict>
+         <productOrServiceCode>1510: AIRCRAFT, FIXED WING</productOrServiceCode>
+         <systemEquipmentCode>000</systemEquipmentCode>
+         <claimantProgramCode>A1A</claimantProgramCode>
+         <principalNAICSCode>336411</principalNAICSCode>
+         <informationTechnologyCommercialItemCategory>Z: NOT IT PRODUCTS OR SERVICES</informationTechnologyCommercialItemCategory>
+         <GFE_GFP>N: Transaction does not use GFE/GFP</GFE_GFP>
+         <useOfEPADesignatedProducts>E: NOT REQUIRED</useOfEPADesignatedProducts>
+         <recoveredMaterialClauses>C: NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED</recoveredMaterialClauses>
+         <seaTransportation>U: UNKNOWN</seaTransportation>
+         <contractBundling>D: NOT A BUNDLED REQUIREMENT</contractBundling>
+         <consolidatedContract>N_x003A__x0020_N</consolidatedContract>
+         <countryOfOrigin>USA: UNITED STATES</countryOfOrigin>
+         <placeOfManufacture>D: MFG IN U.S.</placeOfManufacture>
+         <manufacturingOrganizationType>A: U.S. OWNED BUSINESS</manufacturingOrganizationType>
+         <agencyID>9700: DEPT OF DEFENSE</agencyID>
+         <PIID>FA861512C6016</PIID>
+         <modNumber>P00005</modNumber>
+         <transactionNumber>14</transactionNumber>
+         <fiscal_year>2015</fiscal_year>
+         <extentCompeted>B</extentCompeted>
+         <reasonNotCompeted>IA: INTERNATIONAL AGREEMENT</reasonNotCompeted>
+         <numberOfOffersReceived>1</numberOfOffersReceived>
+         <commercialItemAcquisitionProcedures>D: COMMERCIAL ITEM PROCEDURES NOT USED</commercialItemAcquisitionProcedures>
+         <commercialItemTestProgram>N_x003A__x0020_NO</commercialItemTestProgram>
+         <A76Action>N</A76Action>
+         <solicitationProcedures>SSS: ONLY ONE SOURCE</solicitationProcedures>
+         <typeOfSetAside>NONE: NO SET ASIDE USED.</typeOfSetAside>
+         <localAreaSetAside>N</localAreaSetAside>
+         <evaluatedPreference>NONE: NO PREFERENCE USED</evaluatedPreference>
+         <fedBizOpps>Y</fedBizOpps>
+         <organizationalType>CORPORATE NOT TAX EXEMPT</organizationalType>
+         <numberOfEmployees>140000</numberOfEmployees>
+         <annualRevenue>43259998208</annualRevenue>
+         <firm8AFlag>false</firm8AFlag>
+         <HUBZoneFlag>false</HUBZoneFlag>
+         <SDBFlag>false</SDBFlag>
+         <shelteredWorkshopFlag>false</shelteredWorkshopFlag>
+         <HBCUFlag>false</HBCUFlag>
+         <educationalInstitutionFlag>false</educationalInstitutionFlag>
+         <womenOwnedFlag>false</womenOwnedFlag>
+         <veteranOwnedFlag>false</veteranOwnedFlag>
+         <SRDVOBFlag>false</SRDVOBFlag>
+         <localGovernmentFlag>false</localGovernmentFlag>
+         <minorityInstitutionFlag>false</minorityInstitutionFlag>
+         <AIOBFlag>false</AIOBFlag>
+         <stateGovernmentFlag>false</stateGovernmentFlag>
+         <federalGovernmentFlag>false</federalGovernmentFlag>
+         <minorityOwnedBusinessFlag>false</minorityOwnedBusinessFlag>
+         <APAOBFlag>false</APAOBFlag>
+         <tribalGovernmentFlag>false</tribalGovernmentFlag>
+         <BAOBFlag>false</BAOBFlag>
+         <NAOBFlag>false</NAOBFlag>
+         <SAAOBFlag>false</SAAOBFlag>
+         <nonprofitOrganizationFlag>false</nonprofitOrganizationFlag>
+         <isothernotforprofitorganization>false</isothernotforprofitorganization>
+         <isforprofitorganization>true</isforprofitorganization>
+         <isfoundation>false</isfoundation>
+         <HAOBFlag>false</HAOBFlag>
+         <ishispanicservicinginstitution>false</ishispanicservicinginstitution>
+         <verySmallBusinessFlag>false</verySmallBusinessFlag>
+         <hospitalflag>false</hospitalflag>
+         <contractingOfficerBusinessSizeDetermination>O: OTHER THAN SMALL BUSINESS</contractingOfficerBusinessSizeDetermination>
+         <is1862landgrantcollege>false</is1862landgrantcollege>
+         <is1890landgrantcollege>false</is1890landgrantcollege>
+         <is1994landgrantcollege>false</is1994landgrantcollege>
+         <isveterinarycollege>false</isveterinarycollege>
+         <isveterinaryhospital>false</isveterinaryhospital>
+         <isprivateuniversityorcollege>false</isprivateuniversityorcollege>
+         <isschoolofforestry>false</isschoolofforestry>
+         <isstatecontrolledinstitutionofhigherlearning>false</isstatecontrolledinstitutionofhigherlearning>
+         <receivescontracts>false</receivescontracts>
+         <receivesgrants>false</receivesgrants>
+         <receivescontractsandgrants>true</receivescontractsandgrants>
+         <isairportauthority>false</isairportauthority>
+         <iscouncilofgovernments>false</iscouncilofgovernments>
+         <ishousingauthoritiespublicortribal>false</ishousingauthoritiespublicortribal>
+         <isinterstateentity>false</isinterstateentity>
+         <isplanningcommission>false</isplanningcommission>
+         <isportauthority>false</isportauthority>
+         <istransitauthority>false</istransitauthority>
+         <issubchapterscorporation>false</issubchapterscorporation>
+         <islimitedliabilitycorporation>false</islimitedliabilitycorporation>
+         <isforeignownedandlocated>false</isforeignownedandlocated>
+         <isdotcertifieddisadvantagedbusinessenterprise>false</isdotcertifieddisadvantagedbusinessenterprise>
+         <iscitylocalgovernment>false</iscitylocalgovernment>
+         <iscommunitydevelopedcorporationownedfirm>false</iscommunitydevelopedcorporationownedfirm>
+         <iscommunitydevelopmentcorporation>false</iscommunitydevelopmentcorporation>
+         <ismanufacturerofgoods>true</ismanufacturerofgoods>
+         <iscorporateentitynottaxexempt>true</iscorporateentitynottaxexempt>
+         <iscountylocalgovernment>false</iscountylocalgovernment>
+         <isdomesticshelter>false</isdomesticshelter>
+         <isfederalgovernmentagency>false</isfederalgovernmentagency>
+         <isfederallyfundedresearchanddevelopmentcorp>false</isfederallyfundedresearchanddevelopmentcorp>
+         <isforeigngovernment>false</isforeigngovernment>
+         <isindiantribe>false</isindiantribe>
+         <isintermunicipallocalgovernment>false</isintermunicipallocalgovernment>
+         <isinternationalorganization>false</isinternationalorganization>
+         <islaborsurplusareafirm>false</islaborsurplusareafirm>
+         <islocalgovernmentowned>false</islocalgovernmentowned>
+         <ismunicipalitylocalgovernment>false</ismunicipalitylocalgovernment>
+         <isnativehawaiianownedorganizationorfirm>false</isnativehawaiianownedorganizationorfirm>
+         <isotherminorityowned>false</isotherminorityowned>
+         <ispartnershiporlimitedliabilitypartnership>false</ispartnershiporlimitedliabilitypartnership>
+         <isschooldistrictlocalgovernment>false</isschooldistrictlocalgovernment>
+         <issmallagriculturalcooperative>false</issmallagriculturalcooperative>
+         <issoleproprietorship>false</issoleproprietorship>
+         <istownshiplocalgovernment>false</istownshiplocalgovernment>
+         <istriballyownedfirm>false</istriballyownedfirm>
+         <istribalcollege>false</istribalcollege>
+         <isalaskannativeownedcorporationorfirm>false</isalaskannativeownedcorporationorfirm>
+         <iscorporateentitytaxexempt>false</iscorporateentitytaxexempt>
+         <WalshHealyAct>Y: YES</WalshHealyAct>
+         <serviceContractAct>X: NOT APPLICABLE</serviceContractAct>
+         <DavisBaconAct>X: NOT APPLICABLE</DavisBaconAct>
+         <ClingerCohenAct>N: NO</ClingerCohenAct>
+         <prime_awardee_executive1_compensation>0</prime_awardee_executive1_compensation>
+         <prime_awardee_executive2_compensation>0</prime_awardee_executive2_compensation>
+         <prime_awardee_executive3_compensation>0</prime_awardee_executive3_compensation>
+         <prime_awardee_executive4_compensation>0</prime_awardee_executive4_compensation>
+         <prime_awardee_executive5_compensation>0</prime_awardee_executive5_compensation>
+         <interagencycontractingauthority>X: NOT APPLICABLE</interagencycontractingauthority>
+         <last_modified_date>2014-12-16T00:00:00.000</last_modified_date>
+      </doc>
+   </result>
+</usaspendingSearchResults>

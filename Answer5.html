@@ -1,0 +1,376 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>CAP USA Spending Data</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="http://www.bendewey.com/code/formatcurrency/jquery.formatCurrency-1.4.0.js"></script>
+	<script src="biginteger.js"></script>
+	<style type="text/css">
+		.ui-title {
+			margin: 0 20% !important;
+		}
+		/*.contractAmount, th:nth-child(2) {
+			text-align: right !important;
+		}*/
+		td.contractAmount, th:nth-child(2) {
+			padding-right: 30px !important;
+		}
+		.accordianBody {
+			font-size: 12px;
+		}
+		tr {
+			border-bottom: 1px solid gray;
+		}
+	</style>
+</head>
+<body>
+
+	<script>
+
+		var displayMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		var day = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', 
+			  '10', '11', '12', '13', '14', '15', '16', '17', '18', '19',
+			  '20', '21', '22', '23', '24', '25', '26', '27', '28', '29',
+			  '30', '31'];
+
+		var xmlCache = "";
+
+		$(document).ready(function () {
+
+			console.log("Request");
+
+			$.ajax({
+				type: "GET",
+				url: "DataDownloads/Data_Feed FY 2015 0901 - 0930 DOD.xml",
+				dataType: "xml"
+			})
+			/*$.ajax({
+				type: "GET",
+				url: "https://www.usaspending.gov/fpds/fpds.php?detail=s&fiscal_year=2015&max_records=100",
+				dataType: "xml",
+				statusCode: {
+					404: function() {
+						console.log("Page not found");
+					},
+					503: function(response) {
+						var errorMsg = $(response.responseText)
+						console.log(errorMsg);
+					}
+				}
+			})*/
+				.done(function(xml) {
+					console.log("Loading...");
+					xmlCache = xml;
+					xmlParser(xmlCache);
+				})
+				.fail(function() {
+					$("#errorPopup").popup("open");
+					setTimeout(function(){
+						$.mobile.pageContainer.pagecontainer("change", "#page1", {
+							transition: "fade",
+							changeHash: true,
+							recipient: $(this).attr("data-recipient")
+						});
+					}, 1500);
+				});
+
+
+			$(document).on("pagebeforechange", function (event, data) {
+				if (data.toPage[0].id == "page1") {
+					$("#cSet").html('');
+					$("#page2QueryLength").html('');
+					$("#page2Recipient").html('');
+				}
+				if (data.toPage[0].id == "page2") {
+					loadRecipientContracts(data.options.agencyCode);
+				}
+			});
+
+			$("#errorPopup").popup();
+
+		});
+
+		function xmlParser(xml) {
+
+			var contractData = [];
+
+
+			$(xml).find("doc").each(function () {
+
+				contractData.push({
+					amount: parseInt($(this).find("dollarsobligated").text()),
+					contractingAgency: $(this).find("contractingofficeagencyid").text()
+				});
+
+			});
+
+
+			contractData.sort(function(x,y){return  y.amount - x.amount});
+
+
+
+			$("#page1QueryLength").html(contractData.length);
+
+
+
+			for (var i=0; i < contractData.length; i++) {
+
+				var agencyCode = contractData[i].contractingAgency.substring(0,4);
+
+
+				if ($("#recipientList").find("[data-agencyCode='" + agencyCode + "']").length == 0) {
+				
+
+					$("#recipientList").append(
+						'<li>' +
+							'<a data-agencyCode="' + agencyCode + '">' +
+								contractData[i].contractingAgency.substring(6, contractData[1].contractingAgency.length) +
+								'<span class="ui-li-count contractAmount">' +
+									contractData[i].amount +
+								'</span>' +
+							'</a>' +
+						'</li>'
+					);
+
+				} else {
+
+					//console.log(contractData[i].recipient + ' old amount: ' + parseInt($("#recipientList").find("[data-recipient='" + recipientName + "']").find(".contractAmount").text()) + ' + ' + contractData[i].amount);
+
+					var newAmount = parseInt($("#recipientList").find("[data-agencyCode='" + agencyCode + "']").find(".contractAmount").text()) + contractData[i].amount;
+
+					$("#recipientList").find("[data-agencyCode='" + agencyCode + "']").find(".contractAmount").text(newAmount)
+
+					//console.log('new amount: ' + newAmount);
+
+				}
+
+
+
+			};
+
+
+			$(".contractAmount").formatCurrency();
+
+			$("#recipientList").listview().listview('refresh');
+
+
+
+			$("#recipientList a").click(function(event) {
+				event.preventDefault();
+
+
+
+				$.mobile.pageContainer.pagecontainer("change", "#page2", {
+					transition: "fade",
+					changeHash: false,
+					showLoadMsg: true,
+					agencyCode: $(this).attr("data-agencyCode")
+				});
+
+			});
+
+
+
+		}
+
+		function loadRecipientContracts(agencyCode) {
+			console.log('Loading...');
+
+			/*$.ajax({
+				type: "GET",
+				url: "apiRequest.cfm",
+				dataType: "xml",
+				data: {
+					theURL: "https://www.usaspending.gov/fpds/fpds.php?detail=c&fiscal_year=2015&max_records=1000&sortby=g&company_name=" + recipient
+				}
+			})
+				.done(function(xml) {
+					parseRecipientContracts(xml);
+				})
+				.fail(function() {
+					$("#errorPopup").popup("open");
+					setTimeout(function(){
+						$.mobile.pageContainer.pagecontainer("change", "#page1", {
+							transition: "fade",
+							changeHash: true,
+							recipient: $(this).attr("data-recipient")
+						});
+					}, 1500);
+				});*/
+
+			
+			parseRecipientContracts(xmlCache);
+
+
+			function parseRecipientContracts(xml) {
+
+				var contractData = [];
+
+
+				$(xml).find("doc").each(function () {
+
+					if ($(this).find("contractingofficeagencyid").text().substring(0,4) == agencyCode) {
+
+						contractData.push({
+							contractingAgency: $(this).find("contractingofficeagencyid").text(),
+							product: $(this).find("productorservicecode").text(),
+							amount: parseInt($(this).find("dollarsobligated").text()),
+							city: $(this).find("city").text(),
+							state: $(this).find("state").text(),
+							signedDate: $(this).find("signeddate").text()
+						});
+
+					}
+
+				});
+
+
+				$("#page2QueryLength").html(contractData.length);
+				$("#page2Recipient").html(contractData[0].contractingAgency.substring(6, contractData[0].contractingAgency.length));
+
+				contractData.sort(function(x,y){return  y.amount - x.amount});
+
+
+				console.log(contractData.length);
+
+				for (var i=0; i < contractData.length; i++) {
+
+					var theDate = new Date(contractData[i].signedDate);
+
+
+					if ($("#cSet").find("[data-product='" + contractData[i].product + "']").length == 0) {
+
+						$("#cSet").append(
+							'<div data-role="collapsible">' +
+								'<h3>' +
+									contractData[i].product +
+								'</h3>' +
+								'<table data-role="table" class="ui-responsive">' +
+									'<thead>' +
+										'<tr>' +
+											'<th>' +
+												'Amount' +
+											'</th>' +
+											'<th>' +
+												'Location' +
+											'</th>' +
+											'<th>' +
+												'Signed Date' +
+											'</th>' +
+										'</tr>' +
+									'</thead>' +
+									'<tbody class="accordianBody" data-product="' + contractData[i].product + '">' +
+										'<tr>' +
+											'<td class="contractAmount">' +
+												contractData[i].amount +
+											'</td>' +
+											'<td>' +
+												contractData[i].city + ', ' + contractData[i].state +
+											'</td>' +
+											'<td>' +
+												displayMonth[theDate.getMonth()] + ' ' + day[theDate.getDate()] + ', ' + theDate.getFullYear() +
+											'</td>' +
+										'</tr>' +
+									'</tbody>' +
+								'</table>' +
+							'</div>'
+						);
+
+					} else {
+
+						$("#cSet").find("[data-product='" + contractData[i].product + "']").append(
+							'<tr>' +
+								'<td class="contractAmount">' +
+									contractData[i].amount +
+								'</td>' +
+								'<td>' +
+									contractData[i].city + ', ' + contractData[i].state +
+								'</td>' +
+								'<td>' +
+									displayMonth[theDate.getMonth()] + ' ' + day[theDate.getDate()] + ', ' + theDate.getFullYear() +
+								'</td>' +
+							'</tr>'
+						);
+
+					}
+
+
+				};
+
+
+
+				$("#cSet").find(".accordianBody").each(function() {
+					var totalContractMoney = new BigInteger(0);
+					$(this).find(".contractAmount").each(function() {
+						//var amount = $(this).html().replace("$", "");
+						//amount = amount.replace(/,/g, '');
+						//amount = amount.substring(0, amount.length - 3).replace(/,/g, '');
+						var amount = new BigInteger.parse($(this).html());
+						//amount.parse = $(this).html();
+						totalContractMoney = totalContractMoney.add(amount);
+
+
+						//console.log(amount);
+					});
+					//console.log(totalContractMoney);
+					$(this).append(
+						'<tr>' +
+							'<td class="contractAmount" style="font-weight:bold;">' +
+								totalContractMoney +
+							'</td>' +
+							'<td>' +
+							'</td>' +
+							'<td>' +
+							'</td>' +
+						'</tr>'
+					);
+				});
+
+				$('.contractAmount').formatCurrency();
+
+
+				$("#cSet").collapsibleset();
+				$("table").table();
+
+
+
+			}
+		}
+
+
+	</script>
+
+	<div data-role="popup" id="errorPopup" data-overlay-theme="a" data-theme="b">
+		<p>Error with request, please try again.</p>
+	</div>
+	<div data-role="page" id="page1">
+		<div data-role="header">
+			<h1 id="page1Title">
+				<span id="page1QueryLength"></span> DOD contracts from September in FY 2015
+			</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<ul id="recipientList" data-role="listview" data-count-theme="b" data-inset="true"></ul>
+		</div>
+		<div data-role="footer"><h4>&copy; 2015 GSA.gov</h4></div>
+	</div>
+
+	<div data-role="page" id="page2">
+		<div data-role="header">
+			<a href="#page1" data-icon="back" class="ui-btn-left">Back</a>
+			<h1 id="page2Title">
+				<span id="page2QueryLength"></span> DOD contracts from September in FY 2015 for <span id="page2Recipient"></span>
+			</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<div data-role="collapsible-set" data-inset="true" id="cSet">
+			</div>
+		</div>
+		<div data-role="footer"><h4>&copy; 2015 GSA.gov</h4></div>
+	</div>
+
+</body>
+</html>

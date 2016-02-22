@@ -1,0 +1,147 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Collapsible</title>
+	
+	<script src="jquery-2.1.4.min.js"></script>
+
+	<link rel="stylesheet" href="theme.blue.css">
+	<script src="jquery.tablesorter.min.js"></script>
+	<script src="jquery.tablesorter.widgets.js"></script>
+
+	<!-- Grouping widget -->
+	<script src="parser-input-select.js"></script>
+	<script src="widget-grouping.js"></script>
+	
+	<script type="text/javascript">
+		$(function(){
+
+		  $("#groups").tablesorter({
+		    theme : "blue",
+		    widgets: [ "group", "filter", "zebra" ],
+		    widgetOptions: {
+		      group_collapsible : true,  // make the group header clickable and collapse the rows below it.
+		      group_collapsed   : true, // start with all groups collapsed (if true)
+		      group_count       : " ({num})", // if not false, the "{num}" string is replaced with the number of rows in the group
+
+		      group_enforceSort : false // only apply group_forceColumn when a sort is applied to the table
+
+		    }
+		  });
+
+		});
+	</script>
+
+	<style type="text/css">
+	tr.group-header td {
+	  background: #eee;
+	}
+	.group-name {
+	  text-transform: uppercase;
+	  font-weight: bold;
+	}
+	.group-count {
+	  color: #999;
+	}
+	.group-hidden {
+	  display: none;
+	}
+	.group-header, .group-header td {
+	  user-select: none;
+	  -moz-user-select: none;
+	}
+	/* collapsed arrow */
+	tr.group-header td i {
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border-top: 4px solid transparent;
+	  border-bottom: 4px solid #888;
+	  border-right: 4px solid #888;
+	  border-left: 4px solid transparent;
+	  margin-right: 7px;
+	  user-select: none;
+	  -moz-user-select: none;
+	}
+	tr.group-header.collapsed td i {
+	  border-top: 5px solid transparent;
+	  border-bottom: 5px solid transparent;
+	  border-left: 5px solid #888;
+	  border-right: 0;
+	  margin-right: 10px;
+	}
+</style>
+	
+</head>
+
+<body>
+
+<table id="groups">
+  <thead>
+    <tr>
+      <th class="group-word"></th> <!-- checkbox status -->
+      <th class="group-number">Quality (number)</th> <!-- notice this uses the same class name as the Numeric column, it's just left at 1 -->
+      <th class="group-number-10">Numeric (every <span>10</span>)</th>
+      <th class="group-letter-1">Priority (letter)</th>
+      <th class="group-letter-1">Animals (first <span>letter</span>)</th>
+      <th class="group-word-1">Natural Sort (first word)</th>
+      <th class="group-word-2">Inputs (second word)</th>
+      <!-- try "group-date", "group-date-year", "group-date-month", "group-data-monthyear", "group-date-day", "group-date-week" or "group-date-time" -->
+      <th class="group-date">Date (<span>Full</span>)</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>Quality</th>
+      <th>Numeric</th>
+      <th>Priority</th>
+      <th>Animals</th>
+      <th>Natural Sort</th>
+      <th>Inputs</th>
+      <th>Date</th>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+    	<td>A</td>
+    	<td>B</td>
+    	<td>C</td>
+    	<td>C</td>
+    	<td>D</td>
+    	<td>E</td>
+    	<td>E</td>
+    </tr>
+    <tr>
+    	<td>C</td>
+    	<td>A</td>
+    	<td>B</td>
+    	<td>C</td>
+    	<td>E</td>
+    	<td>D</td>
+    	<td>E</td>
+    </tr>
+    <tr>
+    	<td>A</td>
+    	<td>B</td>
+    	<td>C</td>
+    	<td>C</td>
+    	<td>D</td>
+    	<td>E</td>
+    	<td>E</td>
+    </tr>
+    <tr>
+    	<td>C</td>
+    	<td>A</td>
+    	<td>B</td>
+    	<td>C</td>
+    	<td>E</td>
+    	<td>D</td>
+    	<td>E</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

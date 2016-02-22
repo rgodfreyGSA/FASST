@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usaspendingSearchResults xmlns="http://www.usaspending.gov/schemas/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <search_criteria>
+      <search_criterion field="detail" value="s" />
+      <search_criterion field="sortby" value="OBLIGATED_AMOUNT desc" />
+      <search_criterion field="records_from" value="0" />
+      <search_criterion field="max_records" value="1000" />
+   </search_criteria>
+   <data compiled_from_government_data_last_released_on="TBD" database="FPDS" description="U.S. Federal contracts">
+      <record database="FPDS" description="summary records for search" detail="summary">
+         <totals>
+            <fiscal_year year="2015">2015</fiscal_year>
+            <total_ObligatedAmount>76357932735.7700</total_ObligatedAmount>
+            <percent_of_fiscal_year>20.8600</percent_of_fiscal_year>
+            <number_of_contractors>62584</number_of_contractors>
+            <number_of_transactions>467332</number_of_transactions>
+         </totals>
+         <extent_of_competition description="total obligated amount dollars by extent of competition in contracts" />
+         <type_of_contract_used description="total obligated amount dollars by type of contract used in contracts" />
+         <top_known_congressional_districts description="total obligated amount dollars by type of contract used in contracts" maximum_shown="5" ranked_by="total obligated amount in dollars">
+            <congressional_district rank="1" total_obligatedAmount="6136777876.3900">TX12</congressional_district>
+            <congressional_district rank="2" total_obligatedAmount="3629214115.1200">DC00</congressional_district>
+            <congressional_district rank="3" total_obligatedAmount="2728917054.8900">TN03</congressional_district>
+            <congressional_district rank="4" total_obligatedAmount="2504579834.2700">VA08</congressional_district>
+            <congressional_district rank="5" total_obligatedAmount="2346874725.3400">PA14</congressional_district>
+            <congressional_district rank="6" total_obligatedAmount="2251245113.1600">VA11</congressional_district>
+            <congressional_district rank="7" total_obligatedAmount="2027563856.6000">NM01</congressional_district>
+            <congressional_district rank="8" total_obligatedAmount="1767477735.4000">MO01</congressional_district>
+            <congressional_district rank="9" total_obligatedAmount="1760762859.9000">VA10</congressional_district>
+            <congressional_district rank="10" total_obligatedAmount="1689670798.6300">CT03</congressional_district>
+            <congressional_district rank="11" total_obligatedAmount="1597538098.9600">CT01</congressional_district>
+            <congressional_district rank="12" total_obligatedAmount="1219486454.7000">WA04</congressional_district>
+            <congressional_district rank="13" total_obligatedAmount="1197660488.2400">KY03</congressional_district>
+            <congressional_district rank="14" total_obligatedAmount="1146091422.5300">SC02</congressional_district>
+            <congressional_district rank="15" total_obligatedAmount="1126772803.3200">AL05</congressional_district>
+         </top_known_congressional_districts>
+         <top_products_or_services_sold maximum_shown="15" ranked_by="total obligated amount in dollars">
+            <product_or_service_category rank="1" total_obligatedAmount="9606507143.8500">Aircraft And Airframe Structural Components</product_or_service_category>
+            <product_or_service_category rank="2" total_obligatedAmount="8914684706.8100">Operation Of Structures/Facilities</product_or_service_category>
+            <product_or_service_category rank="3" total_obligatedAmount="8135954012.2600">Support (Professional/Administrative/Management)</product_or_service_category>
+            <product_or_service_category rank="4" total_obligatedAmount="5053193384.4700">Information Technology And Telecommunications</product_or_service_category>
+            <product_or_service_category rank="5" total_obligatedAmount="4659478103.3600">Research And Development</product_or_service_category>
+            <product_or_service_category rank="6" total_obligatedAmount="4231890917.2800">Medical</product_or_service_category>
+            <product_or_service_category rank="7" total_obligatedAmount="3499376526.3500">Medical, Dental, And Veterinary Equipment And Supplies</product_or_service_category>
+            <product_or_service_category rank="8" total_obligatedAmount="3471815068.7000">Utilities And Housekeeping</product_or_service_category>
+            <product_or_service_category rank="9" total_obligatedAmount="2994534984.0500">Maintenance, Repair, And Rebuilding Of Equipment</product_or_service_category>
+            <product_or_service_category rank="10" total_obligatedAmount="1927763559.5000">Construction Of Structures/Facilities</product_or_service_category>
+            <product_or_service_category rank="11" total_obligatedAmount="1901743831.0500">Engines, Turbines, And Components</product_or_service_category>
+            <product_or_service_category rank="12" total_obligatedAmount="1663353214.1500">Automatic Data Processing Equipment (Including Firmware), Software, Supplies And Support Equipment</product_or_service_category>
+            <product_or_service_category rank="13" total_obligatedAmount="1551076012.5200">Guided Missiles</product_or_service_category>
+            <product_or_service_category rank="14" total_obligatedAmount="1507079393.2100">Maintenance, Repair, Alteration Of Structures/Facilities</product_or_service_category>
+            <product_or_service_category rank="15" total_obligatedAmount="1257067027.7900">Communication, Detection, And Coherent Radiation Equipment</product_or_service_category>
+         </top_products_or_services_sold>
+         <top_contracting_agencies maximum_shown="15" ranked_by="total obligated amount in dollars" />
+         <top_recipients maximum_shown="15" ranked_by="total obligated amount in dollars">
+            <recipient rank="1" total_obligatedAmount="8955288815.7200">LOCKHEED MARTIN CORPORATION</recipient>
+            <recipient rank="2" total_obligatedAmount="2031121197.1300">BOEING COMPANY, THE</recipient>
+            <recipient rank="3" total_obligatedAmount="1881946021.0200">SANDIA CORP</recipient>
+            <recipient rank="4" total_obligatedAmount="1706753760.8600">MCKESSON CORPORATION</recipient>
+            <recipient rank="5" total_obligatedAmount="1662967962.8200">CONSOLIDATED NUCLEAR SECURITY LLC</recipient>
+            <recipient rank="6" total_obligatedAmount="1645674819.9000">SIKORSKY AIRCRAFT CORPORATION</recipient>
+            <recipient rank="7" total_obligatedAmount="1547857623.2400">UNITED TECHNOLOGIES CORPORATION</recipient>
+            <recipient rank="8" total_obligatedAmount="1440129396.7700">BECHTEL MARINE PROPULSION CORPORATION</recipient>
+            <recipient rank="9" total_obligatedAmount="1124115906.2300">HUMANA MILITARY HEALTHCARE SERVICES, INC.</recipient>
+            <recipient rank="10" total_obligatedAmount="1074851081.7400">RAYTHEON COMPANY</recipient>
+            <recipient rank="11" total_obligatedAmount="831911975.8700">UT BATTELLE LIMITED LIABILITY COMPANY</recipient>
+            <recipient rank="12" total_obligatedAmount="822019249.0000">BECHTEL PLANT MACHINERY, INC.</recipient>
+            <recipient rank="13" total_obligatedAmount="700347760.7600">THE BOEING COMPANY</recipient>
+            <recipient rank="14" total_obligatedAmount="625678238.4700">NORTHROP GRUMMAN SYSTEMS CORPORATION</recipient>
+            <recipient rank="15" total_obligatedAmount="608416914.4700">HEALTH NET FEDERAL SERVICES, LLC</recipient>
+         </top_recipients>
+         <top_contractor_parent_companies maximum_shown="15" ranked_by="total obligated amount in dollars">
+            <contractor_parent_company rank="15" total_obligatedAmount="593827873.4400">BATTELLE MEMORIAL INSTITUTE INC</contractor_parent_company>
+         </top_contractor_parent_companies>
+         <fiscal_years description="total Federal obligated amount in dollars by year">
+            <fiscal_year year="2015">2015</fiscal_year>
+         </fiscal_years>
+      </record>
+   </data>
+</usaspendingSearchResults>

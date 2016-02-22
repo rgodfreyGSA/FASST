@@ -1,0 +1,451 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>CAP USA Spending Data</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+
+	<link rel="stylesheet" href="bootstrap.min.css" />
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+	<link rel="stylesheet" href="theme.blue2.css" />
+
+	<script src="jquery-2.1.4.min.js"></script>
+
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script src="jquery.formatCurrency-1.4.0.min.js"></script>
+	<script src="biginteger.js"></script>
+
+
+
+
+	<script src="bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="theme.blue.css" type="text/css" media="print, projection, screen" />
+	<script src="jquery.tablesorter.min.js"></script>
+
+	<script src="jquery.tablesorter.widgets.js"></script>
+	<script src="widget-columnSelector.js"></script>
+
+	<script src="parser-input-select.js"></script>
+	<script src="widget-grouping.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+	<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+
+
+
+	<script type='text/javascript'>
+
+
+
+var displayMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var day = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', 
+	  '10', '11', '12', '13', '14', '15', '16', '17', '18', '19',
+	  '20', '21', '22', '23', '24', '25', '26', '27', '28', '29',
+	  '30', '31'];
+
+var rawXmlCache = "";
+var contractData = [];
+var contractHeaders = [];
+
+$(document).ready(function () {
+
+	$.ajax({
+		xhr: function() {
+			var xhr = new window.XMLHttpRequest();
+			xhr.addEventListener("progress", function(evt) {
+				if (evt.lengthComputable) {
+					var percentComplete = evt.loaded / evt.total;
+					$("#percentComplete").text(Math.round(percentComplete * 100) + '%');
+				}
+			}, false);
+			return xhr;
+		},
+		type: "GET",
+		url: "DataDownloads/Data_Feed FY 2016 1109 HSA.xml",
+		dataType: "xml"
+	})
+		.done(function(xml) {
+			$("#percentComplete").remove();
+			xmlCache = xml;
+			xmlParser(xmlCache);
+		})
+		.fail(function(e) {
+			//$("#errorPopup").popup("open");
+		});
+
+
+
+
+	$.mobile.popup.prototype.options.history = false;
+
+
+
+	$("#navPanel").on("panelopen", function(event, ui) {
+		$("#panelBtn").hide();
+	});
+	$("#navPanel").on("panelclose", function(event, ui) {
+		$("#panelBtn").show();
+	});
+
+});
+
+	google.load('visualization', '1', {'packages': ['geochart']});
+	//google.setOnLoadCallback(drawMarkersMap);
+
+
+function drawMarkersMap(array) {
+
+	var data = google.visualization.arrayToDataTable(array);
+
+	var options = {
+		region: 'US',
+		displayMode: 'markers',
+		colorAxis: {colors: ['green', 'blue']},
+		backgroundColor: '#81d4fa'
+	};
+
+	var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+	chart.draw(data, options);
+}
+
+function xmlParser(xml) {
+
+
+	$(xml).find("doc").each(function () {
+
+		var signedDate = new Date($(this).find("signeddate").text());
+		var completionDate = new Date($(this).find("ultimatecompletiondate").text());
+
+		var contractObj = {
+			piid: $(this).find("piid").text(),
+			amount: parseInt($(this).find("dollarsobligated").text()),
+			optionsamount: parseInt($(this).find("baseandalloptionsvalue").text()),
+			exercisedamount: parseInt($(this).find("baseandexercisedoptionsvalue").text()),
+			majAgencyCode: $(this).find("maj_agency_cat").text().substring(0,4),
+			majAgency: $(this).find("maj_agency_cat").text().substring($(this).find("maj_agency_cat").text().indexOf(":") + 2, $(this).find("maj_agency_cat").text().length),
+			majFundAgencyCode: $(this).find("maj_fund_agency_cat").text().substring(0,4),
+			majFundAgency: $(this).find("maj_fund_agency_cat").text().substring($(this).find("maj_fund_agency_cat").text().indexOf(":") + 2, $(this).find("maj_fund_agency_cat").text().length),
+			contractingAgencyCode: $(this).find("contractingofficeagencyid").text().substring(0,4),
+			contractingAgency: $(this).find("contractingofficeagencyid").text().substring($(this).find("contractingofficeagencyid").text().indexOf(":") + 2, $(this).find("contractingofficeagencyid").text().length),
+			contractingOfficeCode: $(this).find("contractingofficeid").text().substring(0,6),
+			contractingOffice: $(this).find("contractingofficeid").text().substring($(this).find("contractingofficeid").text().indexOf(":") + 2, $(this).find("contractingofficeid").text().length),
+			fundRequestingOfficeCode:$(this).find("fundingrequestingofficeid").text().substring(0,4),
+			fundRequestingOffice: $(this).find("fundingrequestingofficeid").text().substring($(this).find("fundingrequestingofficeid").text().indexOf(":") + 2, $(this).find("fundingrequestingofficeid").text().length),
+			contractPricingType: $(this).find("typeofcontractpricing").text().substring($(this).find("typeofcontractpricing").text().indexOf(":") + 2, $(this).find("typeofcontractpricing").text().length),
+			transactionStatus: $(this).find("transaction_status").text(),
+			completionDate: displayMonth[completionDate.getMonth()] + ' ' + day[completionDate.getDate()] + ', ' + completionDate.getFullYear(),
+			contractType: $(this).find("contractactiontype").text().substring($(this).find("contractactiontype").text().indexOf(":") + 2, $(this).find("contractactiontype").text().length),
+			description: $(this).find("descriptionofcontractrequirement").text(),
+			vendorName: $(this).find("vendorname").text(),
+			product: $(this).find("productorservicecode").text().substring($(this).find("productorservicecode").text().indexOf(":") + 2, $(this).find("productorservicecode").text().length),
+			city: $(this).find("city").text(),
+			state: $(this).find("state").text(),
+			signedDate: displayMonth[signedDate.getMonth()] + ' ' + day[signedDate.getDate()] + ', ' + signedDate.getFullYear()
+		}
+
+		contractData.push(contractObj);
+
+	});
+
+
+	contractData.sort(function(x,y){return  y.amount - x.amount});
+
+
+	$("#page1QueryLength").html(contractData.length);
+
+
+
+	$("#tableContainer").html(
+		'<table class="tablesorter bootstrap-popup">' +
+			'<thead>' +
+				'<tr>' +
+					'<th class="checkHead">&nbsp;</th>' +
+					'<th class="group-text">' +
+						'Amount' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Base + All Options Value' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Base + Exercised Options Value' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'PIID' +
+					'</th>' +
+					'<th class="group-text" data-priority="1">' +
+						'Vendor Name' +
+					'</th>' +
+					'<th class="group-text" data-priority="1">' +
+						'Location' +
+					'</th>' +
+					'<th class="group-text" data-priority="1">' +
+						'Product' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Major Agency' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Major Funding Agency' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Contracting Agency' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Contracting Office' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Funding Requesting Office' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Contract Pricing Type' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Contract Type' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Transaction Status' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Signed Date' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Completion Date' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Description' +
+					'</th>' +
+				'</tr>' +
+			'</thead>' +
+			'<tbody>' +
+			'</tbody>' +
+		'</table>'
+	);
+
+
+
+
+
+	loadContracts();
+
+
+
+
+
+	$("table").tablesorter({
+		sortList: [[5,0]],
+		theme: 'blue',
+		widthFixed: true,
+		headers: {
+			'.checkHead' : {
+				sorter: false
+			}
+		},
+		widgets: ['group', 'zebra', 'columnSelector', 'uitheme', 'filter', 'stickyHeaders'],
+		widgetOptions : {
+			columnSelector_saveColumns: false,
+			columnSelector_mediaqueryHidden: true,
+			filter_hideFilters : true,
+
+			group_collapsible : true,
+			group_collapsed   : true,
+			group_saveGroups  : false
+			
+		}
+	});
+
+	$.tablesorter.columnSelector.attachTo( $('table'), '#popover-target');
+
+
+	$('#popover').popover({
+		placement: 'left',
+		html: true,
+		trigger: 'manual',
+		content: $('#popover-target')
+	}).click(function(e) {
+		$('#popover').not(this).popover('hide');
+		$(this).popover('toggle');
+	});
+
+
+	$(document).click(function(e) {
+		if (!$(e.target).is('#popover') && !$(e.target).parents('.popover').length > 0) {
+			$('#popover').popover('hide');
+		}
+	});
+
+
+	$("#visLocation").click(function(e) {
+		var visLocationArray = [];
+		visLocationArray.push(['City', 'Amount']);
+		$("#tableContainer tbody input[type=checkbox]").each(function () {
+			if (this.checked == true) {
+				var thisLocation = $(this).parent().parent().find("td[data-location]").attr("data-location");
+				//var thisAmount = $(this).parent().parent().find("td[data-amount]").text();
+				var thisAmount = parseInt($(this).parent().parent().find("td[data-amount]").attr("data-amount"));
+				visLocationArray.push([thisLocation, thisAmount]);
+				//console.log($(this).parent().parent().find("td[data-amount]").text());
+			}
+		});
+		//console.log(visLocationArray);
+		drawMarkersMap(visLocationArray);
+
+	});
+
+
+}
+
+function loadContracts() {
+
+
+	for (var i=0; i < contractData.length; i++) {
+
+		$("#tableContainer tbody").append(
+			'<tr>' +
+				'<td>' +
+					'<input type="checkbox">' +
+				'</td>' +
+				'<td class="contractAmount" data-amount="' + contractData[i].amount + '">' +
+					contractData[i].amount +
+				'</td>' +
+				'<td class="contractAmount">' +
+					contractData[i].optionsamount +
+				'</td>' +
+				'<td class="contractAmount">' +
+					contractData[i].exercisedamount +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].piid +
+				'</td>' +
+				'<td>' +
+					contractData[i].vendorName +
+				'</td>' +
+				'<td data-location="' + contractData[i].city + ', ' + contractData[i].state + '">' +
+					contractData[i].city + ', ' + contractData[i].state +
+				'</td>' +
+				'<td>' +
+					contractData[i].product +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].majAgency +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].majFundAgency +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].contractingAgency +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].contractingOffice +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].fundRequestingOffice +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].contractPricingType +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].contractType +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].transactionStatus +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].signedDate +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].completionDate +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					contractData[i].description +
+				'</td>' +
+			'</tr>'
+		);
+
+
+	};
+
+
+	updateTotal();
+
+
+	$("table").trigger("update"); 
+
+
+}
+
+function updateTotal() {
+
+	var totalContractMoney = new BigInteger(0);
+
+	$("#tableContainer tbody").find(".contractAmount").each(function() {
+		if ($(this).html() == 'NaN') {
+			$(this).html('0');
+		}
+		var amount = $(this).html().replace("$", "");
+		amount = amount.replace(/,/g, '');
+		amount = amount.replace('(', '-');
+		amount = amount.replace(')', '');
+		amount = new BigInteger.parse(amount);
+		totalContractMoney = totalContractMoney.add(amount);
+		$(this).formatCurrency();
+	});
+	$("#contractsTotal").text(totalContractMoney).formatCurrency();
+
+
+	//$("#contractCount").text($("#tableContainer tbody tr").length);
+
+
+}
+
+	</script>
+</head>
+<body>
+
+
+	<div data-role="popup" id="errorPopup" data-overlay-theme="a" data-theme="b">
+		<p>Error with request, please try again.</p>
+	</div>
+	<div data-role="page" id="page1">
+		<div data-role="header">
+			<h1 id="page1Title">
+				<span id="page1QueryLength"></span> HSA contracts on November 9th in FY 2016
+			</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<div id="percentComplete"></div>
+			<a id="popover" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Columns...</a>
+			<a id="visLocation" data-target="#locModal" data-toggle="modal" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Visualize Location</a>
+			<div id="totalBox">Total: <span id="contractsTotal">$0</span></div>
+			<div class="hidden"><div id="popover-target"></div></div>
+			<div id="tableContainer" data-inset="true"></div>
+		</div>
+		<div id="locModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Location Map</h4>
+					</div>
+					<div class="modal-body">
+						<div id="chart_div"></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed"><h4>&copy; 2015 GSA.gov</h4></div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CAP Answers</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="http://www.bendewey.com/code/formatcurrency/jquery.formatCurrency-1.4.0.js"></script>
+	<script src="biginteger.js"></script>
+	<style type="text/css">
+		.accordianBody {
+			font-size: 11px;
+		}
+		body {
+			font-family: Verdana,Arial,sans-serif;
+		}
+		h3 {
+			font-size: 13px !important;
+		}
+		.contractAmount {
+			width: 130px;
+			display: inline-block;
+			text-align: right;
+			margin-right: 30px;
+			font-size: 12px;
+		}
+		.recipient {
+			width: 300px;
+			display: inline-block;
+			margin-right: 30px;
+			font-size: 12px;
+		}
+		.contractDate {
+			width: 130px;
+			display: inline-block;
+			margin-right: 30px;
+		}
+	</style>
+</head>
+<body>
+
+	<script>
+
+		var displayMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		var day = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', 
+			  '10', '11', '12', '13', '14', '15', '16', '17', '18', '19',
+			  '20', '21', '22', '23', '24', '25', '26', '27', '28', '29',
+			  '30', '31'];
+
+		$(document).ready(function () {
+			$.ajax({
+				type: "GET",
+				url: "https://www.usaspending.gov/fpds/fpds.php?detail=s&fiscal_year=2015&maximum_shown=100",
+				dataType: "xml"
+			})
+				.done(function(xml) {
+					xmlParser(xml);
+				})
+				.fail(function() {
+					alert("Error with request, please refresh.");
+				});
+		});
+
+		function xmlParser(xml) {
+
+			var contractData = [];
+
+
+			$(xml).find("recipient").each(function () {
+
+				contractData.push({
+					rank: $(this).attr("rank"),
+					amount: parseInt($(this).attr("total_obligatedAmount")),
+					recipient: $(this).text()
+				});
+
+			});
+
+			/*function SortByProduct(a, b){
+				var aProduct = a.product.toLowerCase();
+				var bProduct = b.product.toLowerCase(); 
+				return ((aProduct < bProduct) ? -1 : ((aProduct > bProduct) ? 1 : 0));
+			}
+
+			contractData.sort(SortByProduct);*/
+
+
+			console.log(contractData.length);
+
+			for (var i=0; i < contractData.length; i++) {
+
+				
+
+				$("#recipientList").append(
+					'<li>' +
+						'<div class="recipient">' +
+							'<a href="Answer3b.html?recipient=' + contractData[i].recipient + '">' +
+								contractData[i].recipient +
+							'</a>' +
+						'</div>' +
+						'<div class="contractAmount">' +
+							contractData[i].amount +
+						'</div>' +
+					'</li>'
+				);
+
+
+
+			};
+
+
+			$('.contractAmount').formatCurrency();
+
+
+			$("#queryTitle").html('Top ' + contractData.length + ' contract recipients by total obligated amount in dollars');
+
+
+		}
+
+
+	</script>
+
+	<h2 id="queryTitle"></h2>
+	<ol id="recipientList"></ol>
+
+</body>
+</html>

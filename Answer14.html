@@ -1,0 +1,687 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>FAAS USA Spending Data</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+
+	<link rel="stylesheet" href="bootstrap.min.css" />
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+	<link rel="stylesheet" href="theme.blue2.css" />
+
+	<script src="jquery-2.1.4.min.js"></script>
+
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script src="jquery.formatCurrency-1.4.0.min.js"></script>
+	<script src="biginteger.js"></script>
+
+
+
+
+	<script src="bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="theme.blue.css" type="text/css" media="print, projection, screen" />
+	<script src="jquery.tablesorter.min.js"></script>
+
+	<script src="jquery.tablesorter.widgets.js"></script>
+	<script src="widget-columnSelector.js"></script>
+
+	<script src="parser-input-select.js"></script>
+	<script src="widget-grouping.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+	<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+
+
+
+	<script type='text/javascript'>
+
+
+
+var displayMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var day = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', 
+	  '10', '11', '12', '13', '14', '15', '16', '17', '18', '19',
+	  '20', '21', '22', '23', '24', '25', '26', '27', '28', '29',
+	  '30', '31'];
+
+var rawJsonCache = "";
+var contractData = [];
+var contractHeaders = [];
+var visGroupArray = [];
+
+$(document).ready(function () {
+
+	$.ajax({
+		xhr: function() {
+			var xhr = new window.XMLHttpRequest();
+			xhr.addEventListener("progress", function(evt) {
+				if (evt.lengthComputable) {
+					var percentComplete = evt.loaded / evt.total;
+					$("#percentComplete").text(Math.round(percentComplete * 100) + '%');
+				}
+			}, false);
+			return xhr;
+		},
+		type: "GET",
+		url: "ContractWebService.cfm",
+        contentType: "application/json"
+	})
+	.done(function(json) {
+		rawJsonCache = json;
+		setupTable();
+	})
+	.fail(function(e) {
+		console.log('Failed to load data.');
+		console.log(e);
+		//$("#errorPopup").popup("open");
+	});
+
+
+
+
+	$.mobile.popup.prototype.options.history = false;
+
+
+
+	$("#visGroup").hide();
+
+
+	$("#clearBtn").click(function() {
+		$("#tableContainer tbody input[type=checkbox]").attr("checked",false);
+		$("#visGroup").hide();
+	});
+
+
+	$("#sideList").enhanceWithin().controlgroup("refresh");
+
+
+	$("#panelBtn").click(function() {
+
+		$("#sideList").html('');
+
+		var sortedCol = $("#tableContainer").find("th[aria-sort='ascending']").first();
+		if (sortedCol.length == 0) {
+			sortedCol = $("#tableContainer").find("th[aria-sort='descending']").first();
+		}
+
+		$("#navPanel").find("h3").html(sortedCol.text());
+
+
+		$("#tableContainer").find("span.group-name").each(function () {
+
+			$("#sideList").append(
+				'<input type="checkbox" id="' + $(this).text().replace(' ', '') + '" checked>' +
+				'<label for="' + $(this).text().replace(' ', '') + '">' + $(this).text() + '</label>'
+			);
+		});
+
+
+
+		$("#sideList").enhanceWithin().controlgroup("refresh");
+
+
+
+		$("#sideList input[type=checkbox]").click(function () {
+
+			var checkLabel = $(this).parent().find("label").text();
+
+			$("#tableContainer").find("span.group-name").each(function () {
+
+				if (checkLabel == $(this).text()) {
+					//console.log($(this).parent().parent().next());
+
+					var keepSearching = true;
+					var nextRow = $(this).parent().parent().next();
+					while (keepSearching) {
+						
+						if (nextRow.attr("role") == "row") {
+							
+							if (nextRow.next().length == 1) {
+								nextRow = nextRow.next();
+								nextRow.prev().remove();
+							} else {
+								nextRow.remove();
+								keepSearching = false;
+								break;
+							}
+							
+						} else {
+							keepSearching = false;
+							break;
+						}
+
+					}
+					//console.log($(this).parent().parent().nextAll("tr[role='row']").length);
+
+					$(this).parent().parent().remove();
+					$("#tableContainer").find("table").trigger("update");
+
+					updateTotal();
+
+					$("#page1QueryLength").html($("#tableContainer tbody").find("tr[role='row']").length);
+				}
+
+			});
+
+		});
+
+
+
+	});
+
+});
+
+	google.load('visualization', '1', {'packages': ['geochart', 'corechart']});
+	//google.setOnLoadCallback(drawMarkersMap);
+
+
+function drawMarkersMap(array) {
+
+	var data = google.visualization.arrayToDataTable(array);
+
+	var options = {
+		region: 'US',
+		displayMode: 'markers',
+		colorAxis: {colors: ['green', 'blue']},
+		backgroundColor: '#81d4fa'
+	};
+
+	var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+	chart.draw(data, options);
+}
+
+
+function drawChart(array) {
+
+	var data = google.visualization.arrayToDataTable(array);
+
+	var options = {
+		is3D: true
+	};
+
+	var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+	chart.draw(data, options);
+}
+
+function setupTable() {
+
+
+
+	$("#page1QueryLength").html(rawJsonCache.ROWCOUNT);
+
+
+
+	$("#tableContainer").html(
+		'<table class="tablesorter bootstrap-popup">' +
+			'<thead>' +
+				'<tr>' +
+					'<th class="checkHead columnSelector-disable">&nbsp;</th>' +
+					'<th class="group-text">' +
+						'Amount' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Base + All Options Value' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Base + Exercised Options Value' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'PIID' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'IDV PIID' +
+					'</th>' +
+					'<th class="group-text" data-priority="1">' +
+						'Vendor Name' +
+					'</th>' +
+					'<th class="group-text" data-priority="1">' +
+						'Place of Performance' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Product or Service Code' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Product or Service Category' +
+					'</th>' +
+					'<th class="group-text" data-priority="1">' +
+						'Product or Service' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Major Agency' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Major Funding Agency' +
+					'</th>' +
+					'<th data-priority="1" class="group-text">' +
+						'Contracting Agency' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Contracting Office' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Funding Requesting Office' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Contract Pricing Type' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Contract Type' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Transaction Status' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Signed Date' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Completion Date' +
+					'</th>' +
+					'<th data-priority="6" class="columnSelector-false group-text">' +
+						'Description' +
+					'</th>' +
+				'</tr>' +
+			'</thead>' +
+			'<tbody>' +
+			'</tbody>' +
+		'</table>'
+	);
+
+
+
+
+
+	loadContracts();
+
+
+
+
+
+	$("table").tablesorter({
+		sortList: [[13,0]],
+		theme: 'blue',
+		widthFixed: true,
+		headers: {
+			'.checkHead' : {
+				sorter: false
+			}
+		},
+		widgets: ['group', 'zebra', 'columnSelector', 'uitheme', 'filter', 'stickyHeaders'],
+		widgetOptions : {
+			columnSelector_saveColumns: false,
+			columnSelector_mediaqueryHidden: true,
+			filter_hideFilters : true,
+
+			group_collapsible : true,
+			group_collapsed   : true,
+			group_saveGroups  : false
+			
+		}
+	}).bind("sortEnd",function() { 
+		$.tablesorter.refreshWidgets($('table')[0], true, false);
+    });
+
+
+
+	$.tablesorter.columnSelector.attachTo( $('table'), '#popover-target');
+
+
+	$('#popover').popover({
+		placement: 'left',
+		html: true,
+		trigger: 'manual',
+		content: $('#popover-target')
+	}).click(function(e) {
+		$('#popover').not(this).popover('hide');
+		$(this).popover('toggle');
+	});
+
+
+	$(document).click(function(e) {
+		if (!$(e.target).is('#popover') && !$(e.target).parents('.popover').length > 0) {
+			$('#popover').popover('hide');
+		}
+	});
+
+
+	$("#visLocation").click(function(e) {
+		var visLocationArray = [];
+		visLocationArray.push(['City', 'Amount']);
+		$("#tableContainer tbody input[type=checkbox]").each(function () {
+			if (this.checked == true) {
+				var thisLocation = $(this).parent().parent().find("td[data-location]").attr("data-location");
+				//var thisAmount = $(this).parent().parent().find("td[data-amount]").text();
+				var thisAmount = parseInt($(this).parent().parent().find("td[data-amount]").attr("data-amount"));
+				visLocationArray.push([thisLocation, thisAmount]);
+				//console.log($(this).parent().parent().find("td[data-amount]").text());
+			}
+		});
+		$("h4.modal-title").html("Location Map");
+		
+		$('#locModal').on('shown.bs.modal', function() {
+			drawMarkersMap(visLocationArray);
+		})
+
+	});
+
+	var graphGroup = '';
+
+	$("#tableContainer tbody input[type=checkbox]").click(function () {
+		graphGroup = $(this).parent().parent().prevAll("tr.group-header").first().find("span.group-name").text();
+		$("#visGroup").html("Graph Selected Contracts by " + graphGroup.toUpperCase());
+		$("#visGroup").show();
+	});
+
+	$("#visGroup").click(function(e) {
+		visGroupArray = [];
+		
+		visGroupArray.push(['Product', 'Amount']);
+		$("#tableContainer tbody input[type=checkbox]").each(function () {
+			if (this.checked == true) {
+				if ($(this).parent().parent().prevAll("tr.group-header").first().find("span.group-name").text() == graphGroup) {
+					var thisProduct = $(this).parent().parent().find("td[data-product]").attr("data-product");
+					var thisAmount = parseInt($(this).parent().parent().find("td[data-amount]").attr("data-amount"));
+					visGroupArray.push([thisProduct, thisAmount]);
+				}
+			}
+		});
+		$("h4.modal-title").html("Contracts by " + graphGroup.toUpperCase());
+
+		$('#locModal').on('shown.bs.modal', function() {
+			drawChart(visGroupArray);
+		})
+		
+
+	});
+
+
+	$("#percentComplete").remove();
+
+
+}
+
+function parseProductCategory(productCode) {
+
+	var category = '';
+	var switchCode = productCode.toString();
+	switchCode = switchCode.substring(0,1);
+
+	switch(switchCode) {
+		case 'A':
+			category = 'RESEARCH AND DEVELOPMENT';
+			break;
+		case 'B':
+			category = 'SPECIAL STUDIES/ANALYSIS, NOT R and D';
+			break;
+		case 'C':
+			category = 'ARCHITECT/ENGINEER SERVICES';
+			break;
+		case 'D':
+			category = 'ADP AND TELECOMMUNICATIONS';
+			break;
+		case 'E':
+			category = 'PURCHASE OF STRUCTURES/FACILITIES';
+			break;
+		case 'F':
+			category = 'NATURAL RESOURCES MANAGEMENT';
+			break;
+		case 'G':
+			category = 'SOCIAL SERVICES';
+			break;
+		case 'H':
+			category = 'QUALITY CONTROL, TEST, INSPECTION';
+			break;
+		case 'J':
+			category = 'MAINT, REPAIR, REBUILD EQUIPMENT';
+			break;
+		case 'K':
+			category = 'MODIFICATION OF EQUIPMENT';
+			break;
+		case 'L':
+			category = 'TECHNICAL REPRESENTATIVE SVCS.';
+			break;
+		case 'M':
+			category = 'OPERATION OF GOVT OWNED FACILITY';
+			break;
+		case 'N':
+			category = 'INSTALLATION OF EQUIPMENT';
+			break;
+		case 'P':
+			category = 'SALVAGE SERVICES';
+			break;
+		case 'Q':
+			category = 'MEDICAL SERVICES';
+			break;
+		case 'R':
+			category = 'SUPPORT SVCS (PROF, ADMIN, MGMT)';
+			break;
+		case 'S':
+			category = 'UTILITIES AND HOUSEKEEPING';
+			break;
+		case 'T':
+			category = 'PHOTO, MAP, PRINT, PUBLICATION';
+			break;
+		case 'U':
+			category = 'EDUCATION AND TRAINING';
+			break;
+		case 'V':
+			category = 'TRANSPORT, TRAVEL, RELOCATION';
+			break;
+		case 'W':
+			category = 'LEASE/RENT EQUIPMENT';
+			break;
+		case 'X':
+			category = 'LEASE/RENT FACILITIES';
+			break;
+		case 'Y':
+			category = 'CONSTRUCT OF STRUCTURES/FACILITIES';
+			break;
+		case 'Z':
+			category = 'MAINT, REPAIR, ALTER REAL PROPERTY';
+			break;
+		default:
+			category = '';
+			break;
+	}
+
+	return category;
+}
+
+function loadContracts() {
+
+
+
+
+	$.each(rawJsonCache.DATA.CONTRACTID, function (i, itemData) {
+
+		var placeOfPerformance;
+		if (rawJsonCache.DATA.CITY[i] != '' && rawJsonCache.DATA.STATE[i] != '') {
+			placeOfPerformance = rawJsonCache.DATA.CITY[i] + ', ' + rawJsonCache.DATA.STATE[i];
+		} else if (rawJsonCache.DATA.CITY[i] != '') {
+			placeOfPerformance = rawJsonCache.DATA.CITY[i];
+		} else if (rawJsonCache.DATA.STATE[i] != '') {
+			placeOfPerformance = rawJsonCache.DATA.STATE[i];
+		} else {
+			placeOfPerformance = '';
+		}
+
+		
+		$("#tableContainer tbody").append(
+			'<tr>' +
+				'<td>' +
+					'<input type="checkbox">' +
+				'</td>' +
+				'<td class="amountToCount" data-amount="' + rawJsonCache.DATA.AMOUNT[i] + '">' +
+					rawJsonCache.DATA.AMOUNT[i] +
+				'</td>' +
+				'<td class="contractAmount">' +
+					rawJsonCache.DATA.OPTIONSAMOUNT[i] +
+				'</td>' +
+				'<td class="contractAmount">' +
+					rawJsonCache.DATA.EXERCISEDAMOUNT[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.PIID[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.IDVPIID[i] +
+				'</td>' +
+				'<td>' +
+					rawJsonCache.DATA.VENDORNAME[i] +
+				'</td>' +
+				'<td data-location="' + placeOfPerformance + '">' +
+					placeOfPerformance +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.PRODUCTCODE[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					parseProductCategory(rawJsonCache.DATA.PRODUCTCODE[i]) +
+				'</td>' +
+				'<td data-product="' + rawJsonCache.DATA.PRODUCT[i] + '">' +
+					rawJsonCache.DATA.PRODUCT[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.MAJAGENCY[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.MAJFUNDAGENCY[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.CONTRACTINGAGENCY[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.CONTRACTINGOFFICE[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.FUNDREQUESTINGOFFICE[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.CONTRACTPRICINGTYPE[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.CONTRACTTYPE[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.TRANSACTIONSTATUS[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.SIGNEDDATE[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.COMPLETIONDATE[i] +
+				'</td>' +
+				'<td class="columnSelector-false">' +
+					rawJsonCache.DATA.DESCRIPTION[i] +
+				'</td>' +
+			'</tr>'
+		);
+
+
+	});
+
+
+
+
+	updateTotal();
+
+
+	$("table").trigger("update"); 
+
+
+}
+
+function updateTotal() {
+
+	var totalContractMoney = new BigInteger(0);
+
+	$("#tableContainer tbody").find(".amountToCount").each(function() {
+		if ($(this).html() == 'NaN') {
+			$(this).html('0');
+		}
+		var amount = $(this).html().replace("$", "");
+		amount = amount.replace(/,/g, '');
+		amount = amount.replace('(', '-');
+		amount = amount.replace(')', '');
+		amount = new BigInteger.parse(amount);
+		totalContractMoney = totalContractMoney.add(amount);
+		$(this).formatCurrency();
+	});
+	$("#tableContainer tbody").find(".contractAmount").each(function() {
+		if ($(this).html() == 'NaN') {
+			$(this).html('0');
+		}
+		var amount = $(this).html().replace("$", "");
+		amount = amount.replace(/,/g, '');
+		amount = amount.replace('(', '-');
+		amount = amount.replace(')', '');
+		amount = new BigInteger.parse(amount);
+		$(this).formatCurrency();
+	});
+	$("#contractsTotal").text(totalContractMoney).formatCurrency();
+
+
+	//$("#contractCount").text($("#tableContainer tbody tr").length);
+
+
+}
+
+	</script>
+</head>
+<body>
+
+
+	<div data-role="popup" id="errorPopup" data-overlay-theme="a" data-theme="b">
+		<p>Error with request, please try again.</p>
+	</div>
+	<div data-role="page" id="page1">
+		<div data-role="panel" id="navPanel" data-position="left" data-display="reveal" data-theme="a">
+			<div class="ui-field-contain">
+				<h3></h3>
+				<fieldset id="sideList" data-role="controlgroup"></fieldset>
+			</div>
+		</div>
+		<div data-role="header">
+			<a href="#navPanel" id="panelBtn" class="ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Open Panel to Remove Groups</a>
+			<h1 id="page1Title">
+				<span id="page1QueryLength"></span> Contracts
+			</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<div id="percentComplete"></div>
+			<a id="popover" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Columns...</a>
+			<a id="visLocation" data-target="#locModal" data-toggle="modal" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Visualize Location</a>
+			<a id="visGroup" data-target="#locModal" data-toggle="modal" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini"></a>
+			<a id="clearBtn" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Clear</a>
+			<div id="totalBox">Total: <span id="contractsTotal">$0</span></div>
+			<div class="hidden"><div id="popover-target"></div></div>
+			<div id="tableContainer" data-inset="true"></div>
+		</div>
+		<div id="locModal" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<div id="chart_div"></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed"><h4>&copy; 2015 GSA.gov</h4></div>
+	</div>
+
+</body>
+</html>
